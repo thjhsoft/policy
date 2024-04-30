@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Privacy Policy</title>
+</head>
+<body>
+  <div id="content"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    document.getElementById('content').innerHTML =
+      marked.parse('#Privacy Policy\nLast Updated: 03/22/2024\n\nApp Name: Bible Simplified Chinese Union Version\nThank you for using our application. We highly value the protection of your personal information and privacy. This Privacy Policy will outline how we collect, use, and disclose your information. Please read this Privacy Policy carefully before using our application.\n\nInformation Collection and Use\nOur application does not collect any personally identifiable information nor does it require you to provide any permissions. We are committed to providing you with a secure, reliable, and ad-free application experience.\n\nThird-party Services\nOur application does not share your information with any third-party services.\n\nInformation Security\nWe have implemented reasonable security measures to protect your personal information from unauthorized access, use, or disclosure. However, due to the nature of the internet, we cannot guarantee the absolute security of information transmitted through our application.\n\nChildren's Privacy\nOur application is not directed at children under the age of 16. We do not knowingly collect any personally identifiable information from children under the age of 16. If you are a child under the age of 16 and believe we may have collected your personal information, please contact us, and we will take appropriate steps to delete this information.\n\nChanges and Updates\nWe may periodically update the contents of this Privacy Policy. When we make significant changes to the Privacy Policy, we will notify you through our application or via other appropriate means.\n\nContact Us\nIf you have any questions or concerns regarding this Privacy Policy, please contact us at:\n\nEmail: thjhsoft@gmail.com\n\nWe will do our best to address your inquiries and resolve your concerns.\n\nThank you for reading our Privacy Policy. By using our application, you agree to the terms and conditions of this Privacy Policy.\n\n\n\n# 隐私协议\n\n更新时间：05/22/2023\n\n## 应用名称：圣经 简体中文 和合本\n\n感谢您使用我们的应用程序。我们非常重视保护您的个人信息和隐私。本隐私协议将说明我们收集、使用和披露您的信息的方式。请在使用我们的应用程序之前仔细阅读本隐私协议。\n\n### 信息收集和使用\n\n我们的应用程序不会收集任何个人身份信息，也不会要求您提供任何权限。我们致力于为您提供一个安全、可靠且无广告的应用程序使用体验。\n\n### 第三方服务\n\n我们的应用程序不会与任何第三方服务共享您的信息。\n\n### 信息安全\n\n我们采取了合理的安全措施，以保护您的个人信息免受未经授权的访问、使用或披露。然而，由于互联网的性质，我们无法保证您通过我们的应用程序传输的信息的绝对安全性。\n\n### 儿童隐私\n\n我们的应用程序不针对年龄未满16岁的儿童。我们不会故意收集任何年龄未满16岁的儿童的个人身份信息。如果您是年龄未满16岁的儿童，并且您发现我们可能收集了您的个人信息，请与我们联系，我们将采取适当的措施删除这些信息。\n\n### 变更与更新\n\n我们可能会不时更新本隐私协议的内容。在我们对隐私协议进行重大更改时，我们将通过我们的应用程序或通过其他适当的方式通知您。\n\n### 联系我们\n\n如果您对本隐私协议有任何疑问或疑虑，请通过以下联系方式与我们联系：\n\n邮箱：thjhsoft@gmail.com\n\n我们将尽力回答您的问题并解决您的疑虑。\n\n感谢您阅读我们的隐私协议。通过使用我们的应用程序，即表示您同意本隐私协议的条款和条件。\n');
+  </script>
+</body>
+</html>
