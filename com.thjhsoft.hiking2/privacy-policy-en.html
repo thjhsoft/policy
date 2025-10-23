@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Step Counter - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+        h2 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        h3 {
+            color: #555;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+        }
+        .icon {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚶 Hiking Step Counter</h1>
+        <p class="subtitle">Privacy Policy</p>
+        <p class="subtitle">Last Updated: October 23, 2025</p>
+
+        <div class="highlight">
+            <strong>📌 Important Notice:</strong> This app takes your privacy very seriously. We commit to NOT collecting, uploading, or sharing any of your personal information. All data is stored locally on your device.
+        </div>
+
+        <h2>1. Information Collection and Use</h2>
+        <h3>1.1 Information We Collect</h3>
+        <p>Hiking Step Counter is a fully local application. We <strong>DO NOT collect</strong> the following information:</p>
+        <ul>
+            <li>❌ Personal identification information (name, phone, email, etc.)</li>
+            <li>❌ Location information (GPS, network location)</li>
+            <li>❌ Device information (IMEI, device ID, etc.)</li>
+            <li>❌ Network behavior data</li>
+            <li>❌ Any third-party tracking data</li>
+        </ul>
+
+        <h3>1.2 Data Stored Locally</h3>
+        <p>The app only stores the following data locally on your device:</p>
+        <ul>
+            <li>✅ Step count statistics (recorded by minute)</li>
+            <li>✅ App settings (daily goal, sensor sensitivity, etc.)</li>
+            <li>✅ Privacy policy consent status</li>
+        </ul>
+        <p>This data is stored in the Android system's private app directory, <strong>accessible only by this app</strong>. Other apps cannot access it.</p>
+
+        <h2>2. Permission Explanations</h2>
+        <h3>2.1 Activity Recognition Permission (ACTIVITY_RECOGNITION)</h3>
+        <p><span class="icon">🏃</span><strong>Purpose:</strong> Access your phone's step counter sensor (TYPE_STEP_COUNTER) to read step data.</p>
+        <p><strong>Explanation:</strong> This permission is used only for step counting and does not involve location tracking. The system sensor returns cumulative steps since device boot, and we calculate new steps by computing the difference.</p>
+
+        <h3>2.2 Notification Permission (POST_NOTIFICATIONS)</h3>
+        <p><span class="icon">🔔</span><strong>Purpose:</strong> Display foreground service notifications and daily motivational reminders.</p>
+        <p><strong>Explanation:</strong></p>
+        <ul>
+            <li>Foreground service notification: Shows today's step count in real-time, ensuring step counting service continues running</li>
+            <li>Motivational reminders: Once-daily encouraging messages (can be disabled in settings)</li>
+        </ul>
+
+        <h3>2.3 Internet Permission (INTERNET)</h3>
+        <p><span class="icon">🌐</span><strong>Purpose:</strong> Used only to load privacy policy and user guide in the in-app browser.</p>
+        <p><strong>Explanation:</strong> The app does not actively upload data online. Internet permission is used solely for viewing online documentation.</p>
+
+        <h2>3. Data Security</h2>
+        <h3>3.1 Local Storage</h3>
+        <p>All data is stored locally on your device using Android Room database with SQLite encryption (if supported by device). Database files are located in the app's private directory, protected by the system sandbox.</p>
+
+        <h3>3.2 Data Transmission</h3>
+        <p><strong>We do not perform any data transmission.</strong> The app has no server backend and no data upload functionality.</p>
+
+        <h3>3.3 Data Deletion</h3>
+        <p>You can delete data through the following methods:</p>
+        <ul>
+            <li>Uninstall the app: The system will automatically delete all app data</li>
+            <li>Clear data: System Settings → Apps → Hiking Step Counter → Storage → Clear Data</li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+        <p>This app <strong>does not integrate any third-party SDKs</strong>, including but not limited to:</p>
+        <ul>
+            <li>❌ Advertising SDKs</li>
+            <li>❌ Analytics SDKs (such as Google Analytics)</li>
+            <li>❌ Social sharing SDKs</li>
+            <li>❌ Payment SDKs</li>
+            <li>❌ Any cloud service SDKs</li>
+        </ul>
+        <p>The app runs completely independently and does not depend on any external services.</p>
+
+        <h2>5. Children's Privacy</h2>
+        <p>This app does not actively collect personal information from children under 13. Since the app runs entirely locally and does not collect any personal information, it is suitable for users of all ages.</p>
+
+        <h2>6. Privacy Policy Changes</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be communicated through the following methods:</p>
+        <ul>
+            <li>Publishing the updated policy on this page</li>
+            <li>Displaying update notifications in the app</li>
+        </ul>
+        <p>We recommend you review this Privacy Policy regularly to stay informed of the latest information.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or suggestions about this Privacy Policy, please contact us through:</p>
+        <ul>
+            <li>📧 Email: your-email@example.com</li>
+            <li>🐙 GitHub: https://github.com/your-username/hiking-app</li>
+        </ul>
+
+        <h2>8. User Rights</h2>
+        <p>According to relevant laws and regulations, you have the following rights:</p>
+        <ul>
+            <li><strong>Right to Know:</strong> Understand how we process your information</li>
+            <li><strong>Right to Access:</strong> View all local data stored by the app</li>
+            <li><strong>Right to Delete:</strong> Delete all your data at any time</li>
+            <li><strong>Right to Refuse:</strong> Refuse to agree to this policy (the app will not be usable)</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>✅ Our Commitment:</strong>
+            <ul style="margin-top: 10px;">
+                <li>🔒 100% local data storage, never uploaded</li>
+                <li>🚫 No ads, no tracking, no backdoors</li>
+                <li>🆓 Completely free, no in-app purchases</li>
+                <li>📖 Open source and transparent (viewable on GitHub)</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Hiking Step Counter © 2025</p>
+            <p>Thank you for your trust and support ❤️</p>
+        </div>
+    </div>
+</body>
+</html>

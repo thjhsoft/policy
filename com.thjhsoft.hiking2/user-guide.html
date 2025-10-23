@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徒步计步器 - 用户手册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #00b09b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+        h2 {
+            color: #96c93d;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #eee;
+        }
+        h3 {
+            color: #555;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .feature-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid #00b09b;
+        }
+        .tip {
+            background: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #2196F3;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .screenshot-placeholder {
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            color: #999;
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .version-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚶 徒步计步器</h1>
+        <p class="subtitle">用户手册 | User Guide</p>
+        
+        <div class="version-info">
+            <strong>📱 当前版本：v1.0.0</strong><br>
+            适用于 Android 8.0 及以上版本
+        </div>
+
+        <h2>📖 目录</h2>
+        <ol>
+            <li><a href="#intro">应用简介</a></li>
+            <li><a href="#features">核心功能</a></li>
+            <li><a href="#quickstart">快速开始</a></li>
+            <li><a href="#settings">设置说明</a></li>
+            <li><a href="#data">数据查看</a></li>
+            <li><a href="#faq">常见问题</a></li>
+            <li><a href="#tips">使用技巧</a></li>
+        </ol>
+
+        <h2 id="intro">1. 应用简介</h2>
+        <p>徒步计步器是一款<strong>简洁、高效、注重隐私</strong>的计步应用。它利用手机内置的运动传感器自动记录您的步数，帮助您养成健康的运动习惯。</p>
+        
+        <div class="feature-box">
+            <h3>✨ 核心特色</h3>
+            <ul>
+                <li>🔒 <strong>100%本地存储</strong> - 数据绝不上传，保护隐私</li>
+                <li>🎨 <strong>精美设计</strong> - Material Design 3 风格，支持深色模式</li>
+                <li>📊 <strong>详细统计</strong> - 按小时/天/周/月查看数据</li>
+                <li>⚡ <strong>高效省电</strong> - 可调节传感器灵敏度，平衡精度与电量</li>
+                <li>💪 <strong>每日励志</strong> - 激励消息助您坚持运动</li>
+                <li>🆓 <strong>完全免费</strong> - 无广告、无内购</li>
+            </ul>
+        </div>
+
+        <h2 id="features">2. 核心功能</h2>
+
+        <h3>2.1 实时计步</h3>
+        <p>应用使用前台服务持续监听手机的计步传感器（<code>TYPE_STEP_COUNTER</code>），自动记录您的步数。</p>
+        <ul>
+            <li>📈 实时更新：步数变化立即显示在主界面和通知栏</li>
+            <li>🔄 自动保存：每分钟自动保存数据，不怕应用崩溃</li>
+            <li>🌙 后台运行：即使锁屏也能持续计步</li>
+        </ul>
+
+        <h3>2.2 进度可视化</h3>
+        <p>主界面的大圆环动态显示今日完成进度：</p>
+        <ul>
+            <li>🎯 显示今日总步数和完成百分比</li>
+            <li>✨ 酷炫的发光动画和旋转效果</li>
+            <li>🎨 颜色随完成度动态变化</li>
+        </ul>
+
+        <h3>2.3 数据统计</h3>
+        <p>点击"查看数据"按钮，查看详细统计：</p>
+        <ul>
+            <li><strong>今天：</strong>按小时显示，查看全天步数分布</li>
+            <li><strong>本周：</strong>按天显示，对比每天运动量</li>
+            <li><strong>本月：</strong>按天显示，查看月度趋势</li>
+        </ul>
+        <p>每个视图都提供：总步数、平均值、最高值等统计数据。</p>
+
+        <h3>2.4 每日励志</h3>
+        <p>每天自动推送一条励志消息，鼓励您坚持运动（可在设置中关闭）。</p>
+
+        <h2 id="quickstart">3. 快速开始</h2>
+
+        <h3>步骤 1：同意隐私协议</h3>
+        <ol>
+            <li>首次打开应用，会显示隐私协议弹窗</li>
+            <li>仔细阅读后，点击"同意并继续"</li>
+            <li>如需查看完整协议，点击"查看完整隐私协议"</li>
+        </ol>
+
+        <div class="warning">
+            <strong>⚠️ 注意：</strong>如果点击"不同意"，应用将自动关闭。我们尊重您的选择！
+        </div>
+
+        <h3>步骤 2：授予权限</h3>
+        <p>同意协议后，系统会请求以下权限：</p>
+        <ul>
+            <li><strong>运动识别权限：</strong>必需，用于读取计步传感器</li>
+            <li><strong>通知权限：</strong>推荐，用于显示计步状态</li>
+        </ul>
+
+        <div class="tip">
+            <strong>💡 提示：</strong>如果不小心拒绝了权限，可以在系统设置 → 应用管理 → 徒步计步器 → 权限 中手动开启。
+        </div>
+
+        <h3>步骤 3：开启计步</h3>
+        <ol>
+            <li>在主界面找到"跟踪开关"卡片</li>
+            <li>点击右侧的开关按钮</li>
+            <li>看到"✅ 正在跟踪"提示，表示计步服务已启动</li>
+            <li>通知栏会显示计步通知，实时显示今日步数</li>
+        </ol>
+
+        <h3>步骤 4：开始行走</h3>
+        <p>现在您可以把手机放在口袋里，正常行走。应用会自动记录您的步数！</p>
+
+        <h2 id="settings">4. 设置说明</h2>
+        <p>点击主界面右上角的"⚙️ 设置"按钮进入设置页面。</p>
+
+        <h3>4.1 每日目标</h3>
+        <ul>
+            <li>默认目标：10,000步</li>
+            <li>可自定义：输入任意正整数</li>
+            <li>实时生效：修改后立即更新主界面进度</li>
+        </ul>
+
+        <h3>4.2 传感器灵敏度</h3>
+        <p>根据您的需求选择合适的灵敏度：</p>
+        
+        <div class="feature-box">
+            <ul>
+                <li><strong>🚀 最快：</strong>最高精度，最费电 (~5ms采样间隔)</li>
+                <li><strong>🎮 游戏：</strong>高精度，较费电 (~20ms)</li>
+                <li><strong>📱 UI级：</strong>推荐！平衡精度和电量 (~60ms)</li>
+                <li><strong>🔋 省电：</strong>标准精度，最省电 (~200ms)</li>
+            </ul>
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ 重要：</strong>修改灵敏度后，需要关闭并重新开启计步服务才能生效！
+        </div>
+
+        <h3>4.3 励志提醒</h3>
+        <ul>
+            <li>开启后，每天会收到一条励志通知</li>
+            <li>通知时间：应用启动后约2秒</li>
+            <li>可以随时关闭</li>
+        </ul>
+
+        <h2 id="data">5. 数据查看</h2>
+
+        <h3>5.1 统计卡片</h3>
+        <p>数据页面顶部显示三个统计卡片：</p>
+        <ul>
+            <li><strong>📊 总步数：</strong>当前时间段的总步数</li>
+            <li><strong>📈 平均值：</strong>按小时/天计算的平均步数</li>
+            <li><strong>🏆 最高值：</strong>单个时间段的最高步数</li>
+        </ul>
+
+        <h3>5.2 折线图</h3>
+        <p>图表特点：</p>
+        <ul>
+            <li>🎨 平滑贝塞尔曲线，美观直观</li>
+            <li>✨ 渐变填充和发光效果</li>
+            <li>🎯 最高点自动标注数值</li>
+            <li>📏 智能Y轴刻度，自动调整范围</li>
+        </ul>
+
+        <h3>5.3 详细列表</h3>
+        <p>图表下方显示每个时间段的详细数据：</p>
+        <ul>
+            <li>今天：显示每小时的步数（如 09:00、10:00）</li>
+            <li>本周/本月：显示每天的步数（如 10/23）</li>
+            <li>右侧进度条直观显示相对比例</li>
+        </ul>
+
+        <h2 id="faq">6. 常见问题</h2>
+
+        <h3>Q1: 为什么步数不准确？</h3>
+        <p><strong>A:</strong> 步数统计依赖手机的运动传感器，准确度受以下因素影响：</p>
+        <ul>
+            <li>手机放置位置（口袋比手持更准确）</li>
+            <li>行走方式（正常步行比碎步更准确）</li>
+            <li>传感器质量（不同手机传感器精度不同）</li>
+        </ul>
+        <div class="tip">
+            <strong>💡 建议：</strong>将手机放在裤兜或背包中，保持稳定的行走节奏。
+        </div>
+
+        <h3>Q2: 应用耗电吗？</h3>
+        <p><strong>A:</strong> 徒步计步器经过优化，电量消耗很低：</p>
+        <ul>
+            <li>使用系统计步传感器，比GPS定位省电得多</li>
+            <li>默认"UI级"灵敏度已做平衡</li>
+            <li>后台服务轻量化，内存占用小</li>
+        </ul>
+        <div class="tip">
+            <strong>💡 省电技巧：</strong>如果追求极致省电，可以切换到"省电"模式，精度略有下降但仍可接受。
+        </div>
+
+        <h3>Q3: 为什么通知栏一直显示？</h3>
+        <p><strong>A:</strong> 这是前台服务通知，是Android系统的要求：</p>
+        <ul>
+            <li>前台服务必须显示通知，确保用户知情</li>
+            <li>这样可以防止系统杀死计步服务</li>
+            <li>您可以在通知设置中关闭角标（小圆点）</li>
+        </ul>
+
+        <h3>Q4: 卸载应用后数据会丢失吗？</h3>
+        <p><strong>A:</strong> 是的。由于应用不上传任何数据到云端，卸载后本地数据会被清除。</p>
+        <div class="warning">
+            <strong>⚠️ 注意：</strong>目前应用不提供导出功能。如需保留数据，请不要卸载应用。
+        </div>
+
+        <h3>Q5: 支持哪些Android版本？</h3>
+        <p><strong>A:</strong> Android 8.0 (API 26) 及以上版本。</p>
+
+        <h3>Q6: 为什么有时步数突然减少？</h3>
+        <p><strong>A:</strong> 可能的原因：</p>
+        <ul>
+            <li>手机重启，传感器计数器被重置</li>
+            <li>系统杀死了计步服务（建议将应用加入省电白名单）</li>
+        </ul>
+        <div class="tip">
+            <strong>💡 解决方法：</strong>在手机设置中将"徒步计步器"加入省电白名单或自启动白名单。
+        </div>
+
+        <h2 id="tips">7. 使用技巧</h2>
+
+        <h3>技巧 1：白名单设置</h3>
+        <p>为确保计步服务稳定运行，建议将应用加入以下白名单：</p>
+        <ul>
+            <li><strong>省电白名单：</strong>避免被系统休眠</li>
+            <li><strong>自启动白名单：</strong>开机后自动启动（如需要）</li>
+            <li><strong>锁屏清理白名单：</strong>锁屏后继续运行</li>
+        </ul>
+        <p>具体设置路径因手机品牌而异，通常在 设置 → 电池 → 省电模式 中。</p>
+
+        <h3>技巧 2：合理设置目标</h3>
+        <ul>
+            <li>初学者：5,000 - 8,000步</li>
+            <li>一般人群：8,000 - 10,000步（WHO推荐）</li>
+            <li>运动爱好者：12,000 - 15,000步</li>
+            <li>专业级：15,000步以上</li>
+        </ul>
+
+        <h3>技巧 3：查看趋势</h3>
+        <p>定期查看"本周"和"本月"数据，了解运动规律：</p>
+        <ul>
+            <li>找出运动最多的日子，分析原因</li>
+            <li>发现运动不足的时段，制定改进计划</li>
+            <li>设定每周/每月挑战目标</li>
+        </ul>
+
+        <h3>技巧 4：关闭不必要的通知</h3>
+        <p>如果不需要励志提醒：</p>
+        <ol>
+            <li>进入设置页面</li>
+            <li>找到"励志提醒"开关</li>
+            <li>关闭即可</li>
+        </ol>
+
+        <div class="feature-box">
+            <h3>🎯 健康小贴士</h3>
+            <ul>
+                <li>💧 运动时记得补充水分</li>
+                <li>👟 穿舒适的鞋子，保护足部</li>
+                <li>🌳 尽量选择空气清新的环境</li>
+                <li>⏰ 避免饭后立即剧烈运动</li>
+                <li>🧘 结合拉伸运动，预防损伤</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>感谢您使用徒步计步器！</strong></p>
+            <p>如有任何问题或建议，欢迎通过以下方式联系我们：</p>
+            <p>📧 邮箱：your-email@example.com</p>
+            <p>🐙 GitHub：https://github.com/your-username/hiking-app</p>
+            <p style="margin-top: 20px; color: #00b09b;">💚 祝您运动愉快，身体健康！</p>
+        </div>
+    </div>
+</body>
+</html>

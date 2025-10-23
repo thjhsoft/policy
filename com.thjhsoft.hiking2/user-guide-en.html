@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Step Counter - User Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #00b09b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+        h2 {
+            color: #96c93d;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #eee;
+        }
+        h3 {
+            color: #555;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .feature-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid #00b09b;
+        }
+        .tip {
+            background: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #2196F3;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .version-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚶 Hiking Step Counter</h1>
+        <p class="subtitle">User Guide</p>
+        
+        <div class="version-info">
+            <strong>📱 Current Version: v1.0.0</strong><br>
+            Compatible with Android 8.0 and above
+        </div>
+
+        <h2>📖 Table of Contents</h2>
+        <ol>
+            <li><a href="#intro">App Introduction</a></li>
+            <li><a href="#features">Core Features</a></li>
+            <li><a href="#quickstart">Quick Start</a></li>
+            <li><a href="#settings">Settings Guide</a></li>
+            <li><a href="#data">Data Viewing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#tips">Usage Tips</a></li>
+        </ol>
+
+        <h2 id="intro">1. App Introduction</h2>
+        <p>Hiking Step Counter is a <strong>simple, efficient, privacy-focused</strong> step counting app. It uses your phone's built-in motion sensor to automatically record your steps, helping you develop healthy exercise habits.</p>
+        
+        <div class="feature-box">
+            <h3>✨ Core Features</h3>
+            <ul>
+                <li>🔒 <strong>100% Local Storage</strong> - Data never uploaded, privacy protected</li>
+                <li>🎨 <strong>Beautiful Design</strong> - Material Design 3 style with dark mode support</li>
+                <li>📊 <strong>Detailed Statistics</strong> - View data by hour/day/week/month</li>
+                <li>⚡ <strong>Efficient & Battery-Saving</strong> - Adjustable sensor sensitivity to balance accuracy and battery life</li>
+                <li>💪 <strong>Daily Motivation</strong> - Encouraging messages to help you stay active</li>
+                <li>🆓 <strong>Completely Free</strong> - No ads, no in-app purchases</li>
+            </ul>
+        </div>
+
+        <h2 id="features">2. Core Features</h2>
+
+        <h3>2.1 Real-time Step Counting</h3>
+        <p>The app uses a foreground service to continuously monitor your phone's step counter sensor (<code>TYPE_STEP_COUNTER</code>), automatically recording your steps.</p>
+        <ul>
+            <li>📈 Real-time updates: Step changes displayed immediately on main screen and notification</li>
+            <li>🔄 Auto-save: Data saved automatically every minute, no worries about app crashes</li>
+            <li>🌙 Background operation: Continues counting even when screen is locked</li>
+        </ul>
+
+        <h3>2.2 Progress Visualization</h3>
+        <p>The main screen features a large circular progress indicator showing today's completion:</p>
+        <ul>
+            <li>🎯 Displays today's total steps and completion percentage</li>
+            <li>✨ Cool glowing animation and rotation effects</li>
+            <li>🎨 Colors change dynamically based on completion</li>
+        </ul>
+
+        <h3>2.3 Data Statistics</h3>
+        <p>Click "View Data" button to see detailed statistics:</p>
+        <ul>
+            <li><strong>Today:</strong> Hourly display showing daily step distribution</li>
+            <li><strong>This Week:</strong> Daily display comparing each day's activity</li>
+            <li><strong>This Month:</strong> Daily display showing monthly trends</li>
+        </ul>
+        <p>Each view provides: total steps, average, and maximum values.</p>
+
+        <h3>2.4 Daily Motivation</h3>
+        <p>Automatically sends a daily motivational message to encourage you to stay active (can be disabled in settings).</p>
+
+        <h2 id="quickstart">3. Quick Start</h2>
+
+        <h3>Step 1: Accept Privacy Policy</h3>
+        <ol>
+            <li>When you first open the app, a privacy policy dialog appears</li>
+            <li>Read carefully, then click "Agree and Continue"</li>
+            <li>To view the complete policy, click "View Full Privacy Policy"</li>
+        </ol>
+
+        <div class="warning">
+            <strong>⚠️ Note:</strong> If you click "Decline", the app will close automatically. We respect your choice!
+        </div>
+
+        <h3>Step 2: Grant Permissions</h3>
+        <p>After accepting the policy, the system will request the following permissions:</p>
+        <ul>
+            <li><strong>Activity Recognition:</strong> Required, used to access step counter sensor</li>
+            <li><strong>Notification:</strong> Recommended, used to display step counting status</li>
+        </ul>
+
+        <div class="tip">
+            <strong>💡 Tip:</strong> If you accidentally deny permissions, you can manually enable them in System Settings → Apps → Hiking Step Counter → Permissions.
+        </div>
+
+        <h3>Step 3: Start Step Counting</h3>
+        <ol>
+            <li>Find the "Tracking Switch" card on the main screen</li>
+            <li>Click the switch button on the right</li>
+            <li>See "✅ Tracking" message, indicating step counting service has started</li>
+            <li>Notification bar will display step count notification showing today's steps in real-time</li>
+        </ol>
+
+        <h3>Step 4: Start Walking</h3>
+        <p>Now you can put your phone in your pocket and walk normally. The app will automatically record your steps!</p>
+
+        <h2 id="settings">4. Settings Guide</h2>
+        <p>Click the "⚙️ Settings" button in the top right of the main screen to enter settings.</p>
+
+        <h3>4.1 Daily Goal</h3>
+        <ul>
+            <li>Default goal: 10,000 steps</li>
+            <li>Customizable: Enter any positive integer</li>
+            <li>Takes effect immediately: Updates main screen progress after modification</li>
+        </ul>
+
+        <h3>4.2 Sensor Sensitivity</h3>
+        <p>Choose appropriate sensitivity based on your needs:</p>
+        
+        <div class="feature-box">
+            <ul>
+                <li><strong>🚀 Fastest:</strong> Highest accuracy, most battery drain (~5ms sampling interval)</li>
+                <li><strong>🎮 Game:</strong> High accuracy, moderate battery drain (~20ms)</li>
+                <li><strong>📱 UI Level:</strong> Recommended! Balances accuracy and battery (~60ms)</li>
+                <li><strong>🔋 Power Saving:</strong> Standard accuracy, most battery efficient (~200ms)</li>
+            </ul>
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ Important:</strong> After changing sensitivity, you need to turn off and restart the step counting service for it to take effect!
+        </div>
+
+        <h3>4.3 Motivational Reminders</h3>
+        <ul>
+            <li>When enabled, you'll receive one motivational notification per day</li>
+            <li>Notification time: About 2 seconds after app starts</li>
+            <li>Can be disabled at any time</li>
+        </ul>
+
+        <h2 id="data">5. Data Viewing</h2>
+
+        <h3>5.1 Statistics Cards</h3>
+        <p>Three statistics cards are displayed at the top of the data page:</p>
+        <ul>
+            <li><strong>📊 Total Steps:</strong> Total steps for current time period</li>
+            <li><strong>📈 Average:</strong> Average steps per hour/day</li>
+            <li><strong>🏆 Maximum:</strong> Highest steps in a single time period</li>
+        </ul>
+
+        <h3>5.2 Line Chart</h3>
+        <p>Chart features:</p>
+        <ul>
+            <li>🎨 Smooth Bézier curves, beautiful and intuitive</li>
+            <li>✨ Gradient fill and glow effects</li>
+            <li>🎯 Maximum point automatically labeled with value</li>
+            <li>📏 Smart Y-axis scale, automatically adjusts range</li>
+        </ul>
+
+        <h3>5.3 Detailed List</h3>
+        <p>Below the chart, detailed data for each time period is displayed:</p>
+        <ul>
+            <li>Today: Shows steps for each hour (e.g., 09:00, 10:00)</li>
+            <li>This Week/Month: Shows steps for each day (e.g., 10/23)</li>
+            <li>Progress bar on right visually shows relative proportion</li>
+        </ul>
+
+        <h2 id="faq">6. FAQ</h2>
+
+        <h3>Q1: Why are step counts inaccurate?</h3>
+        <p><strong>A:</strong> Step counting relies on your phone's motion sensor, and accuracy is affected by:</p>
+        <ul>
+            <li>Phone placement (pocket is more accurate than handheld)</li>
+            <li>Walking style (normal walking is more accurate than shuffling)</li>
+            <li>Sensor quality (different phones have different sensor accuracy)</li>
+        </ul>
+        <div class="tip">
+            <strong>💡 Suggestion:</strong> Keep your phone in your pocket or backpack and maintain a steady walking rhythm.
+        </div>
+
+        <h3>Q2: Does the app drain battery?</h3>
+        <p><strong>A:</strong> Hiking Step Counter is optimized with very low battery consumption:</p>
+        <ul>
+            <li>Uses system step counter sensor, much more efficient than GPS tracking</li>
+            <li>Default "UI Level" sensitivity already balanced</li>
+            <li>Background service is lightweight with small memory footprint</li>
+        </ul>
+        <div class="tip">
+            <strong>💡 Battery Saving Tip:</strong> For maximum battery efficiency, switch to "Power Saving" mode. Accuracy slightly decreases but remains acceptable.
+        </div>
+
+        <h3>Q3: Why does the notification bar always show?</h3>
+        <p><strong>A:</strong> This is a foreground service notification, required by Android:</p>
+        <ul>
+            <li>Foreground services must display notification to keep users informed</li>
+            <li>This prevents the system from killing the step counting service</li>
+            <li>You can disable the badge (dot) in notification settings</li>
+        </ul>
+
+        <h3>Q4: Will data be lost after uninstalling?</h3>
+        <p><strong>A:</strong> Yes. Since the app doesn't upload any data to the cloud, local data will be cleared upon uninstall.</p>
+        <div class="warning">
+            <strong>⚠️ Note:</strong> The app currently doesn't provide export functionality. To keep your data, don't uninstall the app.
+        </div>
+
+        <h3>Q5: Which Android versions are supported?</h3>
+        <p><strong>A:</strong> Android 8.0 (API 26) and above.</p>
+
+        <h3>Q6: Why do steps sometimes suddenly decrease?</h3>
+        <p><strong>A:</strong> Possible reasons:</p>
+        <ul>
+            <li>Phone restarted, sensor counter was reset</li>
+            <li>System killed the step counting service (recommended to add app to battery whitelist)</li>
+        </ul>
+        <div class="tip">
+            <strong>💡 Solution:</strong> Add "Hiking Step Counter" to battery whitelist or auto-start whitelist in phone settings.
+        </div>
+
+        <h2 id="tips">7. Usage Tips</h2>
+
+        <h3>Tip 1: Whitelist Settings</h3>
+        <p>To ensure stable operation of step counting service, add the app to these whitelists:</p>
+        <ul>
+            <li><strong>Battery Whitelist:</strong> Prevent system hibernation</li>
+            <li><strong>Auto-start Whitelist:</strong> Auto-start after boot (if needed)</li>
+            <li><strong>Lock Screen Cleanup Whitelist:</strong> Continue running after screen lock</li>
+        </ul>
+        <p>Specific settings path varies by phone brand, usually found in Settings → Battery → Power Saving Mode.</p>
+
+        <h3>Tip 2: Set Reasonable Goals</h3>
+        <ul>
+            <li>Beginners: 5,000 - 8,000 steps</li>
+            <li>General population: 8,000 - 10,000 steps (WHO recommended)</li>
+            <li>Fitness enthusiasts: 12,000 - 15,000 steps</li>
+            <li>Professional level: 15,000+ steps</li>
+        </ul>
+
+        <h3>Tip 3: View Trends</h3>
+        <p>Regularly check "This Week" and "This Month" data to understand exercise patterns:</p>
+        <ul>
+            <li>Identify days with most activity and analyze reasons</li>
+            <li>Discover periods of insufficient exercise and make improvement plans</li>
+            <li>Set weekly/monthly challenge goals</li>
+        </ul>
+
+        <h3>Tip 4: Disable Unnecessary Notifications</h3>
+        <p>If you don't need motivational reminders:</p>
+        <ol>
+            <li>Go to settings page</li>
+            <li>Find "Motivational Reminders" switch</li>
+            <li>Turn it off</li>
+        </ol>
+
+        <div class="feature-box">
+            <h3>🎯 Health Tips</h3>
+            <ul>
+                <li>💧 Remember to stay hydrated during exercise</li>
+                <li>👟 Wear comfortable shoes to protect your feet</li>
+                <li>🌳 Choose environments with fresh air when possible</li>
+                <li>⏰ Avoid intense exercise immediately after meals</li>
+                <li>🧘 Include stretching exercises to prevent injuries</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>Thank you for using Hiking Step Counter!</strong></p>
+            <p>If you have any questions or suggestions, feel free to contact us:</p>
+            <p>📧 Email: your-email@example.com</p>
+            <p>🐙 GitHub: https://github.com/your-username/hiking-app</p>
+            <p style="margin-top: 20px; color: #00b09b;">💚 Happy walking and stay healthy!</p>
+        </div>
+    </div>
+</body>
+</html>
