@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字指南针 - 使用说明 | Digital Compass - User Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+        
+        .lang-switch {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .lang-switch button {
+            background: #FF6B6B;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            margin: 0 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .lang-switch button:hover {
+            background: #FF5252;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,107,107,0.3);
+        }
+        
+        .lang-switch button.active {
+            background: #16213e;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .lang-content {
+            display: none;
+        }
+        
+        .lang-content.active {
+            display: block;
+        }
+        
+        h2 {
+            color: #FF6B6B;
+            font-size: 28px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #FF6B6B;
+        }
+        
+        h3 {
+            color: #16213e;
+            font-size: 22px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .feature-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #FF6B6B;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .header p {
+                font-size: 16px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+            
+            h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧭 数字指南针</h1>
+            <p>Digital Compass</p>
+        </div>
+        
+        <div class="lang-switch">
+            <button onclick="switchLang('zh')" class="active" id="btn-zh">中文</button>
+            <button onclick="switchLang('en')" id="btn-en">English</button>
+        </div>
+        
+        <div class="content">
+            <!-- 中文内容 -->
+            <div class="lang-content active" id="content-zh">
+                <h2>📖 使用说明</h2>
+                
+                <div class="feature-box">
+                    <h3>✨ 主要功能</h3>
+                    <ul>
+                        <li><strong>精准指南针：</strong>实时显示当前方向，精确到1度</li>
+                        <li><strong>方向指示：</strong>显示中英文方位（北、东、南、西等）</li>
+                        <li><strong>GPS定位：</strong>显示当前经纬度坐标</li>
+                        <li><strong>海拔高度：</strong>显示当前所在地的海拔高度</li>
+                        <li><strong>定位精度：</strong>显示GPS定位的精确度</li>
+                        <li><strong>美观界面：</strong>现代化设计，夜间友好的深色主题</li>
+                    </ul>
+                </div>
+                
+                <h3>🚀 快速开始</h3>
+                <ol>
+                    <li><strong>首次启动：</strong>打开应用后，会请求位置权限</li>
+                    <li><strong>授予权限：</strong>点击"允许"以获取完整功能</li>
+                    <li><strong>校准设备：</strong>将手机水平放置，沿8字形移动以校准磁力计</li>
+                    <li><strong>开始使用：</strong>指南针会自动显示当前方向</li>
+                </ol>
+                
+                <h3>📍 权限说明</h3>
+                <p><strong>位置权限（必需）：</strong></p>
+                <ul>
+                    <li>用于获取GPS坐标信息</li>
+                    <li>用于显示海拔高度</li>
+                    <li>用于显示定位精度</li>
+                    <li>应用不会上传或分享您的位置信息</li>
+                </ul>
+                
+                <h3>💡 使用技巧</h3>
+                <div class="feature-box">
+                    <ul>
+                        <li><strong>保持水平：</strong>使用时请将手机保持水平，以获得最准确的读数</li>
+                        <li><strong>远离干扰：</strong>远离磁性物体（如磁铁、音响、金属物）以避免干扰</li>
+                        <li><strong>校准方法：</strong>如果指南针不准确，请将手机沿8字形移动几次进行校准</li>
+                        <li><strong>室内使用：</strong>在室内使用时，GPS信号可能较弱，定位精度会降低</li>
+                        <li><strong>等待定位：</strong>首次使用或长时间未使用后，GPS可能需要几秒到几分钟才能定位</li>
+                    </ul>
+                </div>
+                
+                <div class="warning-box">
+                    <h3>⚠️ 注意事项</h3>
+                    <ul>
+                        <li>本应用仅供参考，不应用于专业导航或安全关键场景</li>
+                        <li>磁力计易受环境影响，请定期校准</li>
+                        <li>GPS在室内、隧道、高楼密集区域可能无法正常工作</li>
+                        <li>某些设备的传感器精度可能有限</li>
+                    </ul>
+                </div>
+                
+                <h3>🔧 常见问题</h3>
+                <p><strong>Q: 指南针不准确怎么办？</strong></p>
+                <p>A: 请尝试以下方法：</p>
+                <ul>
+                    <li>将手机沿8字形移动进行校准</li>
+                    <li>远离磁性物体和电子设备</li>
+                    <li>重启应用</li>
+                    <li>检查手机传感器是否正常工作</li>
+                </ul>
+                
+                <p><strong>Q: 为什么GPS显示"等待GPS"？</strong></p>
+                <p>A: 可能的原因：</p>
+                <ul>
+                    <li>位置权限未授予</li>
+                    <li>GPS未开启</li>
+                    <li>在室内或信号较弱的地方</li>
+                    <li>首次定位需要时间</li>
+                </ul>
+                
+                <p><strong>Q: 如何访问设置菜单？</strong></p>
+                <p>A: 点击右上角的菜单按钮（三条横线图标），可以查看使用说明和隐私协议。</p>
+                
+                <h3>📱 系统要求</h3>
+                <ul>
+                    <li>Android 7.0 (API 24) 及以上版本</li>
+                    <li>设备必须具备加速度计和磁力计传感器</li>
+                    <li>建议授予位置权限以获得完整功能</li>
+                </ul>
+                
+                <h3>📞 联系支持</h3>
+                <p>如有问题或建议，请访问我们的 GitHub 仓库提交 Issue。</p>
+            </div>
+            
+            <!-- English Content -->
+            <div class="lang-content" id="content-en">
+                <h2>📖 User Guide</h2>
+                
+                <div class="feature-box">
+                    <h3>✨ Main Features</h3>
+                    <ul>
+                        <li><strong>Accurate Compass:</strong> Real-time direction display, accurate to 1 degree</li>
+                        <li><strong>Direction Indicator:</strong> Shows cardinal directions in both English and Chinese</li>
+                        <li><strong>GPS Location:</strong> Displays current latitude and longitude coordinates</li>
+                        <li><strong>Altitude:</strong> Shows current elevation above sea level</li>
+                        <li><strong>Location Accuracy:</strong> Displays GPS positioning accuracy</li>
+                        <li><strong>Beautiful Interface:</strong> Modern design with night-friendly dark theme</li>
+                    </ul>
+                </div>
+                
+                <h3>🚀 Quick Start</h3>
+                <ol>
+                    <li><strong>First Launch:</strong> The app will request location permission</li>
+                    <li><strong>Grant Permission:</strong> Click "Allow" to access full functionality</li>
+                    <li><strong>Calibrate Device:</strong> Hold phone flat and move in figure-8 pattern to calibrate magnetometer</li>
+                    <li><strong>Start Using:</strong> Compass will automatically show current direction</li>
+                </ol>
+                
+                <h3>📍 Permission Details</h3>
+                <p><strong>Location Permission (Required):</strong></p>
+                <ul>
+                    <li>Used to obtain GPS coordinate information</li>
+                    <li>Used to display altitude</li>
+                    <li>Used to show location accuracy</li>
+                    <li>App does not upload or share your location information</li>
+                </ul>
+                
+                <h3>💡 Usage Tips</h3>
+                <div class="feature-box">
+                    <ul>
+                        <li><strong>Keep Level:</strong> Hold phone flat for most accurate readings</li>
+                        <li><strong>Avoid Interference:</strong> Stay away from magnetic objects (magnets, speakers, metal) to avoid interference</li>
+                        <li><strong>Calibration Method:</strong> If compass is inaccurate, move phone in figure-8 pattern several times</li>
+                        <li><strong>Indoor Use:</strong> GPS signal may be weak indoors, reducing accuracy</li>
+                        <li><strong>Wait for Fix:</strong> First use or after long inactivity, GPS may need seconds to minutes to lock</li>
+                    </ul>
+                </div>
+                
+                <div class="warning-box">
+                    <h3>⚠️ Important Notes</h3>
+                    <ul>
+                        <li>This app is for reference only, not for professional navigation or safety-critical scenarios</li>
+                        <li>Magnetometer is susceptible to environmental factors, calibrate regularly</li>
+                        <li>GPS may not work properly indoors, in tunnels, or in areas with tall buildings</li>
+                        <li>Some devices may have limited sensor accuracy</li>
+                    </ul>
+                </div>
+                
+                <h3>🔧 FAQ</h3>
+                <p><strong>Q: What if the compass is inaccurate?</strong></p>
+                <p>A: Try the following:</p>
+                <ul>
+                    <li>Move phone in figure-8 pattern to calibrate</li>
+                    <li>Stay away from magnetic objects and electronic devices</li>
+                    <li>Restart the app</li>
+                    <li>Check if phone sensors are working properly</li>
+                </ul>
+                
+                <p><strong>Q: Why does GPS show "Waiting for GPS"?</strong></p>
+                <p>A: Possible reasons:</p>
+                <ul>
+                    <li>Location permission not granted</li>
+                    <li>GPS not enabled</li>
+                    <li>Indoors or in area with weak signal</li>
+                    <li>First fix takes time</li>
+                </ul>
+                
+                <p><strong>Q: How to access settings menu?</strong></p>
+                <p>A: Tap the menu button (three horizontal lines icon) in the top right corner to view user guide and privacy policy.</p>
+                
+                <h3>📱 System Requirements</h3>
+                <ul>
+                    <li>Android 7.0 (API 24) or higher</li>
+                    <li>Device must have accelerometer and magnetometer sensors</li>
+                    <li>Location permission recommended for full functionality</li>
+                </ul>
+                
+                <h3>📞 Support</h3>
+                <p>For questions or suggestions, please visit our GitHub repository and submit an Issue.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 THJH Software. All rights reserved.</p>
+            <p>Version 1.0</p>
+        </div>
+    </div>
+    
+    <script>
+        function switchLang(lang) {
+            // Hide all content
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.lang-switch button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected content
+            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+            
+            // Update page language
+            document.documentElement.lang = lang;
+        }
+    </script>
+</body>
+</html>
