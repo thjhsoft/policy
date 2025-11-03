@@ -81,6 +81,10 @@
             font-size: 1.2em;
             margin-right: 8px;
         }
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -90,22 +94,28 @@
         <p class="subtitle">Last Updated: October 23, 2025</p>
 
         <div class="highlight">
-            <strong>📌 Important Notice:</strong> This app takes your privacy very seriously. We commit to NOT collecting, uploading, or sharing any of your personal information. All data is stored locally on your device.
+            <strong>📌 Important Notice:</strong> This app takes your privacy very seriously. We commit to keeping your step count and personal settings <strong>100% local</strong>. However, the app contains <strong>Google AdMob ads</strong>, which may collect anonymous advertising information. Your personal step data is <strong>not shared</strong> with advertisers.
         </div>
 
         <h2>1. Information Collection and Use</h2>
         <h3>1.1 Information We Collect</h3>
-        <p>Hiking Step Counter is a fully local application. We <strong>DO NOT collect</strong> the following information:</p>
+        <p>Hiking Step Counter is primarily a local app. We <strong>DO NOT collect</strong> the following information:</p>
         <ul>
             <li>❌ Personal identification information (name, phone, email, etc.)</li>
             <li>❌ Location information (GPS, network location)</li>
             <li>❌ Device information (IMEI, device ID, etc.)</li>
-            <li>❌ Network behavior data</li>
-            <li>❌ Any third-party tracking data</li>
+            <li>❌ Network behavior data unrelated to ads</li>
         </ul>
+        <p>However, because the app contains AdMob ads, Google may collect the following anonymous data:</p>
+        <ul>
+            <li>✅ Advertising identifiers (AAID / IDFA)</li>
+            <li>✅ Ad click and impression statistics</li>
+            <li>✅ Anonymous demographic or interest data to optimize ads</li>
+        </ul>
+        <p>These advertising data are handled by Google according to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> and are <strong>not linked</strong> to your step count or app settings.</p>
 
         <h3>1.2 Data Stored Locally</h3>
-        <p>The app only stores the following data locally on your device:</p>
+        <p>The app only stores the following data on your device:</p>
         <ul>
             <li>✅ Step count statistics (recorded by minute)</li>
             <li>✅ App settings (daily goal, sensor sensitivity, etc.)</li>
@@ -116,79 +126,61 @@
         <h2>2. Permission Explanations</h2>
         <h3>2.1 Activity Recognition Permission (ACTIVITY_RECOGNITION)</h3>
         <p><span class="icon">🏃</span><strong>Purpose:</strong> Access your phone's step counter sensor (TYPE_STEP_COUNTER) to read step data.</p>
-        <p><strong>Explanation:</strong> This permission is used only for step counting and does not involve location tracking. The system sensor returns cumulative steps since device boot, and we calculate new steps by computing the difference.</p>
+        <p><strong>Explanation:</strong> Only used for step counting. Does not involve location tracking.</p>
 
         <h3>2.2 Notification Permission (POST_NOTIFICATIONS)</h3>
-        <p><span class="icon">🔔</span><strong>Purpose:</strong> Display foreground service notifications and daily motivational reminders.</p>
-        <p><strong>Explanation:</strong></p>
-        <ul>
-            <li>Foreground service notification: Shows today's step count in real-time, ensuring step counting service continues running</li>
-            <li>Motivational reminders: Once-daily encouraging messages (can be disabled in settings)</li>
-        </ul>
+        <p><span class="icon">🔔</span><strong>Purpose:</strong> Display foreground notifications and daily motivational reminders.</p>
 
         <h3>2.3 Internet Permission (INTERNET)</h3>
-        <p><span class="icon">🌐</span><strong>Purpose:</strong> Used only to load privacy policy and user guide in the in-app browser.</p>
-        <p><strong>Explanation:</strong> The app does not actively upload data online. Internet permission is used solely for viewing online documentation.</p>
+        <p><span class="icon">🌐</span><strong>Purpose:</strong> Required for loading AdMob ads and viewing online documentation.</p>
+        <p><strong>Explanation:</strong> Step data is never uploaded. Internet is used only for ads and online content.</p>
 
         <h2>3. Data Security</h2>
         <h3>3.1 Local Storage</h3>
-        <p>All data is stored locally on your device using Android Room database with SQLite encryption (if supported by device). Database files are located in the app's private directory, protected by the system sandbox.</p>
+        <p>Step counts and settings are stored locally using Android Room database with SQLite encryption (if supported). Protected by system sandbox.</p>
 
         <h3>3.2 Data Transmission</h3>
-        <p><strong>We do not perform any data transmission.</strong> The app has no server backend and no data upload functionality.</p>
+        <p>Step and personal settings data <strong>do not leave your device</strong>. Only anonymous AdMob data may be transmitted to Google for advertising purposes.</p>
 
         <h3>3.3 Data Deletion</h3>
-        <p>You can delete data through the following methods:</p>
         <ul>
-            <li>Uninstall the app: The system will automatically delete all app data</li>
-            <li>Clear data: System Settings → Apps → Hiking Step Counter → Storage → Clear Data</li>
+            <li>Uninstall the app: Deletes all local app data</li>
+            <li>Clear data: Settings → Apps → Hiking Step Counter → Storage → Clear Data</li>
         </ul>
 
         <h2>4. Third-Party Services</h2>
-        <p>This app <strong>does not integrate any third-party SDKs</strong>, including but not limited to:</p>
+        <p>The app integrates <strong>Google AdMob</strong> to display ads:</p>
         <ul>
-            <li>❌ Advertising SDKs</li>
-            <li>❌ Analytics SDKs (such as Google Analytics)</li>
-            <li>❌ Social sharing SDKs</li>
-            <li>❌ Payment SDKs</li>
-            <li>❌ Any cloud service SDKs</li>
+            <li>May collect anonymous advertising data (identifiers, ad clicks, impressions)</li>
+            <li>Google AdMob Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
         </ul>
-        <p>The app runs completely independently and does not depend on any external services.</p>
+        <p>The app does not include other third-party SDKs such as social sharing or payment services.</p>
 
         <h2>5. Children's Privacy</h2>
-        <p>This app does not actively collect personal information from children under 13. Since the app runs entirely locally and does not collect any personal information, it is suitable for users of all ages.</p>
+        <p>The app does not actively collect personal information from children under 13. Step data is local, and ad data is anonymous.</p>
 
         <h2>6. Privacy Policy Changes</h2>
-        <p>We may update this Privacy Policy from time to time. Any changes will be communicated through the following methods:</p>
-        <ul>
-            <li>Publishing the updated policy on this page</li>
-            <li>Displaying update notifications in the app</li>
-        </ul>
-        <p>We recommend you review this Privacy Policy regularly to stay informed of the latest information.</p>
+        <p>Updates will be published on this page and/or in-app notifications. Please review periodically.</p>
 
         <h2>7. Contact Us</h2>
-        <p>If you have any questions or suggestions about this Privacy Policy, please contact us through:</p>
         <ul>
-            <li>📧 Email: your-email@example.com</li>
-            <li>🐙 GitHub: https://github.com/your-username/hiking-app</li>
+            <li>📧 Email: thjhsoft@example.com</li>
         </ul>
 
         <h2>8. User Rights</h2>
-        <p>According to relevant laws and regulations, you have the following rights:</p>
         <ul>
-            <li><strong>Right to Know:</strong> Understand how we process your information</li>
-            <li><strong>Right to Access:</strong> View all local data stored by the app</li>
-            <li><strong>Right to Delete:</strong> Delete all your data at any time</li>
-            <li><strong>Right to Refuse:</strong> Refuse to agree to this policy (the app will not be usable)</li>
+            <li><strong>Right to Know:</strong> Understand how your information is handled</li>
+            <li><strong>Right to Access:</strong> View all local data</li>
+            <li><strong>Right to Delete:</strong> Remove all data at any time</li>
+            <li><strong>Right to Refuse:</strong> Decline this policy (app will not work)</li>
         </ul>
 
         <div class="highlight">
             <strong>✅ Our Commitment:</strong>
             <ul style="margin-top: 10px;">
-                <li>🔒 100% local data storage, never uploaded</li>
-                <li>🚫 No ads, no tracking, no backdoors</li>
-                <li>🆓 Completely free, no in-app purchases</li>
-                <li>📖 Open source and transparent (viewable on GitHub)</li>
+                <li>🔒 Step and settings data stored 100% locally</li>
+                <li>🚫 No other ads tracking or backdoors</li>
+                <li>🆓 Free app with AdMob ads</li>
             </ul>
         </div>
 
