@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Guide - Draw Replay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h1 {
+            color: #6200EE;
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #6200EE;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E3F2FD;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2::before {
+            content: "●";
+            color: #6200EE;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .feature-card {
+            background: #F5F5F5;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid #6200EE;
+        }
+        
+        .tip-box {
+            background: #E8F5E9;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .tip-box strong {
+            color: #2E7D32;
+        }
+        
+        .warning-box {
+            background: #FFF3E0;
+            padding: 15px;
+            border-left: 4px solid #FF9800;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .warning-box strong {
+            color: #E65100;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Draw Replay User Guide</h1>
+        <div class="subtitle">Record every stroke and replay the art of drawing</div>
+        
+        <h2>App Overview</h2>
+        <p>Draw Replay is a powerful drawing recording app that not only lets you create freely, but also records and replays your entire drawing process, and exports it as a video to share with friends. All data is stored completely locally to protect your privacy.</p>
+        
+        <h2>Main Features</h2>
+        
+        <div class="feature-card">
+            <h3>🎨 Drawing Tools</h3>
+            <ul>
+                <li><strong>Multiple Brush Styles:</strong> Solid, dashed, dotted, dash-dot lines</li>
+                <li><strong>Rich Color Selection:</strong> Preset colors + advanced color wheel palette</li>
+                <li><strong>Brush Size Adjustment:</strong> 1-50 pixels adjustable</li>
+                <li><strong>Transparency Control:</strong> Alpha channel transparency adjustment supported</li>
+                <li><strong>Background Settings:</strong> Solid color background, custom image background</li>
+            </ul>
+        </div>
+        
+        <div class="feature-card">
+            <h3>📹 Recording & Playback</h3>
+            <ul>
+                <li><strong>Real-time Recording:</strong> Click record button to capture every stroke</li>
+                <li><strong>Smooth Playback:</strong> Play drawing process at 60 FPS</li>
+                <li><strong>Progress Control:</strong> Drag progress bar to jump to any position</li>
+                <li><strong>Pause & Resume:</strong> Pause and continue playback anytime</li>
+            </ul>
+        </div>
+        
+        <div class="feature-card">
+            <h3>💾 Save & Share</h3>
+            <ul>
+                <li><strong>Save Works:</strong> Save drawings to history, load anytime to continue</li>
+                <li><strong>Export Image:</strong> Save current canvas as PNG image to gallery</li>
+                <li><strong>Share Image:</strong> Share current canvas directly to other apps</li>
+                <li><strong>Export Video:</strong> Export recorded drawing process as MP4 video</li>
+            </ul>
+        </div>
+        
+        <h2>Detailed Instructions</h2>
+        
+        <h3>1. Basic Drawing</h3>
+        <ul>
+            <li><strong>Start Drawing:</strong> Slide your finger on the canvas to start drawing</li>
+            <li><strong>Change Color:</strong> Tap the colored circle button in bottom-left, select preset colors or use color wheel</li>
+            <li><strong>Adjust Brush:</strong> Tap brush icon, slide to adjust brush thickness (1-50px)</li>
+            <li><strong>Select Style:</strong> Tap style icon, choose solid/dashed/dotted/dash-dot line</li>
+        </ul>
+        
+        <h3>2. Canvas Operations</h3>
+        <ul>
+            <li><strong>Zoom Canvas:</strong> Pinch/spread two fingers to zoom canvas (0.5x - 5x)</li>
+            <li><strong>Move Canvas:</strong> Drag with two fingers to pan canvas position</li>
+            <li><strong>Reset View:</strong> Tap reset button in top-right to restore default view</li>
+            <li><strong>Undo/Redo:</strong> Tap undo/redo buttons in toolbar</li>
+            <li><strong>Clear Canvas:</strong> Tap delete icon to clear all content</li>
+        </ul>
+        
+        <h3>3. Recording Drawing Process</h3>
+        <ul>
+            <li><strong>Start Recording:</strong> Tap "Record" button (red dot icon), button turns red when recording</li>
+            <li><strong>Recording Indicator:</strong> During recording, every stroke is captured</li>
+            <li><strong>Stop Recording:</strong> Tap "Stop" button again to end recording</li>
+            <li><strong>Play Recording:</strong> Tap "Play" button to watch drawing process playback</li>
+        </ul>
+        
+        <div class="tip-box">
+            <p><strong>💡 Tip:</strong> It's recommended to clear the canvas before recording, so the recorded video starts from a blank canvas for better results!</p>
+        </div>
+        
+        <h3>4. Playback Control</h3>
+        <ul>
+            <li><strong>Play/Pause:</strong> During playback, tap "Pause" to pause, tap "Resume" to continue</li>
+            <li><strong>Progress Adjustment:</strong> Drag progress bar at bottom of screen to jump to any position</li>
+            <li><strong>Stop Playback:</strong> Tap "Stop" button to end playback, keeping current frame</li>
+        </ul>
+        
+        <h3>5. Setting Background</h3>
+        <ul>
+            <li>Tap top menu → "Background"</li>
+            <li><strong>Solid Color:</strong> Select preset colors (white, black, gray, etc.)</li>
+            <li><strong>Custom Image:</strong> Choose photo from gallery as background</li>
+        </ul>
+        
+        <h3>6. Save & History</h3>
+        <ul>
+            <li><strong>Save Work:</strong> Tap "Save" icon at top, work will be saved to history</li>
+            <li><strong>View History:</strong> Tap "History" icon to browse all saved works</li>
+            <li><strong>Load Work:</strong> Tap thumbnail in history list to load work and continue editing</li>
+            <li><strong>Delete Work:</strong> Tap delete button in top-right of thumbnail</li>
+        </ul>
+        
+        <h3>7. Export & Share</h3>
+        <ul>
+            <li>Tap top menu (three dots) → Select function:
+                <ul>
+                    <li><strong>Save Image:</strong> Save current canvas as image to gallery</li>
+                    <li><strong>Share Image:</strong> Share current canvas via system share menu</li>
+                    <li><strong>Export Video:</strong> Export recorded drawing process as MP4 video (requires prior recording)</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="warning-box">
+            <p><strong>⚠️ Note:</strong> Video export may take a while, depending on number of recorded frames. Do not switch apps or lock screen during export.</p>
+        </div>
+        
+        <h2>Tips & Tricks</h2>
+        
+        <div class="tip-box">
+            <ul>
+                <li><strong>Smooth Drawing:</strong> Use moderate brush thickness (5-15px) and lighter colors for more natural effects</li>
+                <li><strong>Fine Control:</strong> Zoom in canvas (spread two fingers) to draw finer details</li>
+                <li><strong>Layer Effect:</strong> Use semi-transparent colors with overlapping strokes to create layer effects</li>
+                <li><strong>Background Match:</strong> Choose appropriate background color to make artwork stand out</li>
+                <li><strong>Regular Saves:</strong> Remember to save important works timely to avoid accidental loss</li>
+            </ul>
+        </div>
+        
+        <h2>FAQ</h2>
+        
+        <h3>Q: Why does video export fail?</h3>
+        <p>A: Please ensure: 1) Storage permission granted; 2) Drawing process recorded; 3) Sufficient device storage space.</p>
+        
+        <h3>Q: Can I edit saved works?</h3>
+        <p>A: Yes! Tap the work thumbnail in history to load and continue editing.</p>
+        
+        <h3>Q: Does recording affect drawing performance?</h3>
+        <p>A: Recording has minimal impact on performance, feel free to use it.</p>
+        
+        <h3>Q: Is data uploaded to cloud?</h3>
+        <p>A: No. All data is stored completely locally on your device. We do not collect or upload any information.</p>
+        
+        <h3>Q: Will data be lost after uninstalling?</h3>
+        <p>A: Yes. Uninstalling the app will delete all local data. Please export important works before uninstalling.</p>
+        
+        <h2>System Requirements</h2>
+        <ul>
+            <li>Android 9.0 (API 28) or higher</li>
+            <li>Recommended 2GB+ RAM</li>
+            <li>Recommended 500MB+ available storage</li>
+        </ul>
+        
+        <div class="footer">
+            <p>For questions or suggestions, feel free to contact us via GitHub or email</p>
+            <p>© 2025 Draw Replay. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
