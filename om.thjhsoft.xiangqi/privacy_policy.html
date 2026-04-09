@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户隐私协议 · Privacy Policy</title>
+    <style>
+        :root {
+            --gold: #C8A84B;
+            --gold-light: #E8C96A;
+            --bg: #0D0D05;
+            --surface: rgba(255,255,255,0.06);
+            --text: #F0EDD8;
+            --text-sub: #A89C78;
+            --border: rgba(200,168,75,0.2);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 24px 20px 48px;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 32px 0 24px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 28px;
+        }
+        .app-icon {
+            font-size: 40px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 0.5px;
+        }
+        .subtitle {
+            font-size: 13px;
+            color: var(--text-sub);
+            margin-top: 6px;
+        }
+        .effective-date {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 4px 14px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--gold);
+        }
+        h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--gold-light);
+            margin: 28px 0 10px;
+            padding-left: 10px;
+            border-left: 3px solid var(--gold);
+        }
+        p, li {
+            font-size: 14px;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 8px;
+        }
+        li { margin-bottom: 4px; }
+        .section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin-bottom: 14px;
+        }
+        .section h2 { margin-top: 0; }
+        .highlight {
+            background: rgba(200,168,75,0.08);
+            border-left: 3px solid var(--gold);
+            border-radius: 0 8px 8px 0;
+            padding: 10px 14px;
+            margin: 10px 0;
+            font-size: 13px;
+            color: var(--text-sub);
+        }
+        a { color: var(--gold); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--text-sub);
+        }
+        .lang-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .lang-btn {
+            padding: 6px 18px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--text-sub);
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .lang-btn.active {
+            border-color: var(--gold);
+            color: var(--gold);
+            background: rgba(200,168,75,0.1);
+        }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+    </style>
+</head>
+<body>
+
+<header>
+    <span class="app-icon">♟️</span>
+    <h1>用户隐私协议 · Privacy Policy</h1>
+    <div class="subtitle">楚汉争霸：巅峰 · XiangQi Pinnacle</div>
+    <span class="effective-date">生效日期 Effective：2026-04-09</span>
+</header>
+
+<div class="lang-toggle">
+    <button class="lang-btn active" onclick="showLang('zh')">简体中文</button>
+    <button class="lang-btn" onclick="showLang('en')">English</button>
+    <button class="lang-btn" onclick="showLang('tw')">繁體中文</button>
+</div>
+
+<!-- 简体中文 -->
+<div id="lang-zh" class="lang-section active">
+
+    <div class="section">
+        <h2>概述</h2>
+        <p>本隐私协议适用于由 <strong>thjhsoft</strong> 开发的移动应用程序「楚汉争霸：巅峰」（以下简称"本应用"）。我们非常重视您的隐私权，本协议说明我们如何收集、使用和保护您的信息。</p>
+        <div class="highlight">本应用为单机象棋程序，我们不主动收集任何个人身份信息。为维持应用免费运营，应用内集成了 Google AdMob 广告服务，该服务可能收集设备相关信息以投放个性化广告。</div>
+    </div>
+
+    <div class="section">
+        <h2>一、信息收集</h2>
+        <p><strong>我们（开发者）不会主动收集</strong>以下信息：</p>
+        <ul>
+            <li>姓名、电话、电子邮件等个人身份信息</li>
+            <li>精确位置信息</li>
+            <li>通讯录、相机、麦克风等敏感权限数据</li>
+        </ul>
+        <p>本应用在您的设备本地存储以下数据，用于游戏功能：</p>
+        <ul>
+            <li>游戏设置（音效、震动等偏好）</li>
+            <li>对局历史记录</li>
+            <li>残局完成进度</li>
+        </ul>
+        <p>上述数据仅存储于设备本地，不会上传至任何服务器。</p>
+        <p>⚠️ 本应用集成的 <strong>Google AdMob</strong> 广告服务可能收集以下信息（由 Google 处理）：</p>
+        <ul>
+            <li>广告标识符（Advertising ID）</li>
+            <li>设备型号、操作系统版本等设备信息</li>
+            <li>IP 地址及大致地理位置</li>
+            <li>广告互动数据（展示、点击等）</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>二、权限说明</h2>
+        <p>本应用仅申请以下设备权限：</p>
+        <ul>
+            <li><strong>震动（VIBRATE）</strong>：用于落子时的触觉反馈，不涉及任何数据访问。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>三、第三方广告服务（Google AdMob）</h2>
+        <p>本应用使用 <strong>Google AdMob</strong> 提供应用内广告，以支持本应用的免费运营。AdMob 由 Google LLC 运营，其隐私政策适用于广告数据的收集与处理。</p>
+        <p>AdMob 可能通过以下方式投放广告：</p>
+        <ul>
+            <li><strong>个性化广告</strong>：基于您的兴趣和使用习惯（需您的同意）</li>
+            <li><strong>非个性化广告</strong>：仅基于上下文，不追踪个人行为</li>
+        </ul>
+        <p>您可通过以下方式管理广告偏好：</p>
+        <ul>
+            <li>在设备 <strong>设置 → 隐私 → 广告</strong> 中重置或限制广告 ID</li>
+            <li>访问 <a href="https://adssettings.google.com">https://adssettings.google.com</a> 管理 Google 广告个性化设置</li>
+        </ul>
+        <p>Google 隐私政策：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+        <p>AdMob 服务条款：<a href="https://developers.google.com/admob/terms">https://developers.google.com/admob/terms</a></p>
+    </div>
+
+    <div class="section">
+        <h2>四、儿童隐私</h2>
+        <p>本应用适合所有年龄段用户使用。我们不主动向儿童收集个人信息。由于集成了 AdMob 广告，家长或监护人可以在设备设置中启用儿童保护模式或限制广告追踪，以确保儿童的隐私安全。</p>
+    </div>
+
+    <div class="section">
+        <h2>五、数据安全</h2>
+        <p>所有游戏数据均保存在您的设备本地，受设备系统级安全机制保护。我们无法访问您的设备上的任何数据。</p>
+    </div>
+
+    <div class="section">
+        <h2>六、隐私协议变更</h2>
+        <p>如本协议发生变更，我们将在应用更新说明中予以提示。重大变更将通过应用内通知告知用户。</p>
+    </div>
+
+    <div class="section">
+        <h2>七、联系我们</h2>
+        <p>如您对本隐私协议有任何疑问，请通过以下方式联系我们：</p>
+        <p>📧 <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></p>
+    </div>
+
+</div>
+
+<!-- English -->
+<div id="lang-en" class="lang-section">
+
+    <div class="section">
+        <h2>Overview</h2>
+        <p>This Privacy Policy applies to the mobile application "XiangQi Pinnacle" (hereinafter "the App") developed by <strong>thjhsoft</strong>. We respect your privacy and this policy explains how we handle your information.</p>
+        <div class="highlight">This App is a standalone XiangQi game. We do not actively collect any personally identifiable information. To keep the App free, we integrate Google AdMob, which may collect device-related information to serve personalized advertisements.</div>
+    </div>
+
+    <div class="section">
+        <h2>1. Information Collection</h2>
+        <p><strong>We (the developer) do not actively collect</strong> any of the following:</p>
+        <ul>
+            <li>Personal identity information (name, phone number, email, etc.)</li>
+            <li>Precise location data</li>
+            <li>Data from sensitive permissions (contacts, camera, microphone, etc.)</li>
+        </ul>
+        <p>The following data is stored locally on your device for gameplay functionality:</p>
+        <ul>
+            <li>Game settings (sound, vibration preferences)</li>
+            <li>Game history records</li>
+            <li>Endgame puzzle completion progress</li>
+        </ul>
+        <p>This data is stored only on your device and is never uploaded to any server.</p>
+        <p>⚠️ The integrated <strong>Google AdMob</strong> service may collect the following (processed by Google):</p>
+        <ul>
+            <li>Advertising ID</li>
+            <li>Device model, OS version, and other device information</li>
+            <li>IP address and approximate geographic location</li>
+            <li>Ad interaction data (impressions, clicks, etc.)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>2. Permissions</h2>
+        <p>This App requests only the following device permission:</p>
+        <ul>
+            <li><strong>Vibration (VIBRATE)</strong>: Used for haptic feedback when moving pieces. No data is accessed.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Third-Party Advertising (Google AdMob)</h2>
+        <p>This App uses <strong>Google AdMob</strong> to display in-app advertisements to support the free availability of the App. AdMob is operated by Google LLC, and its privacy policy governs the collection and use of advertising data.</p>
+        <p>AdMob may serve ads in the following ways:</p>
+        <ul>
+            <li><strong>Personalized ads</strong>: Based on your interests and usage behavior (with your consent)</li>
+            <li><strong>Non-personalized ads</strong>: Contextual only, without personal tracking</li>
+        </ul>
+        <p>You can manage your ad preferences by:</p>
+        <ul>
+            <li>Going to <strong>Settings → Privacy → Ads</strong> on your device to reset or limit your Advertising ID</li>
+            <li>Visiting <a href="https://adssettings.google.com">https://adssettings.google.com</a> to manage Google ad personalization</li>
+        </ul>
+        <p>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+        <p>AdMob Terms of Service: <a href="https://developers.google.com/admob/terms">https://developers.google.com/admob/terms</a></p>
+    </div>
+
+    <div class="section">
+        <h2>4. Children's Privacy</h2>
+        <p>This App is suitable for users of all ages. We do not actively collect personal information from children. Since the App integrates AdMob, parents or guardians can enable child protection modes or restrict ad tracking in device settings to ensure children's privacy.</p>
+    </div>
+
+    <div class="section">
+        <h2>5. Data Security</h2>
+        <p>All game data is stored locally on your device and protected by the device's system-level security. We have no access to any data on your device.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Policy Updates</h2>
+        <p>If this policy changes, we will notify users in the app update release notes. Significant changes will be communicated via an in-app notification.</p>
+    </div>
+
+    <div class="section">
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+        <p>📧 <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></p>
+    </div>
+
+</div>
+
+<!-- 繁體中文 -->
+<div id="lang-tw" class="lang-section">
+
+    <div class="section">
+        <h2>概述</h2>
+        <p>本隱私協議適用於由 <strong>thjhsoft</strong> 開發的行動應用程式「楚漢爭霸：巔峰」（以下簡稱「本應用」）。我們非常重視您的隱私權，本協議說明我們如何收集、使用和保護您的資訊。</p>
+        <div class="highlight">本應用為單機象棋程式，我們不主動收集任何個人身分資訊。為維持應用免費營運，應用內整合了 Google AdMob 廣告服務，該服務可能收集裝置相關資訊以投放個人化廣告。</div>
+    </div>
+
+    <div class="section">
+        <h2>一、資訊收集</h2>
+        <p><strong>我們（開發者）不會主動收集</strong>以下資訊：</p>
+        <ul>
+            <li>姓名、電話、電子郵件等個人身分資訊</li>
+            <li>精確位置資訊</li>
+            <li>通訊錄、相機、麥克風等敏感權限資料</li>
+        </ul>
+        <p>本應用在您的裝置本機儲存以下資料，用於遊戲功能：</p>
+        <ul>
+            <li>遊戲設定（音效、震動等偏好）</li>
+            <li>對局歷史記錄</li>
+            <li>殘局完成進度</li>
+        </ul>
+        <p>上述資料僅儲存於裝置本機，不會上傳至任何伺服器。</p>
+        <p>⚠️ 本應用整合的 <strong>Google AdMob</strong> 廣告服務可能收集以下資訊（由 Google 處理）：</p>
+        <ul>
+            <li>廣告識別碼（Advertising ID）</li>
+            <li>裝置型號、作業系統版本等裝置資訊</li>
+            <li>IP 位址及大致地理位置</li>
+            <li>廣告互動資料（曝光、點擊等）</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>二、權限說明</h2>
+        <p>本應用僅申請以下裝置權限：</p>
+        <ul>
+            <li><strong>震動（VIBRATE）</strong>：用於落子時的觸覺回饋，不涉及任何資料存取。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>三、第三方廣告服務（Google AdMob）</h2>
+        <p>本應用使用 <strong>Google AdMob</strong> 提供應用內廣告，以支持本應用的免費營運。AdMob 由 Google LLC 營運，其隱私政策適用於廣告資料的收集與處理。</p>
+        <p>AdMob 可能透過以下方式投放廣告：</p>
+        <ul>
+            <li><strong>個人化廣告</strong>：基於您的興趣和使用習慣（需您同意）</li>
+            <li><strong>非個人化廣告</strong>：僅基於上下文，不追蹤個人行為</li>
+        </ul>
+        <p>您可透過以下方式管理廣告偏好：</p>
+        <ul>
+            <li>在裝置 <strong>設定 → 隱私 → 廣告</strong> 中重設或限制廣告 ID</li>
+            <li>前往 <a href="https://adssettings.google.com">https://adssettings.google.com</a> 管理 Google 廣告個人化設定</li>
+        </ul>
+        <p>Google 隱私政策：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+        <p>AdMob 服務條款：<a href="https://developers.google.com/admob/terms">https://developers.google.com/admob/terms</a></p>
+    </div>
+
+    <div class="section">
+        <h2>四、兒童隱私</h2>
+        <p>本應用適合所有年齡層使用者使用。我們不主動向兒童收集個人資訊。由於整合了 AdMob 廣告，家長或監護人可在裝置設定中啟用兒童保護模式或限制廣告追蹤，以確保兒童的隱私安全。</p>
+    </div>
+
+    <div class="section">
+        <h2>五、資料安全</h2>
+        <p>所有遊戲資料均儲存在您的裝置本機，受裝置系統級安全機制保護。我們無法存取您裝置上的任何資料。</p>
+    </div>
+
+    <div class="section">
+        <h2>六、隱私協議變更</h2>
+        <p>如本協議發生變更，我們將在應用更新說明中予以提示。重大變更將透過應用內通知告知使用者。</p>
+    </div>
+
+    <div class="section">
+        <h2>七、聯絡我們</h2>
+        <p>如您對本隱私協議有任何疑問，請透過以下方式聯絡我們：</p>
+        <p>📧 <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 thjhsoft · 楚汉争霸：巅峰 · XiangQi Pinnacle</p>
+    <p style="margin-top:6px;">thjhsoft@gmail.com</p>
+</footer>
+
+<script>
+function showLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
