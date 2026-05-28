@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - CozySprout</title>
+    <style>
+        :root {
+            --bg-color: #FAF7F0;
+            --text-color: #3A3630;
+            --secondary-text-color: #5C554B;
+            --card-bg: #FFFFFF;
+            --card-border: #E8E2D5;
+            --accent-color: #7B8E78;
+            --accent-light: #EBF0EA;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1A1A1A;
+                --text-color: #E0E0E0;
+                --secondary-text-color: #A0A0A0;
+                --card-bg: #262626;
+                --card-border: #3A3A3A;
+                --accent-color: #8FAF8C;
+                --accent-light: #2D3A2C;
+            }
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 24px 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+        .subtitle {
+            font-size: 14px;
+            color: var(--secondary-text-color);
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 2px solid var(--card-border);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        p, li {
+            font-size: 14px;
+            color: var(--secondary-text-color);
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background-color: var(--accent-light);
+            border-left: 4px solid var(--accent-color);
+            padding: 12px 16px;
+            border-radius: 4px 12px 12px 4px;
+            margin-bottom: 16px;
+        }
+        .highlight-box p {
+            margin: 0;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: var(--secondary-text-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Effective Date: May 28, 2026</p>
+        </header>
+
+        <div class="highlight-box">
+            <p>🔒 Our Commitment: CozySprout is a 100% local, offline-first notes and habit tracker application built to respect and protect your privacy. Your data belongs entirely to you, and it will never be uploaded to any server.</p>
+        </div>
+
+        <div class="card">
+            <h2><span>1.</span> Information Collection & Use</h2>
+            <p>We deeply respect your privacy. CozySprout is designed to run entirely without collecting any of your personal information:</p>
+            <ul>
+                <li><strong>Local Storage Only:</strong> All notes, checklists, drawings, and habit tracking records are stored locally on your device (via an offline SQLite database).</li>
+                <li><strong>No Cloud Servers:</strong> We do not host or use any cloud servers for sync or storage. Your notes never leave your device.</li>
+                <li><strong>Ad-Free and No Tracking:</strong> The application is 100% ad-free and contains no third-party advertisements or behavioral tracking frameworks (such as telemetry or analytics).</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span>2.</span> Data Security & Protection</h2>
+            <p>We provide tools for you to protect and manage your data locally:</p>
+            <ul>
+                <li><strong>AES Note Encryption:</strong> You can encrypt sensitive notes with a password using AES encryption. The contents are locked locally and can only be decrypted with the correct password.</li>
+                <li><strong>ZIP Backup & Restore:</strong> You can export a secure ZIP file of your database to back up your data. You can save this file in a trusted location and import it later to restore your notes.</li>
+                <li><strong>App Screen Security:</strong> To prevent data leaks, you can enable screen capture and screenshot protection in the app settings, which obscures the app's contents in the system multitasking view.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span>3.</span> Permissions Usage</h2>
+            <p>To support its core offline features, the app may request the following permissions, which are processed entirely on-device:</p>
+            <ul>
+                <li><strong>Storage/Photos & Videos Access:</strong> Used exclusively to export drawings/notes as images to your device gallery or to import/export ZIP backup files.</li>
+                <li><strong>Camera Access:</strong> Used only when you choose to take a photo to attach directly to a note.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span>4.</span> Third-Party Links</h2>
+            <p>You can add external web links (URLs) to your notes. Tapping these links opens them in your device's system browser. We are not responsible for the privacy practices or content of third-party websites.</p>
+        </div>
+
+        <div class="card">
+            <h2><span>5.</span> Your Rights & Data Control</h2>
+            <p>Because all data is stored on your device, you have complete control:</p>
+            <ul>
+                <li>You can add, edit, or delete any record at any time.</li>
+                <li>Uninstalling the app will permanently delete all local app data. Please make sure to export a ZIP backup beforehand if you wish to keep your data.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span>6.</span> Updates to this Policy</h2>
+            <p>We may update our Privacy Policy from time to time. Any changes will be reflected directly on this page. We encourage you to review this page periodically.</p>
+        </div>
+
+        <div class="card">
+            <h2><span>7.</span> Contact Us</h2>
+            <p>If you have any questions, suggestions, or need technical support, feel free to contact us at:</p>
+            <p style="font-weight: bold; margin-bottom: 0;">📧 Email: thjhsoft@gmail.com</p>
+        </div>
+
+        <footer>
+            <p>© 2026 CozySprout. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
