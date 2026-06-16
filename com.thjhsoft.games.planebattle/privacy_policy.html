@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>用户隐私协议 · Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Ma+Shan+Zheng&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <style>
+        /* ── Reset ─────────────────────────────────────── */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html, body {
+            width: 100%;
+            min-height: 100%;
+            background-color: #e2ded5;
+            font-family: 'Caveat', 'Zhi Mang Xing', 'Ma Shan Zheng', cursive, sans-serif;
+            color: #2a251e;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── Paper background ──────────────────────────── */
+        body {
+            background-color: #e2ded5;
+            background-image:
+                linear-gradient(rgba(200,190,175,0.35) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(200,190,175,0.35) 1px, transparent 1px);
+            background-size: 25px 25px;
+        }
+
+        /* ── Page wrapper ──────────────────────────────── */
+        .page {
+            max-width: 680px;
+            margin: 0 auto;
+            background-color: #faf6ed;
+            min-height: 100vh;
+            padding: 0 0 40px 0;
+            box-shadow: 0 0 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        /* Red margin line – classic notebook look */
+        .page::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: calc(50% - 340px + 48px);
+            width: 2px;
+            height: 100vh;
+            background-color: rgba(180, 80, 80, 0.25);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ── Top bar / header ──────────────────────────── */
+        .top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 20px 12px 20px;
+            background-color: rgba(250, 246, 237, 0.97);
+            border-bottom: 2.5px dashed #332d24;
+            backdrop-filter: blur(4px);
+        }
+
+        .back-btn {
+            font-family: inherit;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2a251e;
+            background: transparent;
+            border: 2px solid #332d24;
+            border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+            padding: 6px 18px;
+            cursor: pointer;
+            box-shadow: 2px 3px 0px rgba(0,0,0,0.12);
+            transition: all 0.18s ease;
+            flex-shrink: 0;
+        }
+        .back-btn:hover  { transform: translate(-1px,-1px); box-shadow: 3px 5px 0px rgba(0,0,0,0.18); }
+        .back-btn:active { transform: translate(2px, 3px);  box-shadow: none; }
+
+        .top-title {
+            font-size: 1.7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #1e1b16;
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.15);
+        }
+
+        /* ── Content area ──────────────────────────────── */
+        .content {
+            padding: 28px 28px 20px 60px; /* 60px left – to the right of the margin line */
+            position: relative;
+            z-index: 1;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .lang-btn {
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 2px solid #8c806e;
+            border-radius: 8px 3px 8px 3px;
+            background: transparent;
+            padding: 4px 14px;
+            cursor: pointer;
+            color: #5a5040;
+            transition: all 0.15s;
+        }
+        .lang-btn.active,
+        .lang-btn:hover {
+            background: #332d24;
+            color: #faf6ed;
+            border-color: #332d24;
+        }
+
+        /* ── Effective date badge ─────────────────────── */
+        .effective-date {
+            display: inline-block;
+            font-size: 0.95rem;
+            color: #8c806e;
+            border: 1.5px dashed #8c806e;
+            border-radius: 6px 3px 6px 3px;
+            padding: 3px 12px;
+            margin-bottom: 20px;
+        }
+
+        /* ── Section headings ─────────────────────────── */
+        h1.doc-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1e1b16;
+            letter-spacing: 3px;
+            margin-bottom: 6px;
+            border-bottom: 2.5px dashed #332d24;
+            padding-bottom: 8px;
+            transform: rotate(-0.4deg);
+        }
+
+        h2.section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #332d24;
+            margin: 22px 0 8px 0;
+            padding-left: 10px;
+            border-left: 4px solid #332d24;
+            letter-spacing: 1px;
+        }
+
+        p.body-text {
+            font-size: 1.05rem;
+            line-height: 1.75;
+            color: #2a251e;
+            margin-bottom: 10px;
+        }
+
+        ul.body-list {
+            margin-left: 18px;
+            margin-bottom: 12px;
+        }
+        ul.body-list li {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 6px;
+            list-style-type: square;
+        }
+
+        /* Highlight box */
+        .highlight-box {
+            background-color: rgba(245, 238, 222, 0.8);
+            border: 2px dashed #8c806e;
+            border-radius: 10px 4px 10px 4px;
+            padding: 14px 18px;
+            margin: 14px 0;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #4a4030;
+        }
+
+        /* ── Language section visibility ─────────────── */
+        .lang-zh { display: block; }
+        .lang-en { display: none;  }
+        body.show-en .lang-zh { display: none; }
+        body.show-en .lang-en { display: block; }
+
+        /* ── Footer ───────────────────────────────────── */
+        .footer {
+            margin-top: 30px;
+            padding: 18px 20px 0 60px;
+            border-top: 2px dashed rgba(51,45,36,0.2);
+            font-size: 0.9rem;
+            color: #8c806e;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+
+    <!-- Sticky top bar with back button -->
+    <div class="top-bar">
+        <button class="back-btn" id="btn-back" onclick="goBack()">← 返回</button>
+        <span class="top-title">📄 隐私协议</span>
+    </div>
+
+    <div class="content">
+
+        <!-- Language switch -->
+        <div class="lang-switch">
+            <button class="lang-btn active" id="btn-zh" onclick="setLang('zh')">中文</button>
+            <button class="lang-btn"        id="btn-en" onclick="setLang('en')">English</button>
+        </div>
+
+        <!-- ═══════════════ CHINESE ═══════════════ -->
+        <div class="lang-zh">
+            <h1 class="doc-title">用户隐私政策</h1>
+            <div class="effective-date">生效日期：2025年6月1日 &nbsp;|&nbsp; 版本：1.0</div>
+
+            <div class="highlight-box">
+                感谢您选择《纸机空战 (Paper Plane Battle)》。我们非常重视您的隐私，本政策将说明我们如何收集、使用和保护您的个人信息。使用本应用即表示您同意本政策。
+            </div>
+
+            <h2 class="section-title">一、收集的信息</h2>
+            <p class="body-text">我们可能收集以下信息：</p>
+            <ul class="body-list">
+                <li><strong>设备信息：</strong>设备型号、操作系统版本、广告 ID（AAID）等，用于广告投放与分析。</li>
+                <li><strong>游戏数据：</strong>您的游戏进度、设置选项、购买记录（存储在本地设备）。</li>
+                <li><strong>广告数据：</strong>由 Google AdMob 收集的广告交互数据（点击、曝光等）。</li>
+                <li><strong>崩溃日志：</strong>用于改善应用稳定性的匿名崩溃报告。</li>
+            </ul>
+            <p class="body-text">我们<strong>不会</strong>主动收集您的姓名、电话号码、邮箱地址或银行信息。</p>
+
+            <h2 class="section-title">二、信息使用目的</h2>
+            <ul class="body-list">
+                <li>展示个性化或非个性化广告（通过 Google AdMob）。</li>
+                <li>改善游戏体验，修复漏洞，分析使用情况。</li>
+                <li>遵守法律法规要求。</li>
+            </ul>
+
+            <h2 class="section-title">三、广告与第三方服务</h2>
+            <p class="body-text">
+                本应用使用 <strong>Google AdMob</strong> 展示广告。AdMob 可能使用 Cookie 或广告标识符来为您提供相关广告。您可参阅 Google 的隐私政策了解详情：
+            </p>
+            <p class="body-text">
+                🔗 <a href="https://policies.google.com/privacy" style="color:#332d24;">https://policies.google.com/privacy</a>
+            </p>
+            <p class="body-text">
+                如您位于欧洲经济区（EEA）或英国，我们将在展示个性化广告前通过 <strong>Google UMP（用户消息平台）</strong>征询您的同意。您可随时在设置中撤回同意。
+            </p>
+
+            <h2 class="section-title">四、数据存储与安全</h2>
+            <ul class="body-list">
+                <li>游戏进度仅存储在您的本地设备，不上传至我们的服务器。</li>
+                <li>广告数据由 Google 按照其安全标准处理。</li>
+                <li>我们采取合理的技术措施保护您的信息安全。</li>
+            </ul>
+
+            <h2 class="section-title">五、儿童隐私</h2>
+            <p class="body-text">
+                本应用面向 <strong>13 岁及以上</strong>用户。我们不会故意收集 13 岁以下儿童的个人信息。如发现儿童使用本应用，请家长联系我们，我们将立即处理。
+            </p>
+
+            <h2 class="section-title">六、您的权利</h2>
+            <ul class="body-list">
+                <li><strong>访问 / 更正：</strong>您可随时查看或修改本地存储的游戏数据（通过重置存档功能）。</li>
+                <li><strong>撤回同意：</strong>可在系统设置中撤回广告个性化同意（仅限 EEA 用户）。</li>
+                <li><strong>删除数据：</strong>卸载应用即可删除本地所有游戏数据。</li>
+                <li><strong>退出广告个性化：</strong>可在 Android 系统设置 → 隐私 → 广告中重置广告 ID。</li>
+            </ul>
+
+            <h2 class="section-title">七、政策更新</h2>
+            <p class="body-text">
+                我们保留更新本隐私政策的权利。修订后的政策将在应用内公布，重大变更将通过更新日期告知。继续使用本应用视为接受新政策。
+            </p>
+
+            <h2 class="section-title">八、联系我们</h2>
+            <p class="body-text">
+                如有任何隐私相关问题，请通过以下方式联系我们：
+            </p>
+            <div class="highlight-box">
+                📧 电子邮件：<strong>thjhsoft@gmail.com</strong><br>
+                🏢 开发者：THJHSoft Games
+            </div>
+        </div>
+
+        <!-- ═══════════════ ENGLISH ═══════════════ -->
+        <div class="lang-en">
+            <h1 class="doc-title">Privacy Policy</h1>
+            <div class="effective-date">Effective Date: June 1, 2025 &nbsp;|&nbsp; Version: 1.0</div>
+
+            <div class="highlight-box">
+                Thank you for playing <em>Paper Plane Battle (纸机空战)</em>. We take your privacy seriously. This policy explains how we collect, use, and protect your information. By using the app, you agree to this policy.
+            </div>
+
+            <h2 class="section-title">1. Information We Collect</h2>
+            <p class="body-text">We may collect the following information:</p>
+            <ul class="body-list">
+                <li><strong>Device Info:</strong> Device model, OS version, advertising ID (AAID) – used for ads and analytics.</li>
+                <li><strong>Game Data:</strong> Your progress, settings, and in-app choices (stored locally on device only).</li>
+                <li><strong>Ad Data:</strong> Ad interaction data (clicks, impressions) collected by Google AdMob.</li>
+                <li><strong>Crash Logs:</strong> Anonymous crash reports used to improve stability.</li>
+            </ul>
+            <p class="body-text">We do <strong>not</strong> collect your name, phone number, email address, or payment details.</p>
+
+            <h2 class="section-title">2. How We Use Information</h2>
+            <ul class="body-list">
+                <li>To display personalized or non-personalized ads (via Google AdMob).</li>
+                <li>To improve gameplay, fix bugs, and analyze usage patterns.</li>
+                <li>To comply with applicable laws and regulations.</li>
+            </ul>
+
+            <h2 class="section-title">3. Advertising &amp; Third-Party Services</h2>
+            <p class="body-text">
+                This app uses <strong>Google AdMob</strong> to display advertisements. AdMob may use cookies or advertising identifiers to serve relevant ads. Please see Google's Privacy Policy:
+            </p>
+            <p class="body-text">
+                🔗 <a href="https://policies.google.com/privacy" style="color:#332d24;">https://policies.google.com/privacy</a>
+            </p>
+            <p class="body-text">
+                If you are located in the European Economic Area (EEA) or UK, we will request your consent via <strong>Google UMP (User Messaging Platform)</strong> before serving personalized ads. You may withdraw consent at any time in Settings.
+            </p>
+
+            <h2 class="section-title">4. Data Storage &amp; Security</h2>
+            <ul class="body-list">
+                <li>Game progress is stored locally on your device only – not on our servers.</li>
+                <li>Ad data is processed by Google under their security standards.</li>
+                <li>We employ reasonable technical measures to protect your information.</li>
+            </ul>
+
+            <h2 class="section-title">5. Children's Privacy</h2>
+            <p class="body-text">
+                This app is intended for users <strong>13 years of age or older</strong>. We do not knowingly collect personal information from children under 13. If you believe a child has provided us information, please contact us and we will promptly delete it.
+            </p>
+
+            <h2 class="section-title">6. Your Rights</h2>
+            <ul class="body-list">
+                <li><strong>Access / Correct:</strong> View or reset your local game data via the in-game "Reset Progress" feature.</li>
+                <li><strong>Withdraw Consent:</strong> EEA/UK users may withdraw ad-personalization consent in Settings.</li>
+                <li><strong>Delete Data:</strong> Uninstalling the app removes all local game data.</li>
+                <li><strong>Opt Out of Ad Personalization:</strong> Go to Android Settings → Privacy → Ads → Reset Advertising ID.</li>
+            </ul>
+
+            <h2 class="section-title">7. Policy Updates</h2>
+            <p class="body-text">
+                We may update this Privacy Policy from time to time. Updated policies will be published within the app. Continued use of the app after changes constitutes acceptance of the revised policy.
+            </p>
+
+            <h2 class="section-title">8. Contact Us</h2>
+            <p class="body-text">For any privacy-related inquiries, please contact us:</p>
+            <div class="highlight-box">
+                📧 Email: <strong>thjhsoft@gmail.com</strong><br>
+                🏢 Developer: THJHSoft Games
+            </div>
+        </div>
+
+    </div><!-- /content -->
+
+    <div class="footer">
+        <span class="lang-zh">© 2025 THJHSoft Games · 纸机空战 · 保留所有权利</span>
+        <span class="lang-en">© 2025 THJHSoft Games · Paper Plane Battle · All Rights Reserved</span>
+    </div>
+
+</div><!-- /page -->
+
+<script>
+    // ── Language toggle ────────────────────────────────────────────────────
+    function setLang(lang) {
+        if (lang === 'en') {
+            document.body.classList.add('show-en');
+            document.getElementById('btn-en').classList.add('active');
+            document.getElementById('btn-zh').classList.remove('active');
+        } else {
+            document.body.classList.remove('show-en');
+            document.getElementById('btn-zh').classList.add('active');
+            document.getElementById('btn-en').classList.remove('active');
+        }
+    }
+
+    // ── Back navigation ───────────────────────────────────────────────────
+    function goBack() {
+        // When running inside the game's WebView, history.back() returns to index.html
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            // Fallback: navigate directly to index
+            window.location.href = 'index.html';
+        }
+    }
+
+    // ── Auto-detect language from parent game (if accessible) ─────────────
+    (function detectGameLang() {
+        try {
+            // The game stores language in localStorage as 'planebattle_lang'
+            const savedLang = localStorage.getItem('planebattle_lang');
+            if (savedLang && savedLang.startsWith('en')) setLang('en');
+        } catch (e) { /* ignore */ }
+    })();
+</script>
+
+</body>
+</html>
