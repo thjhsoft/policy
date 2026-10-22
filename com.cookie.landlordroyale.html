@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Privacy Policy · Landlord Royale</title>
+  <style>
+    :root { color-scheme: light; --ink:#19372f; --green:#075442; --gold:#ad8428; --paper:#fffdf7; --line:#d9dfd7; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#f1f4ef; color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { max-width:850px; margin:24px auto; padding:28px clamp(18px,5vw,46px) 40px; background:var(--paper); border:1px solid var(--line); border-radius:22px; box-shadow:0 12px 36px #143b2b18; }
+    header { padding:5px 0 20px; border-bottom:2px solid #e6d39a; }
+    h1 { margin:0 0 8px; color:var(--green); font-size:clamp(27px,5vw,38px); line-height:1.2; }
+    h2 { margin:27px 0 8px; color:var(--green); font-size:20px; line-height:1.3; }
+    p { margin:8px 0 12px; }
+    a { color:#075c91; overflow-wrap:anywhere; }
+    .meta { color:#63756e; font-size:14px; }
+    .language { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin:18px 0 8px; }
+    label { font-weight:650; }
+    select { min-height:42px; padding:7px 12px; border:1px solid #879d91; border-radius:9px; background:#fff; color:var(--ink); font:inherit; }
+    .notice { margin-top:23px; padding:13px 15px; border-left:4px solid var(--gold); background:#f8f3e5; border-radius:4px 10px 10px 4px; }
+    footer { margin-top:28px; padding-top:16px; border-top:1px solid var(--line); color:#63756e; font-size:13px; }
+    @media (max-width:540px) { main { margin:0; padding:23px 19px 32px; border:0; border-radius:0; min-height:100vh; } }
+  </style>
+</head>
+<body>
+<main>
+  <div class="language"><label for="language">Language / 语言</label><select id="language" aria-label="Language">
+    <option value="en">English</option><option value="zh">简体中文</option><option value="zh-TW">繁體中文</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="pt">Português</option>
+  </select></div>
+  <header><h1 id="title"></h1><p class="meta" id="updated"></p><p id="intro"></p></header>
+  <section><h2 id="localTitle"></h2><p id="localText"></p></section>
+  <section><h2 id="adsTitle"></h2><p id="adsText"></p></section>
+  <section><h2 id="consentTitle"></h2><p id="consentText"></p></section>
+  <section><h2 id="sharingTitle"></h2><p id="sharingText"></p></section>
+  <section><h2 id="retentionTitle"></h2><p id="retentionText"></p></section>
+  <section><h2 id="controlsTitle"></h2><p id="controlsText"></p></section>
+  <section><h2 id="hostingTitle"></h2><p id="hostingText"></p></section>
+  <section><h2 id="contactTitle"></h2><p id="contactText"></p></section>
+  <p class="notice" id="changesText"></p>
+  <footer><span id="footerText"></span> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> · <a href="https://github.com/site/privacy" target="_blank" rel="noopener">GitHub Privacy Statement</a></footer>
+</main>
+<script>
+const policy = {
+  en: {
+    title:"Privacy Policy", updated:"Last updated: October 22, 2026 · App: Landlord Royale – Classic Card Game · Package: com.cookie.landlordroyale",
+    intro:"This policy explains what information is handled when you use Landlord Royale (also named 牌局天下：经典斗地主). The game is designed to work offline and does not require an account.",
+    localTitle:"Information stored on your device", localText:"Game preferences (including language, sound, and rival selections) and match history/statistics are stored in private app storage on your device. The game keeps up to 20 recent match records. You can delete individual records from Match Records. Clearing the app’s storage or uninstalling it removes the locally stored game data. If Android backup is enabled, the operating system may include app data in device backups under your backup settings. The game has no developer-operated game server; your cards, results, and preferences are not sent to the developer.",
+    adsTitle:"Advertising and Google Mobile Ads", adsText:"Production versions may show Google AdMob App Open and occasional interstitial ads. The Google Mobile Ads SDK may automatically collect and share data for ad delivery, measurement, analytics, security, and fraud prevention. Depending on the SDK version and configuration, this may include your IP address (which can indicate approximate location), app interactions such as launches, taps, and ad views, diagnostics, and device/account identifiers such as the Android Advertising ID and App Set ID. Google encrypts SDK data in transit. See Google’s current <a href=\"https://developers.google.com/admob/android/privacy/play-data-disclosure\" target=\"_blank\" rel=\"noopener\">Mobile Ads SDK data disclosure</a> for details. Screenshot builds do not request or display ads.",
+    consentTitle:"Consent and privacy choices", consentText:"The Google User Messaging Platform (UMP) SDK checks consent information when the app starts and presents consent messages when required for your region and setup. Where available, use “Privacy choices” in Settings to review or change advertising choices. Your choices affect which ads can be served; limited or non-personalized ads may still use some data for delivery, frequency controls, security, or reporting. You can also reset or delete the Android Advertising ID in Android settings.",
+    sharingTitle:"Who receives information", sharingText:"The developer does not receive your locally stored game history or preferences. Google receives data handled by its advertising and consent SDKs as described above. Ads may link to third-party sites or apps; those services operate under their own privacy notices. The developer does not sell your game history.",
+    retentionTitle:"Retention", retentionText:"Local game records and preferences remain on your device until you delete records, clear app storage, or uninstall the app. Google determines retention for data processed by its services under its own policies and settings.",
+    controlsTitle:"Your choices and questions", controlsText:"You can delete match records inside the game, clear the app’s data in Android settings, uninstall the game, and use Android’s advertising ID controls. For privacy questions or requests concerning this app, email <a href=\"mailto:thjhsoft@gmail.com\">thjhsoft@gmail.com</a>.",
+    hostingTitle:"Online policy page", hostingText:"If you visit this policy on GitHub Pages, GitHub may log and retain your IP address for security purposes. This hosting is separate from the game; see GitHub’s Privacy Statement for its practices.",
+    contactTitle:"Contact", changesText:"We may update this policy when the app or its data practices change. The revised date at the top shows when it was last updated.", footerText:"Third-party services have their own privacy practices."
+  },
+  zh: {
+    title:"隐私政策", updated:"最后更新：2026年10月22日 · 应用：牌局天下：经典斗地主 · 包名：com.cookie.landlordroyale",
+    intro:"本政策说明你使用《牌局天下：经典斗地主》（Landlord Royale – Classic Card Game）时，哪些信息会被处理。本游戏可离线运行，无需注册账号。",
+    localTitle:"保存在你设备上的信息", localText:"游戏偏好（包括语言、音效和对手选择）以及对局记录和统计数据保存在设备的应用私有存储中，最多保留最近20条对局记录。你可以在“对局记录”中删除单条记录；清除应用存储或卸载应用会删除本地游戏数据。如果启用了 Android 备份，系统可能会按你的备份设置将应用数据纳入设备备份。本游戏没有开发者运营的游戏服务器，你的手牌、战绩和偏好不会发送给开发者。",
+    adsTitle:"广告与 Google Mobile Ads", adsText:"正式版可能展示 Google AdMob 开屏广告和不定期插屏广告。Google Mobile Ads SDK 可能为广告投放、衡量、分析、安全和防欺诈而自动收集并共享数据。根据 SDK 版本和配置，数据可能包括 IP 地址（可用于推测大致位置）、应用互动（例如启动、点击和广告观看）、诊断信息，以及 Android 广告 ID、App Set ID 等设备或账号标识符。Google 表示 SDK 数据在传输过程中会加密。详情请查看 Google 当前的<a href=\"https://developers.google.com/admob/android/privacy/play-data-disclosure\" target=\"_blank\" rel=\"noopener\">Mobile Ads SDK 数据披露</a>。截图版本不会请求或展示广告。",
+    consentTitle:"同意与隐私选项", consentText:"Google UMP SDK 会在应用启动时检查同意信息，并根据所在地区和配置，在需要时显示同意说明。若设置中提供“隐私选项”，你可以查看或更改广告选择。你的选择会影响可展示的广告类型；为投放、频次控制、安全或报告所需，受限或非个性化广告仍可能处理部分数据。你也可以在 Android 设置中重置或删除广告 ID。",
+    sharingTitle:"信息接收方", sharingText:"开发者不会收到保存在本机的游戏记录或偏好。Google 会按照上述说明处理其广告和同意 SDK 所涉及的数据。广告可能链接至第三方网站或应用，这些服务按各自的隐私说明处理信息。开发者不会出售你的游戏记录。",
+    retentionTitle:"保存期限", retentionText:"本地游戏记录和偏好会保留在设备上，直到你删除记录、清除应用存储或卸载应用。Google 按其自身政策和设置决定其服务所处理数据的保存期限。",
+    controlsTitle:"你的选择与问题反馈", controlsText:"你可以在游戏中删除对局记录，在 Android 设置中清除应用数据、卸载游戏或管理广告 ID。如对本应用有隐私问题或请求，请发送邮件至 <a href=\"mailto:thjhsoft@gmail.com\">thjhsoft@gmail.com</a>。",
+    hostingTitle:"在线政策页面", hostingText:"如果你通过 GitHub Pages 访问本政策，GitHub 可能为安全目的记录并保留你的 IP 地址。该托管服务与游戏分开；详情请查看 GitHub 隐私声明。",
+    contactTitle:"联系方式", changesText:"当应用或数据处理方式发生变化时，我们可能更新本政策。页面顶部的日期表示最近更新日期。", footerText:"第三方服务有各自的隐私处理方式。"
+  },
+  "zh-TW": {
+    title:"隱私權政策", updated:"最後更新：2026年10月22日 · 應用程式：牌局天下：經典鬥地主 · 套件名稱：com.cookie.landlordroyale",
+    intro:"本政策說明你使用《牌局天下：經典鬥地主》（Landlord Royale – Classic Card Game）時，哪些資訊會受到處理。本遊戲可離線執行，無須註冊帳號。",
+    localTitle:"儲存在你裝置上的資訊", localText:"遊戲偏好設定（包括語言、音效和對手選擇）以及對局紀錄與統計資料會儲存在裝置的應用程式私有空間，最多保留最近20筆對局紀錄。你可在「對局紀錄」中刪除單筆紀錄；清除應用程式資料或解除安裝會刪除本機遊戲資料。如果已啟用 Android 備份，系統可能會依你的備份設定將應用程式資料納入裝置備份。本遊戲沒有由開發者營運的遊戲伺服器，你的手牌、戰績和偏好不會傳送給開發者。",
+    adsTitle:"廣告與 Google Mobile Ads", adsText:"正式版可能顯示 Google AdMob 開啟應用程式廣告及不定期插頁式廣告。Google Mobile Ads SDK 可能為廣告投放、衡量、分析、安全及防詐欺而自動收集並分享資料。視 SDK 版本與設定而定，資料可能包括 IP 位址（可用於推測大致位置）、應用程式互動（例如啟動、點選及觀看廣告）、診斷資訊，以及 Android 廣告 ID、App Set ID 等裝置或帳號識別碼。Google 表示 SDK 資料在傳輸期間會加密。詳情請參閱 Google 最新的<a href=\"https://developers.google.com/admob/android/privacy/play-data-disclosure\" target=\"_blank\" rel=\"noopener\">Mobile Ads SDK 資料揭露</a>。截圖版本不會請求或顯示廣告。",
+    consentTitle:"同意與隱私權選項", consentText:"Google UMP SDK 會在應用程式啟動時檢查同意資訊，並依所在地區與設定在必要時顯示同意訊息。若設定中提供「隱私權選項」，你可檢視或變更廣告選擇。你的選擇會影響可提供的廣告類型；受限或非個人化廣告仍可能為投放、頻率控制、安全或報告處理部分資料。你也可在 Android 設定中重設或刪除廣告 ID。",
+    sharingTitle:"資訊接收方", sharingText:"開發者不會收到儲存在本機的遊戲紀錄或偏好。Google 會依上述說明處理其廣告及同意 SDK 涉及的資料。廣告可能連結至第三方網站或應用程式，這些服務依各自的隱私權聲明處理資訊。開發者不會出售你的遊戲紀錄。",
+    retentionTitle:"保存期間", retentionText:"本機遊戲紀錄和偏好會保留在裝置上，直到你刪除紀錄、清除應用程式資料或解除安裝。Google 依其自身政策與設定決定其服務所處理資料的保存期間。",
+    controlsTitle:"你的選擇與問題", controlsText:"你可在遊戲中刪除對局紀錄，在 Android 設定中清除應用程式資料、解除安裝遊戲或管理廣告 ID。如對本應用程式有隱私權問題或請求，請寄信至 <a href=\"mailto:thjhsoft@gmail.com\">thjhsoft@gmail.com</a>。",
+    hostingTitle:"線上政策頁面", hostingText:"若你透過 GitHub Pages 瀏覽本政策，GitHub 可能基於安全目的記錄並保留你的 IP 位址。此託管服務與遊戲分開；詳情請參閱 GitHub 隱私權聲明。",
+    contactTitle:"聯絡方式", changesText:"當應用程式或資料處理方式有所變更時，我們可能更新本政策。頁面頂端的日期會標示最近更新時間。", footerText:"第三方服務有各自的隱私權處理方式。"
+  },
+  ja: {
+    title:"プライバシーポリシー", updated:"最終更新日：2026年10月22日 · アプリ：牌局天下：クラシック斗地主 · パッケージ：com.cookie.landlordroyale",
+    intro:"本ポリシーでは、「Landlord Royale – Classic Card Game」（牌局天下：经典斗地主）の利用時に取り扱う情報について説明します。本ゲームはオフラインで動作し、アカウント登録は不要です。",
+    localTitle:"端末に保存される情報", localText:"言語、効果音、対戦相手の選択などの設定と、対局履歴・統計は端末内のアプリ専用領域に保存され、直近20件まで記録されます。「対局履歴」から個別の記録を削除できます。アプリのデータを消去するかアンインストールすると、端末内のゲームデータも削除されます。Android のバックアップが有効な場合、OS のバックアップ設定に従ってアプリデータが端末のバックアップに含まれることがあります。開発者が運営するゲームサーバーはなく、手札、戦績、設定が開発者に送信されることはありません。",
+    adsTitle:"広告と Google Mobile Ads", adsText:"製品版では Google AdMob のアプリ起動時広告や、頻度を抑えたインタースティシャル広告を表示する場合があります。Google Mobile Ads SDK は広告配信、測定、分析、安全対策、不正防止のためにデータを自動的に収集・共有することがあります。SDK のバージョンや設定により、IP アドレス（おおよその位置の推定に使用される場合があります）、アプリの利用状況（起動、タップ、広告表示など）、診断情報、Android 広告 ID や App Set ID などの端末・アカウント識別子が含まれる場合があります。詳細は Google の<a href=\"https://developers.google.com/admob/android/privacy/play-data-disclosure\" target=\"_blank\" rel=\"noopener\">Mobile Ads SDK データ開示</a>をご覧ください。スクリーンショット版では広告をリクエスト・表示しません。",
+    consentTitle:"同意とプライバシー設定", consentText:"Google UMP SDK はアプリ起動時に同意情報を確認し、地域や設定に応じて必要な場合に同意メッセージを表示します。設定に「プライバシー設定」が表示される場合、広告に関する選択を確認・変更できます。選択内容によって表示可能な広告が変わります。限定広告や非パーソナライズ広告でも、配信、頻度制御、安全、レポートのために一部データが処理される場合があります。Android の設定から広告 ID をリセットまたは削除することもできます。",
+    sharingTitle:"情報の共有先", sharingText:"開発者は端末内のゲーム履歴や設定を受け取りません。Google は上記の広告・同意 SDK に関するデータを処理します。広告から第三者のウェブサイトやアプリに移動する場合、そのサービスは独自のプライバシー通知に従って情報を扱います。開発者がゲーム履歴を販売することはありません。",
+    retentionTitle:"保存期間", retentionText:"端末内の記録と設定は、記録の削除、アプリデータの消去、またはアンインストールまで端末に残ります。Google サービスで処理されるデータの保存期間は、Google 独自のポリシーと設定に従います。",
+    controlsTitle:"選択肢とお問い合わせ", controlsText:"ゲーム内で対局記録を削除できます。また、Android の設定からアプリデータや広告 ID を管理したり、ゲームをアンインストールしたりできます。本アプリのプライバシーに関するお問い合わせは <a href=\"mailto:thjhsoft@gmail.com\">thjhsoft@gmail.com</a> までご連絡ください。",
+    hostingTitle:"オンライン版のポリシー", hostingText:"GitHub Pages で本ポリシーを閲覧する場合、安全確保のため GitHub が IP アドレスを記録・保持することがあります。これはゲームとは別のホスティングサービスです。詳細は GitHub のプライバシー声明をご覧ください。",
+    contactTitle:"お問い合わせ", changesText:"アプリやデータの取扱いに変更があった場合、本ポリシーを更新することがあります。最終更新日はページ上部に記載します。", footerText:"第三者サービスにはそれぞれ独自のプライバシー方針があります。"
+  },
+  ko: {
+    title:"개인정보 처리방침", updated:"최종 업데이트: 2026년 10월 22일 · 앱: Landlord Royale – Classic Card Game · 패키지: com.cookie.landlordroyale",
+    intro:"이 방침은 Landlord Royale(牌局天下：经典斗地主)을 사용할 때 처리되는 정보를 설명합니다. 게임은 오프라인으로 작동하며 계정이 필요하지 않습니다.",
+    localTitle:"기기에 저장되는 정보", localText:"언어, 효과음, 상대 선택 등의 게임 설정과 대전 기록 및 통계는 기기의 앱 전용 저장 공간에 저장되며 최근 기록은 최대 20개까지 보관됩니다. 대전 기록 화면에서 개별 기록을 삭제할 수 있습니다. 앱 데이터를 지우거나 앱을 삭제하면 기기의 게임 데이터도 삭제됩니다. Android 백업이 활성화된 경우 OS 백업 설정에 따라 앱 데이터가 기기 백업에 포함될 수 있습니다. 개발자가 운영하는 게임 서버는 없으며, 패와 결과 및 설정은 개발자에게 전송되지 않습니다.",
+    adsTitle:"광고 및 Google Mobile Ads", adsText:"정식 버전에는 Google AdMob 앱 실행 광고와 간헐적인 전면 광고가 표시될 수 있습니다. Google Mobile Ads SDK는 광고 제공·측정·분석·보안·사기 방지를 위해 데이터를 자동 수집하고 공유할 수 있습니다. SDK 버전과 설정에 따라 IP 주소(대략적인 위치 추정에 사용될 수 있음), 앱 상호작용(실행, 탭, 광고 조회 등), 진단 정보, Android 광고 ID 및 App Set ID와 같은 기기 또는 계정 식별자가 포함될 수 있습니다. 자세한 내용은 Google의 최신 <a href=\"https://developers.google.com/admob/android/privacy/play-data-disclosure\" target=\"_blank\" rel=\"noopener\">Mobile Ads SDK 데이터 공개</a>를 확인하세요. 스크린샷 빌드는 광고를 요청하거나 표시하지 않습니다.",
+    consentTitle:"동의 및 개인정보 옵션", consentText:"Google UMP SDK는 앱 시작 시 동의 정보를 확인하고 지역과 설정에 따라 필요한 경우 동의 메시지를 표시합니다. 설정에 ‘개인정보 옵션’이 제공되면 광고 선택을 확인하거나 변경할 수 있습니다. 선택에 따라 표시 가능한 광고가 달라집니다. 제한적 또는 맞춤 설정되지 않은 광고도 제공·빈도 제어·보안·보고를 위해 일부 데이터를 처리할 수 있습니다. Android 설정에서 광고 ID를 재설정하거나 삭제할 수도 있습니다.",
+    sharingTitle:"정보를 받는 주체", sharingText:"개발자는 기기에 저장된 게임 기록이나 설정을 받지 않습니다. Google은 위에 설명된 광고 및 동의 SDK 데이터를 처리합니다. 광고는 제3자 웹사이트나 앱으로 연결될 수 있으며, 해당 서비스는 자체 개인정보 안내에 따라 정보를 처리합니다. 개발자는 게임 기록을 판매하지 않습니다.",
+    retentionTitle:"보관 기간", retentionText:"기기의 게임 기록과 설정은 기록을 삭제하거나 앱 저장 공간을 지우거나 앱을 삭제할 때까지 보관됩니다. Google 서비스 데이터의 보관 기간은 Google의 정책과 설정을 따릅니다.",
+    controlsTitle:"선택 및 문의", controlsText:"게임 내에서 대전 기록을 삭제하고 Android 설정에서 앱 데이터와 광고 ID를 관리하거나 게임을 삭제할 수 있습니다. 이 앱의 개인정보 관련 문의나 요청은 <a href=\"mailto:thjhsoft@gmail.com\">thjhsoft@gmail.com</a>으로 보내 주세요.",
+    hostingTitle:"온라인 정책 페이지", hostingText:"GitHub Pages에서 이 정책을 보는 경우 GitHub가 보안을 위해 IP 주소를 기록하고 보관할 수 있습니다. 이는 게임과 별도의 호스팅 서비스입니다. 자세한 내용은 GitHub 개인정보 처리방침을 확인하세요.",
+    contactTitle:"문의", changesText:"앱이나 데이터 처리 방식이 변경되면 이 방침을 업데이트할 수 있습니다. 최근 업데이트 날짜는 페이지 상단에 표시됩니다.", footerText:"제3자 서비스에는 각자의 개인정보 처리 방식이 적용됩니다."
+  },
+  es: {
+    title:"Política de privacidad", updated:"Última actualización: 22 de octubre de 2026 · Aplicación: Landlord Royale – Classic Card Game · Paquete: com.cookie.landlordroyale",
+    intro:"Esta política explica qué información se trata al usar Landlord Royale (牌局天下：经典斗地主). El juego funciona sin conexión y no requiere una cuenta.",
+    localTitle:"Información guardada en tu dispositivo", localText:"Las preferencias (idioma, sonido y rivales), el historial de partidas y las estadísticas se guardan en el almacenamiento privado de la aplicación en tu dispositivo; se conservan hasta 20 partidas recientes. Puedes borrar partidas individualmente en «Historial». Borrar los datos de la aplicación o desinstalarla elimina los datos locales. Si la copia de seguridad de Android está activada, el sistema operativo puede incluir los datos de la aplicación en las copias del dispositivo según tus ajustes. El juego no tiene un servidor operado por el desarrollador; tus cartas, resultados y preferencias no se envían al desarrollador.",
+    adsTitle:"Publicidad y Google Mobile Ads", adsText:"Las versiones de producción pueden mostrar anuncios de apertura de Google AdMob e intersticiales ocasionales. El SDK de Google Mobile Ads puede recopilar y compartir datos automáticamente para mostrar y medir anuncios, realizar análisis, proteger la seguridad y prevenir fraudes. Según la versión y configuración del SDK, pueden incluir la dirección IP (que puede indicar una ubicación aproximada), interacciones con la aplicación (aperturas, toques y visualizaciones de anuncios), diagnósticos e identificadores de dispositivo o cuenta, como el ID de publicidad de Android y App Set ID. Consulta la <a href=\"https://developers.google.com/admob/android/privacy/play-data-disclosure\" target=\"_blank\" rel=\"noopener\">divulgación actual de datos del SDK de Mobile Ads</a> de Google. Las versiones para capturas no solicitan ni muestran anuncios.",
+    consentTitle:"Consentimiento y opciones de privacidad", consentText:"El SDK Google UMP comprueba la información de consentimiento al iniciar la aplicación y muestra mensajes cuando sean necesarios según tu región y configuración. Si aparece «Opciones de privacidad» en Ajustes, puedes revisar o cambiar tus opciones publicitarias. La elección afecta a los anuncios disponibles; los anuncios limitados o no personalizados aún pueden tratar ciertos datos para su entrega, control de frecuencia, seguridad o informes. También puedes restablecer o eliminar el ID de publicidad en los ajustes de Android.",
+    sharingTitle:"Quién recibe la información", sharingText:"El desarrollador no recibe el historial ni las preferencias guardadas localmente. Google trata los datos de sus SDK de publicidad y consentimiento descritos arriba. Los anuncios pueden enlazar a sitios o aplicaciones de terceros, que tratan la información según sus propios avisos. El desarrollador no vende tu historial de juego.",
+    retentionTitle:"Conservación", retentionText:"Los registros y preferencias locales permanecen en tu dispositivo hasta que los borres, elimines los datos de la aplicación o la desinstales. Google determina la conservación de los datos de sus servicios según sus propias políticas y opciones.",
+    controlsTitle:"Tus opciones y contacto", controlsText:"Puedes borrar partidas en el juego, eliminar los datos de la aplicación desde Android, desinstalarla y administrar el ID de publicidad. Para consultas o solicitudes de privacidad sobre esta aplicación, escribe a <a href=\"mailto:thjhsoft@gmail.com\">thjhsoft@gmail.com</a>.",
+    hostingTitle:"Página de política en línea", hostingText:"Si visitas esta política en GitHub Pages, GitHub puede registrar y conservar tu dirección IP por motivos de seguridad. Este alojamiento es independiente del juego; consulta la declaración de privacidad de GitHub.",
+    contactTitle:"Contacto", changesText:"Podemos actualizar esta política cuando cambie la aplicación o el tratamiento de datos. La fecha de la parte superior indica la última actualización.", footerText:"Los servicios de terceros aplican sus propias prácticas de privacidad."
+  },
+  fr: {
+    title:"Politique de confidentialité", updated:"Dernière mise à jour : 22 octobre 2026 · Application : Landlord Royale – Classic Card Game · Package : com.cookie.landlordroyale",
+    intro:"Cette politique explique quelles informations sont traitées lorsque vous utilisez Landlord Royale (牌局天下：经典斗地主). Le jeu fonctionne hors ligne et ne nécessite aucun compte.",
+    localTitle:"Informations stockées sur votre appareil", localText:"Les préférences (langue, son et choix des adversaires), l’historique des parties et les statistiques sont stockés dans l’espace privé de l’application sur votre appareil ; jusqu’à 20 parties récentes sont conservées. Vous pouvez supprimer des parties dans « Historique ». Effacer les données de l’application ou la désinstaller supprime les données locales. Si la sauvegarde Android est activée, le système peut inclure les données de l’application dans les sauvegardes de l’appareil selon vos paramètres. Le jeu n’a pas de serveur exploité par le développeur ; vos cartes, résultats et préférences ne lui sont pas envoyés.",
+    adsTitle:"Publicité et Google Mobile Ads", adsText:"Les versions de production peuvent afficher des annonces à l’ouverture de Google AdMob et des annonces interstitielles occasionnelles. Le SDK Google Mobile Ads peut collecter et partager automatiquement des données pour la diffusion et la mesure des annonces, l’analyse, la sécurité et la prévention de la fraude. Selon la version et la configuration du SDK, cela peut inclure l’adresse IP (susceptible d’indiquer une position approximative), les interactions avec l’application (lancements, clics, vues d’annonces), des diagnostics et des identifiants d’appareil ou de compte tels que l’identifiant publicitaire Android et l’App Set ID. Consultez la <a href=\"https://developers.google.com/admob/android/privacy/play-data-disclosure\" target=\"_blank\" rel=\"noopener\">divulgation actuelle des données du SDK Mobile Ads</a> de Google. Les versions de capture d’écran ne demandent ni n’affichent de publicités.",
+    consentTitle:"Consentement et choix de confidentialité", consentText:"Le SDK Google UMP vérifie les informations de consentement au démarrage et affiche les messages nécessaires selon votre région et la configuration. Si « Choix de confidentialité » est disponible dans les paramètres, vous pouvez consulter ou modifier vos choix publicitaires. Ceux-ci influencent les annonces proposées ; des annonces limitées ou non personnalisées peuvent encore traiter certaines données pour leur diffusion, le contrôle de fréquence, la sécurité ou les rapports. Vous pouvez aussi réinitialiser ou supprimer l’identifiant publicitaire dans les paramètres Android.",
+    sharingTitle:"Destinataires des informations", sharingText:"Le développeur ne reçoit pas l’historique de jeu ni les préférences stockés localement. Google traite les données de ses SDK publicitaires et de consentement décrites ci-dessus. Les annonces peuvent renvoyer vers des sites ou applications tiers, qui traitent les informations selon leurs propres avis. Le développeur ne vend pas votre historique de jeu.",
+    retentionTitle:"Conservation", retentionText:"Les données et préférences locales restent sur votre appareil jusqu’à leur suppression, à l’effacement des données de l’application ou à sa désinstallation. Google détermine la durée de conservation des données traitées par ses services selon ses propres règles et paramètres.",
+    controlsTitle:"Vos choix et contact", controlsText:"Vous pouvez supprimer des parties dans le jeu, effacer les données de l’application dans Android, désinstaller le jeu et gérer l’identifiant publicitaire. Pour toute question ou demande relative à la confidentialité de cette application, écrivez à <a href=\"mailto:thjhsoft@gmail.com\">thjhsoft@gmail.com</a>.",
+    hostingTitle:"Page de politique en ligne", hostingText:"Si vous consultez cette politique sur GitHub Pages, GitHub peut enregistrer et conserver votre adresse IP pour des raisons de sécurité. Cet hébergement est distinct du jeu ; consultez la déclaration de confidentialité de GitHub.",
+    contactTitle:"Contact", changesText:"Nous pouvons mettre à jour cette politique en cas d’évolution de l’application ou du traitement des données. La date en haut de page indique la dernière mise à jour.", footerText:"Les services tiers appliquent leurs propres pratiques de confidentialité."
+  },
+  de: {
+    title:"Datenschutzerklärung", updated:"Zuletzt aktualisiert: 22. Oktober 2026 · App: Landlord Royale – Classic Card Game · Paket: com.cookie.landlordroyale",
+    intro:"Diese Erklärung beschreibt, welche Informationen bei der Nutzung von Landlord Royale (牌局天下：经典斗地主) verarbeitet werden. Das Spiel funktioniert offline und benötigt kein Konto.",
+    localTitle:"Auf deinem Gerät gespeicherte Informationen", localText:"Spieleinstellungen (Sprache, Sound und Gegnerauswahl), Spielverlauf und Statistiken werden im privaten App-Speicher deines Geräts gespeichert; bis zu 20 aktuelle Partien bleiben erhalten. Einzelne Einträge kannst du unter „Spielverlauf“ löschen. Das Löschen der App-Daten oder die Deinstallation entfernt die lokalen Spieldaten. Wenn Android-Backups aktiviert sind, kann das Betriebssystem App-Daten gemäß deinen Sicherungseinstellungen in Geräte-Backups aufnehmen. Das Spiel hat keinen vom Entwickler betriebenen Server; Karten, Ergebnisse und Einstellungen werden nicht an den Entwickler gesendet.",
+    adsTitle:"Werbung und Google Mobile Ads", adsText:"Produktionsversionen können Google-AdMob-Startanzeigen und gelegentliche Interstitial-Anzeigen zeigen. Das Google Mobile Ads SDK kann Daten automatisch für Anzeigenauslieferung und -messung, Analysen, Sicherheit und Betrugsprävention erheben und weitergeben. Je nach SDK-Version und Konfiguration können dazu die IP-Adresse (die einen ungefähren Standort erkennen lassen kann), App-Interaktionen (Starts, Tippen, Anzeigenaufrufe), Diagnosedaten sowie Geräte- oder Konto-IDs wie die Android-Werbe-ID und die App Set ID gehören. Weitere Informationen enthält Googles aktuelle <a href=\"https://developers.google.com/admob/android/privacy/play-data-disclosure\" target=\"_blank\" rel=\"noopener\">Datenoffenlegung zum Mobile Ads SDK</a>. Screenshot-Versionen fordern keine Anzeigen an und zeigen keine an.",
+    consentTitle:"Einwilligung und Datenschutzeinstellungen", consentText:"Das Google-UMP-SDK prüft beim App-Start die Einwilligungsinformationen und zeigt je nach Region und Konfiguration erforderliche Hinweise an. Wenn „Datenschutzoptionen“ in den Einstellungen verfügbar ist, kannst du deine Werbeauswahl ansehen oder ändern. Deine Auswahl beeinflusst die verfügbaren Anzeigen; eingeschränkte oder nicht personalisierte Anzeigen können für Auslieferung, Häufigkeitsbegrenzung, Sicherheit oder Berichte weiterhin bestimmte Daten verarbeiten. Die Android-Werbe-ID lässt sich in den Android-Einstellungen zurücksetzen oder löschen.",
+    sharingTitle:"Empfänger von Informationen", sharingText:"Der Entwickler erhält weder deinen lokal gespeicherten Spielverlauf noch deine Einstellungen. Google verarbeitet die oben beschriebenen Daten seiner Werbe- und Einwilligungs-SDKs. Anzeigen können zu Websites oder Apps Dritter führen, die Informationen nach ihren eigenen Hinweisen verarbeiten. Der Entwickler verkauft deinen Spielverlauf nicht.",
+    retentionTitle:"Speicherung", retentionText:"Lokale Spieldaten und Einstellungen bleiben auf deinem Gerät, bis du Einträge löschst, App-Daten entfernst oder die App deinstallierst. Google legt die Speicherung von Daten in seinen Diensten nach eigenen Richtlinien und Einstellungen fest.",
+    controlsTitle:"Deine Möglichkeiten und Kontakt", controlsText:"Du kannst Spielverläufe im Spiel löschen, App-Daten in Android entfernen, das Spiel deinstallieren und die Werbe-ID verwalten. Fragen oder Anfragen zum Datenschutz dieser App kannst du an <a href=\"mailto:thjhsoft@gmail.com\">thjhsoft@gmail.com</a> richten.",
+    hostingTitle:"Online-Richtlinienseite", hostingText:"Wenn du diese Richtlinie über GitHub Pages aufrufst, kann GitHub deine IP-Adresse zu Sicherheitszwecken protokollieren und speichern. Dieses Hosting ist vom Spiel getrennt. Einzelheiten stehen in der Datenschutzerklärung von GitHub.",
+    contactTitle:"Kontakt", changesText:"Bei Änderungen an der App oder der Datenverarbeitung können wir diese Erklärung aktualisieren. Das Datum oben zeigt die letzte Aktualisierung.", footerText:"Für Drittanbieterdienste gelten deren eigene Datenschutzpraktiken."
+  },
+  pt: {
+    title:"Política de Privacidade", updated:"Última atualização: 22 de outubro de 2026 · Aplicativo: Landlord Royale – Classic Card Game · Pacote: com.cookie.landlordroyale",
+    intro:"Esta política explica quais informações são tratadas quando você usa Landlord Royale (牌局天下：经典斗地主). O jogo funciona offline e não exige uma conta.",
+    localTitle:"Informações armazenadas no seu dispositivo", localText:"As preferências do jogo (idioma, som e escolha de oponentes), o histórico e as estatísticas ficam no armazenamento privado do aplicativo no dispositivo; são mantidas até 20 partidas recentes. Você pode excluir partidas individualmente em “Histórico”. Limpar os dados do aplicativo ou desinstalá-lo remove os dados locais. Se o backup do Android estiver ativado, o sistema operacional poderá incluir os dados do aplicativo nos backups do dispositivo conforme suas configurações. O jogo não tem servidor operado pelo desenvolvedor; suas cartas, resultados e preferências não são enviados ao desenvolvedor.",
+    adsTitle:"Publicidade e Google Mobile Ads", adsText:"As versões de produção podem exibir anúncios de abertura do Google AdMob e anúncios intersticiais ocasionais. O SDK do Google Mobile Ads pode coletar e compartilhar dados automaticamente para veiculação e medição de anúncios, análise, segurança e prevenção de fraudes. Dependendo da versão e configuração do SDK, isso pode incluir endereço IP (que pode indicar localização aproximada), interações com o aplicativo (aberturas, toques e visualizações de anúncios), diagnósticos e identificadores de dispositivo ou conta, como o ID de publicidade do Android e o App Set ID. Consulte a <a href=\"https://developers.google.com/admob/android/privacy/play-data-disclosure\" target=\"_blank\" rel=\"noopener\">divulgação atual de dados do SDK Mobile Ads</a> do Google. Versões de captura de tela não solicitam nem exibem anúncios.",
+    consentTitle:"Consentimento e opções de privacidade", consentText:"O SDK Google UMP verifica as informações de consentimento na inicialização e mostra mensagens quando exigidas pela sua região e configuração. Se “Opções de privacidade” estiver disponível nas Configurações, você poderá revisar ou alterar suas escolhas de publicidade. Elas afetam os anúncios disponíveis; anúncios limitados ou não personalizados ainda podem processar alguns dados para entrega, controle de frequência, segurança ou relatórios. Você também pode redefinir ou excluir o ID de publicidade nas configurações do Android.",
+    sharingTitle:"Quem recebe informações", sharingText:"O desenvolvedor não recebe o histórico nem as preferências armazenadas localmente. O Google processa os dados de seus SDKs de publicidade e consentimento descritos acima. Os anúncios podem direcionar a sites ou aplicativos de terceiros, que tratam informações de acordo com seus próprios avisos. O desenvolvedor não vende seu histórico de jogo.",
+    retentionTitle:"Retenção", retentionText:"Os registros e preferências locais permanecem no dispositivo até que você os exclua, limpe os dados do aplicativo ou o desinstale. O Google define a retenção dos dados processados por seus serviços conforme suas próprias políticas e configurações.",
+    controlsTitle:"Suas opções e contato", controlsText:"Você pode excluir partidas no jogo, limpar os dados do aplicativo no Android, desinstalá-lo e gerenciar o ID de publicidade. Para dúvidas ou solicitações de privacidade sobre este aplicativo, envie um e-mail para <a href=\"mailto:thjhsoft@gmail.com\">thjhsoft@gmail.com</a>.",
+    hostingTitle:"Página da política online", hostingText:"Ao acessar esta política no GitHub Pages, o GitHub pode registrar e reter seu endereço IP para fins de segurança. Essa hospedagem é separada do jogo; consulte a Declaração de Privacidade do GitHub.",
+    contactTitle:"Contato", changesText:"Podemos atualizar esta política se o aplicativo ou o tratamento de dados mudar. A data no topo indica a última atualização.", footerText:"Serviços de terceiros têm suas próprias práticas de privacidade."
+  }
+};
+const keys = ["title","updated","intro","localTitle","localText","adsTitle","adsText","consentTitle","consentText","sharingTitle","sharingText","retentionTitle","retentionText","controlsTitle","controlsText","hostingTitle","hostingText","contactTitle","changesText","footerText"];
+const languageSelect = document.getElementById("language");
+function applyLanguage(code) {
+  const copy = policy[code] || policy.en;
+  document.documentElement.lang = code;
+  for (const key of keys) document.getElementById(key).innerHTML = copy[key];
+  document.title = copy.title + " · Landlord Royale";
+  languageSelect.value = policy[code] ? code : "en";
+}
+languageSelect.addEventListener("change", () => applyLanguage(languageSelect.value));
+const systemLanguage = (navigator.language || "en").toLowerCase();
+const initialLanguage = systemLanguage.startsWith("zh-tw") || systemLanguage.startsWith("zh-hk") || systemLanguage.startsWith("zh-mo") || systemLanguage.startsWith("zh-hant") ? "zh-TW" : systemLanguage.slice(0,2);
+applyLanguage(policy[initialLanguage] ? initialLanguage : "en");
+</script>
+</body>
+</html>
