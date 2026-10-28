@@ -8,16 +8,16 @@
         :root {
             --bg-cream: #FFF9F2;
             --card-bg: #FFFFFF;
-            --text-main: #4A3B39;
-            --text-muted: #7C6966;
-            --accent-rose: #E58C9A;
-            --accent-sage: #7FB298;
-            --border-soft: #F3E3DC;
+            --text-main: #3D2E2C;
+            --text-muted: #6E5A57;
+            --accent-rose: #C96576;
+            --accent-sage: #5E937A;
+            --border-soft: #F0DDD5;
         }
         * { box-sizing: border-box; }
         body {
             margin: 0;
-            padding: 20px 18px 40px;
+            padding: 20px 18px 48px;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background: var(--bg-cream);
             color: var(--text-main);
@@ -27,31 +27,31 @@
         .card {
             background: var(--card-bg);
             border: 1.5px solid var(--border-soft);
-            border-radius: 22px;
+            border-radius: 20px;
             padding: 22px 20px;
             margin-bottom: 16px;
-            box-shadow: 0 6px 18px rgba(124, 105, 102, 0.06);
+            box-shadow: 0 4px 14px rgba(110, 90, 87, 0.05);
         }
         .badge {
             display: inline-block;
             background: #FCEBF0;
-            color: #C96576;
+            color: var(--accent-rose);
             font-weight: 700;
-            font-size: 12px;
+            font-size: 11px;
             padding: 4px 12px;
             border-radius: 999px;
             margin-bottom: 8px;
-            letter-spacing: 0.4px;
+            letter-spacing: 0.5px;
         }
         h1 {
             font-size: 22px;
-            margin: 4px 0 8px;
-            color: #3D2E2C;
+            margin: 4px 0 10px;
+            color: var(--text-main);
         }
         h2 {
-            font-size: 17px;
+            font-size: 16px;
             margin: 0 0 10px;
-            color: #C96576;
+            color: var(--accent-rose);
             display: flex;
             align-items: center;
             gap: 8px;
@@ -65,7 +65,7 @@
             margin: 8px 0;
         }
         a {
-            color: #C96576;
+            color: var(--accent-rose);
             text-decoration: none;
             font-weight: 600;
         }
@@ -81,52 +81,66 @@
     <div class="card">
         <span class="badge">EFFECTIVE DATE: OCTOBER 2026</span>
         <h1>Privacy Policy</h1>
-        <p>Welcome to <strong>WordPetal – Cozy English Word Game</strong> ("WordPetal", "we", "our", or "us"). We respect your privacy and are committed to protecting your personal data while providing a calm, educational, and enjoyable offline-ready word puzzle experience.</p>
+        <p>Welcome to <strong>WordPetal – Cozy English Word Game</strong> ("WordPetal", "we", "our", or "us"). We are dedicated to respecting and protecting the privacy of all players. This Privacy Policy details how information is handled when you download, install, and play WordPetal.</p>
     </div>
 
     <div class="card">
         <h2>1. Information We Collect</h2>
-        <p>WordPetal is designed with a <strong>Privacy-First &amp; Offline-Capable</strong> architecture:</p>
+        <p>WordPetal is built with a <strong>privacy-first, offline-capable architecture</strong>:</p>
         <ul>
-            <li><strong>Local Gameplay Progress:</strong> Your level progress, star ratings, coin balance, learned vocabulary, daily challenge streaks, unlocked storybook chapters, and audio preferences are stored locally on your device.</li>
-            <li><strong>Advertising &amp; Analytics Identifiers (Optional / AdMob):</strong> When connected to the internet, third-party ad networks such as Google AdMob may collect non-personal device identifiers (such as the Android Advertising ID), coarse location, and crash diagnostics to display contextual or personalized advertisements in compliance with Google Play policies.</li>
-            <li><strong>In-App Purchases:</strong> All billing transactions are processed securely through Google Play Billing. We never collect, process, or store your credit card or banking details.</li>
+            <li><strong>No Account Registration:</strong> We do not require you to create an account, log in with social media, or provide personal details such as your name, phone number, or physical address.</li>
+            <li><strong>Local Gameplay Data:</strong> Your level progression, star ratings, earned coins, learned words, daily challenge streaks, and sound settings are saved strictly on your local device.</li>
+            <li><strong>Advertising Identifiers (Optional / Google AdMob):</strong> When your device is connected to the internet, third-party advertising SDKs (specifically Google AdMob) may collect standard non-personal device identifiers (e.g., Android Advertising ID), general device technical information, and coarse network location to serve contextual or interest-based ads in compliance with Google Play Developer policies.</li>
         </ul>
     </div>
 
     <div class="card">
         <h2>2. How We Use Information</h2>
         <ul>
-            <li>To save and restore your puzzle progress, learned words, and storybook collection locally on your device.</li>
-            <li>To provide optional rewarded hints, daily bonus coins, and interstitial ad breaks supported by Google AdMob.</li>
-            <li>To improve game stability, puzzle difficulty balance, and compatibility across Android screen sizes.</li>
+            <li>To persist your puzzle progress, unlocked botanical chapters, and vocabulary records locally on your device.</li>
+            <li>To deliver optional rewarded video hints (opt-in for free bonus coins) and non-intrusive transition ad breaks provided by Google AdMob.</li>
+            <li>To ensure app stability, smooth rendering performance, and responsive layout scaling across different Android phone and tablet screens.</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>3. Data Storage &amp; User Control</h2>
-        <p>All gameplay data is stored locally in your device's private application storage. You can reset or erase your saved data at any time through the in-game <strong>Settings &rarr; Reset Progress</strong> option or via your Android system settings.</p>
-        <p>You may also opt out of personalized advertising at any time on your Android device by navigating to <strong>Settings &rarr; Google &rarr; Ads</strong> and selecting "Reset advertising ID" or "Delete advertising ID".</p>
+        <h2>3. In-App Purchases &amp; Financial Information</h2>
+        <p><strong>WordPetal contains no in-app purchases (IAP) or paid subscription services.</strong> We do not collect, process, or store credit card, debit card, bank, or billing information. All levels, vocabulary definitions, and puzzle mechanics are entirely accessible through gameplay.</p>
     </div>
 
     <div class="card">
-        <h2>4. Children's Privacy</h2>
-        <p>WordPetal is a family-friendly educational word game suitable for learners of all ages. We do not knowingly collect personal information such as names, physical addresses, or phone numbers from children under the age of 13 (or the applicable age of consent in your jurisdiction). If you believe any personal information was inadvertently submitted to us, please contact us immediately so we can delete it.</p>
-    </div>
-
-    <div class="card">
-        <h2>5. Third-Party Services</h2>
-        <p>Our app may integrate standard Google Play services subject to their own privacy terms:</p>
+        <h2>4. Data Storage &amp; User Control</h2>
+        <p>All game progress is maintained directly in your device's private application storage. You retain complete control over your data:</p>
         <ul>
-            <li>Google Play Services &amp; Google Play In-App Billing</li>
-            <li>Google AdMob (Mobile Advertising)</li>
+            <li><strong>Reset Progress:</strong> You can wipe all game progress, stars, coins, and learned word records anytime through the in-game <strong>Settings &rarr; Reset Progress</strong> option.</li>
+            <li><strong>Uninstalling the App:</strong> Uninstalling WordPetal deletes all associated local application data from your device.</li>
+            <li><strong>Ad Personalization Opt-Out:</strong> You can opt out of personalized advertisements or reset your Android Advertising ID at any time in your device settings via <strong>Settings &rarr; Google &rarr; Ads</strong>.</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>6. Contact Us</h2>
-        <p>If you have any questions, feedback, or privacy inquiries regarding <strong>WordPetal – Cozy English Word Game</strong>, please reach out to our product and support team:</p>
-        <p><strong>Email:</strong> <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></p>
+        <h2>5. Children's Privacy</h2>
+        <p>WordPetal is designed to be family-friendly and suitable for players of all ages. We comply with the Children's Online Privacy Protection Act (COPPA), GDPR-K, and Google Play Families policy. We do not knowingly collect personal identifiable information from children under the age of 13. If you believe that any personal information has been inadvertently gathered, please contact us immediately so we can promptly address it.</p>
+    </div>
+
+    <div class="card">
+        <h2>6. Third-Party Services</h2>
+        <p>WordPetal utilizes trusted third-party mobile services governed by their respective privacy policies:</p>
+        <ul>
+            <li><strong>Google Play Services:</strong> Core application platform runtime. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>)</li>
+            <li><strong>Google AdMob:</strong> Mobile advertising network delivering app-open, interstitial, and opt-in rewarded ads. (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Ad Policies</a>)</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>7. Changes to This Policy</h2>
+        <p>We may occasionally update this Privacy Policy to reflect improvements in our game or updates to regulatory requirements. The latest version will always be accessible within the application and provided on our Google Play Store listing.</p>
+    </div>
+
+    <div class="card">
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions, feedback, or data privacy inquiries regarding WordPetal, please contact us at:</p>
+        <p><strong>Developer Support Email:</strong> <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></p>
     </div>
 
     <div class="footer">
