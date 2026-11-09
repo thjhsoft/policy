@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Privacy Policy - PocketKit</title>
+    <style>
+        :root {
+            --bg-primary: #0b1120;
+            --bg-card: #131d31;
+            --bg-card-alt: #1a2744;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-cyan: #00e5ff;
+            --accent-blue: #0284c7;
+            --accent-green: #10b981;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-family);
+            line-height: 1.6;
+            padding: 20px 16px 40px 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.2), rgba(2, 132, 199, 0.2));
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Language Switcher Bar */
+        .lang-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            margin-bottom: 24px;
+            padding: 8px;
+            background: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .lang-btn {
+            background: transparent;
+            color: var(--text-secondary);
+            border: 1px solid transparent;
+            border-radius: 8px;
+            padding: 6px 10px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn.active {
+            background: var(--accent-cyan);
+            color: #04101e;
+            border-color: var(--accent-cyan);
+        }
+
+        /* Sections */
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 18px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            font-size: 17px;
+            color: var(--accent-cyan);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .perm-list {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .perm-item {
+            background: var(--bg-card-alt);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 10px;
+        }
+
+        .perm-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .perm-code {
+            font-family: monospace;
+            font-size: 11px;
+            color: var(--accent-cyan);
+            background: rgba(0, 229, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .perm-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .highlight-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 3px solid var(--accent-green);
+            padding: 10px 14px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+            font-size: 13px;
+            color: #d1fae5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="app-badge">PocketKit Compliance</div>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Effective Date: November 2026</p>
+    </header>
+
+    <!-- Language Switcher Bar -->
+    <div class="lang-bar">
+        <button class="lang-btn active" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" onclick="switchLang('zh')">简体中文</button>
+        <button class="lang-btn" onclick="switchLang('zhtw')">繁體中文</button>
+        <button class="lang-btn" onclick="switchLang('es')">Español</button>
+        <button class="lang-btn" onclick="switchLang('ja')">日本語</button>
+        <button class="lang-btn" onclick="switchLang('ko')">한국어</button>
+        <button class="lang-btn" onclick="switchLang('fr')">Français</button>
+        <button class="lang-btn" onclick="switchLang('de')">Deutsch</button>
+    </div>
+
+    <!-- ==================== ENGLISH (DEFAULT) ==================== -->
+    <div id="content-en" class="lang-content active">
+        <div class="card">
+            <h2>1. Offline-First Privacy Architecture</h2>
+            <p>PocketKit is engineered with strict offline-first principles. Your physical sensor data, measurements, calculations, and hardware readings are processed 100% locally on your device. We do not operate remote tracking servers, analytics trackers, or user profiling pipelines.</p>
+            <div class="highlight-box">
+                <strong>Zero Remote Transmission:</strong> Camera frames, sound samples, and step history never leave your smartphone.
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>2. Detailed Explanation of Special Permissions</h2>
+            <p>PocketKit requests sensitive Android runtime permissions strictly to drive hardware sensor instruments. Here is how each permission is utilized:</p>
+            <ul class="perm-list">
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>Camera</span>
+                        <span class="perm-code">CAMERA</span>
+                    </div>
+                    <div class="perm-desc">Required exclusively for visual measurement tools: AR 3D Measure, Optical Color Detector, Cosmetic Mirror, and Digital Magnifier. Camera frames are processed in volatile memory in real time; no photos or videos are saved or transmitted.</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>Microphone / Audio</span>
+                        <span class="perm-code">RECORD_AUDIO</span>
+                    </div>
+                    <div class="perm-desc">Used solely by the Sound Meter tool to calculate ambient sound pressure levels (decibels dB) using mathematical FFT. Raw audio is never stored or recorded.</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>Geographic Location</span>
+                        <span class="perm-code">ACCESS_FINE_LOCATION &amp; ACCESS_COARSE_LOCATION</span>
+                    </div>
+                    <div class="perm-desc">Required for GPS Locator, Altimeter calibration, Sun &amp; Moon position ephemeris, Weather forecasts, and Star Finder astronomical math. Coordinates remain local to your device and are never tracked.</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>Physical Activity</span>
+                        <span class="perm-code">ACTIVITY_RECOGNITION</span>
+                    </div>
+                    <div class="perm-desc">Required on Android 10+ for the Pedometer tool to connect to the hardware step sensor. Step counts and calories are stored solely in your local device database.</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>Flashlight</span>
+                        <span class="perm-code">FLASHLIGHT</span>
+                    </div>
+                    <div class="perm-desc">Controls the hardware LED torch for the Flashlight utility and Morse code optical SOS signal generator.</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>Vibration &amp; Haptics</span>
+                        <span class="perm-code">VIBRATE</span>
+                    </div>
+                    <div class="perm-desc">Provides tactile physical feedback for instrument dials, level balance zero-alignment, and button presses.</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>Notifications</span>
+                        <span class="perm-code">POST_NOTIFICATIONS</span>
+                    </div>
+                    <div class="perm-desc">Used on Android 13+ to display optional stopwatch/timer alerts and background pedometer daily goal notifications.</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>Network &amp; Advertising ID</span>
+                        <span class="perm-code">INTERNET, ACCESS_NETWORK_STATE, AD_ID</span>
+                    </div>
+                    <div class="perm-desc">Used for fetching live weather forecast data and serving compliant advertisements through Google AdMob in accordance with user consent preferences.</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>3. Advertising &amp; CMP Consent (GDPR / CCPA)</h2>
+            <p>We integrate Google AdMob to support free access to PocketKit. To protect European Economic Area (EEA) and UK users, we strictly implement the Google User Messaging Platform (UMP) Consent Management Platform (CMP).</p>
+            <p>• <strong>User Choice:</strong> Ad components remain uninitialized until user consent choices are registered.</p>
+            <p>• <strong>Consent Revocation:</strong> You can modify or withdraw your advertising consent choices at any time from <em>Settings &gt; Ad Privacy Preferences</em>.</p>
+            <p>• <strong>Screenshot Mode:</strong> Screenshots and ad-free flavors completely disable all ad SDK requests.</p>
+        </div>
+
+        <div class="card">
+            <h2>4. Security &amp; Contact</h2>
+            <p>We implement standard Android security sandboxing. If you have questions regarding our privacy practices, contact us via our developer portal.</p>
+        </div>
+    </div>
+
+    <!-- ==================== 简体中文 (SIMPLIFIED CHINESE) ==================== -->
+    <div id="content-zh" class="lang-content">
+        <div class="card">
+            <h2>1. 离线优先隐私架构</h2>
+            <p>PocketKit 采用严格的“离线优先”原则构建。您的所有物理传感器数据、度量结果、计算公式以及硬件读数均 100% 在本地设备上实时计算。我们不设立远程追踪服务器，不收集任何用户行为画像或分析日志。</p>
+            <div class="highlight-box">
+                <strong>零远程传输：</strong> 相机画面、声音分贝样本、计步记录均仅保留于您的物理设备中。
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>2. 特殊系统权限详细说明</h2>
+            <p>PocketKit 申请的敏感权限仅用于驱动物理传感器和测量工具，绝不滥用：</p>
+            <ul class="perm-list">
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>相机权限</span>
+                        <span class="perm-code">CAMERA</span>
+                    </div>
+                    <div class="perm-desc">仅用于视觉测量与光学工具：AR 三维测距、光学颜色检测器、前置镜子以及数字放大镜。图像流实时驻留于易失性内存中处理，绝不保存或上传任何照片或视频。</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>麦克风录音权限</span>
+                        <span class="perm-code">RECORD_AUDIO</span>
+                    </div>
+                    <div class="perm-desc">仅供“分贝噪音计”实时计算环境声压级（dB分贝）。音频数据仅在内存中做瞬时傅里叶变换计算，绝不录制、存储或回传任何音频片段。</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>精确与粗略地理位置</span>
+                        <span class="perm-code">ACCESS_FINE_LOCATION &amp; ACCESS_COARSE_LOCATION</span>
+                    </div>
+                    <div class="perm-desc">用于 GPS 经纬度定位仪、气压海拔基准校准、太阳与月球运行星历、本地天气预报以及星空罗盘天体计算。位置信息完全保存在本地，绝无追踪。</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>身体运动与步数识别</span>
+                        <span class="perm-code">ACTIVITY_RECOGNITION</span>
+                    </div>
+                    <div class="perm-desc">用于 Android 10+ 设备的计步器工具，直接调用硬件步数检测器。历史步数仅保存在设备私有数据库中。</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>闪光灯控制</span>
+                        <span class="perm-code">FLASHLIGHT</span>
+                    </div>
+                    <div class="perm-desc">控制后置 LED 手电筒常亮与莫尔斯电码光电 SOS 应急求救信号。</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>震动反馈</span>
+                        <span class="perm-code">VIBRATE</span>
+                    </div>
+                    <div class="perm-desc">提供工业级触觉触感反馈，例如水平仪平衡归零、刻度微调及按键反馈。</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>通知权限</span>
+                        <span class="perm-code">POST_NOTIFICATIONS</span>
+                    </div>
+                    <div class="perm-desc">用于 Android 13+ 弹出秒表计时器结束提醒及后台计步目标达成提示。</div>
+                </li>
+                <li class="perm-item">
+                    <div class="perm-title">
+                        <span>网络与广告标识符</span>
+                        <span class="perm-code">INTERNET, ACCESS_NETWORK_STATE, AD_ID</span>
+                    </div>
+                    <div class="perm-desc">用于在线天气预报更新，以及通过 Google AdMob 合规展示广告。广告请求完全遵照用户 CMP 授权设置。</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>3. 广告合规与 CMP 同意管理 (GDPR / CCPA)</h2>
+            <p>为支持应用持续免费维护，本应用集成了 Google AdMob 广告服务。针对欧洲经济区 (EEA) 和英国用户，我们完整集成了 Google UMP (User Messaging Platform) CMP 授权机制：</p>
+            <p>• <strong>合规先行：</strong> 未获得用户明确授权前，绝不预先初始化广告组件。</p>
+            <p>• <strong>随时撤销：</strong> 您可随时在【设置】&gt;【广告隐私偏好设置】中修改或撤回个性化广告授权。</p>
+            <p>• <strong>截图模式：</strong> 截图专属渠道完全禁用广告组件，不发起任何广告网络请求。</p>
+        </div>
+    </div>
+
+    <!-- ==================== 繁體中文 (TRADITIONAL CHINESE) ==================== -->
+    <div id="content-zhtw" class="lang-content">
+        <div class="card">
+            <h2>1. 離線優先隱私架構</h2>
+            <p>PocketKit 採用嚴格的「離線優先」架構。您的感測器數據、測量數值與硬體讀數均 100% 於裝置本機即時處理，絕無任何遠端追蹤伺服器。</p>
+        </div>
+        <div class="card">
+            <h2>2. 特殊權限詳細說明</h2>
+            <p><strong>相機 (CAMERA)：</strong> 供 AR 測距、顏色辨識、鏡子與放大鏡即時處理，絕不儲存影像。<br>
+            <strong>麥克風 (RECORD_AUDIO)：</strong> 僅供噪音計計算分貝數值，絕不錄音。<br>
+            <strong>地理位置 (LOCATION)：</strong> 供 GPS、氣壓海拔、日照星曆及天氣預報使用。<br>
+            <strong>廣告識別碼 (AD_ID)：</strong> 遵照 Google AdMob 與 CMP 規範展示廣告。</p>
+        </div>
+    </div>
+
+    <!-- ==================== ESPAÑOL (SPANISH) ==================== -->
+    <div id="content-es" class="lang-content">
+        <div class="card">
+            <h2>1. Arquitectura de privacidad sin conexión</h2>
+            <p>PocketKit opera 100% de manera local. Las lecturas de los sensores físicos, mediciones y cálculos nunca se transmiten a servidores remotos.</p>
+        </div>
+        <div class="card">
+            <h2>2. Explicación de permisos especiales</h2>
+            <p><strong>Cámara (CAMERA):</strong> Medición RA, detector de color, espejo y lupa en tiempo real.<br>
+            <strong>Micrófono (RECORD_AUDIO):</strong> Cálculo de decibelios (dB) para el sonómetro.<br>
+            <strong>Ubicación (LOCATION):</strong> Posición solar, pronóstico del tiempo y cálculos astronómicos.<br>
+            <strong>Publicidad y CMP:</strong> Cumplimiento estricto de RGPD mediante Google UMP.</p>
+        </div>
+    </div>
+
+    <!-- ==================== 日本語 (JAPANESE) ==================== -->
+    <div id="content-ja" class="lang-content">
+        <div class="card">
+            <h2>1. オフライン最優先のプライバシー設計</h2>
+            <p>PocketKit は完全なローカル処理アーキテクチャを採用しています。センサーデータ、測定値、計算結果はすべて端末内で安全に処理されます。</p>
+        </div>
+        <div class="card">
+            <h2>2. 特別権限の説明</h2>
+            <p><strong>カメラ (CAMERA):</strong> AR測定、カラーピッカー、拡大鏡、ミラー機能のみに使用されます。<br>
+            <strong>マイク (RECORD_AUDIO):</strong> 騒音計のデシベル (dB) リアルタイム計算のみに使用されます。<br>
+            <strong>位置情報 (LOCATION):</strong> GPS、気圧高度計、日の出入位置、天気予報に使用されます。<br>
+            <strong>広告とCMP同意:</strong> Google AdMob および UMP による GDPR 準拠の同意管理をサポートしています。</p>
+        </div>
+    </div>
+
+    <!-- ==================== 한국어 (KOREAN) ==================== -->
+    <div id="content-ko" class="lang-content">
+        <div class="card">
+            <h2>1. 오프라인 우선 개인정보 보호</h2>
+            <p>PocketKit은 100% 오프라인 로컬 처리 원칙으로 설계되었습니다. 센서 판독값과 측정 데이터는 절대 외부 서버로 전송되지 않습니다.</p>
+        </div>
+        <div class="card">
+            <h2>2. 특수 권한 안내</h2>
+            <p><strong>카메라 (CAMERA):</strong> AR 측정, 색상 감지기, 돋보기, 거울 기능의 실시간 처리에만 사용됩니다.<br>
+            <strong>마이크 (RECORD_AUDIO):</strong> 소음 측정기의 데시벨(dB) 계산에만 사용되며 녹음되지 않습니다.<br>
+            <strong>위치 (LOCATION):</strong> GPS, 고도계, 일조 위치 및 날씨 정보에 사용됩니다.<br>
+            <strong>광고 및 CMP:</strong> Google UMP를 통한 완벽한 GDPR 동의 관리 지원.</p>
+        </div>
+    </div>
+
+    <!-- ==================== FRANÇAIS (FRENCH) ==================== -->
+    <div id="content-fr" class="lang-content">
+        <div class="card">
+            <h2>1. Architecture hors-ligne respectueuse de la vie privée</h2>
+            <p>PocketKit traite 100% des données de vos capteurs physiquement sur votre appareil. Aucune donnée audio, photo ou localisation n'est stockée sur des serveurs distants.</p>
+        </div>
+        <div class="card">
+            <h2>2. Explication des autorisations spéciales</h2>
+            <p><strong>Appareil photo (CAMERA) :</strong> Mesure AR, détecteur de couleur, miroir et loupe.<br>
+            <strong>Microphone (RECORD_AUDIO) :</strong> Mesure des décibels (dB) en direct sans aucun enregistrement.<br>
+            <strong>Localisation (LOCATION) :</strong> Éphémérides solaires, altimètre et météo locale.<br>
+            <strong>Publicité &amp; CMP :</strong> Respect strict du RGPD via Google UMP.</p>
+        </div>
+    </div>
+
+    <!-- ==================== DEUTSCH (GERMAN) ==================== -->
+    <div id="content-de" class="lang-content">
+        <div class="card">
+            <h2>1. Offline-First Datenschutzarchitektur</h2>
+            <p>PocketKit verarbeitet alle Messdaten und Sensoren zu 100% lokal auf Ihrem Gerät ohne Remote-Tracking.</p>
+        </div>
+        <div class="card">
+            <h2>2. Erklärung spezieller Berechtigungen</h2>
+            <p><strong>Kamera (CAMERA):</strong> AR-Messungen, Farberkennung, Lupe und Spiegel.<br>
+            <strong>Mikrofon (RECORD_AUDIO):</strong> Echtzeit-Dezibelberechnung (dB) ohne Tonaufzeichnung.<br>
+            <strong>Standort (LOCATION):</strong> GPS, Sonnenstand, barometrische Höhenmessung und Wetter.<br>
+            <strong>AdMob &amp; DSGVO (CMP):</strong> Vollständige Unterstützung der Google UMP Plattform.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 PocketKit Toolkit &bull; All Rights Reserved
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            // Remove active from all buttons
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Remove active from all content sections
+            const contents = document.querySelectorAll('.lang-content');
+            contents.forEach(cnt => cnt.classList.remove('active'));
+
+            // Activate target button
+            const targetBtn = Array.from(buttons).find(btn => btn.getAttribute('onclick').includes(lang));
+            if (targetBtn) targetBtn.classList.add('active');
+
+            // Activate target content
+            const targetContent = document.getElementById('content-' + lang);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            } else {
+                document.getElementById('content-en').classList.add('active');
+            }
+        }
+
+        // Auto-detect browser/system language if possible
+        window.addEventListener('DOMContentLoaded', () => {
+            const navLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+            if (navLang.startsWith('zh-tw') || navLang.startsWith('zh-hk')) {
+                switchLang('zhtw');
+            } else if (navLang.startsWith('zh')) {
+                switchLang('zh');
+            } else if (navLang.startsWith('es')) {
+                switchLang('es');
+            } else if (navLang.startsWith('ja')) {
+                switchLang('ja');
+            } else if (navLang.startsWith('ko')) {
+                switchLang('ko');
+            } else if (navLang.startsWith('fr')) {
+                switchLang('fr');
+            } else if (navLang.startsWith('de')) {
+                switchLang('de');
+            } else {
+                switchLang('en');
+            }
+        });
+    </script>
+</body>
+</html>
