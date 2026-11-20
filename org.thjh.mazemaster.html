@@ -1,15 +1,385 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <title>Privacy Policy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Maze Master (org.thjh.mazemaster)</title>
+    <style>
+        :root {
+            --text-color: #1f2937;
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+            --primary-color: #2563eb;
+            --border-color: #e5e7eb;
+            --muted-color: #6b7280;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 36px 40px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
+        }
+        h1 {
+            font-size: 1.85rem;
+            margin-top: 0;
+            color: #111827;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+        h2 {
+            font-size: 1.35rem;
+            color: #111827;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+        h3 {
+            font-size: 1.1rem;
+            color: #374151;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        p, li {
+            font-size: 1rem;
+            color: #374151;
+        }
+        ul {
+            padding-left: 22px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .meta {
+            color: var(--muted-color);
+            font-size: 0.92rem;
+            margin-bottom: 24px;
+        }
+        .divider {
+            margin: 48px 0;
+            border: 0;
+            border-top: 2px dashed var(--border-color);
+        }
+        .lang-nav {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+        .lang-nav a {
+            padding: 6px 14px;
+            border-radius: 6px;
+            background: #eff6ff;
+            font-weight: 500;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.95rem;
+        }
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 10px 14px;
+            text-align: left;
+        }
+        th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 20px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div id="content"></div>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script>
-    document.getElementById('content').innerHTML =
-      marked.parse('## Privacy Policy\n\nThank you for using the MazeMaster APP (hereinafter referred to as the \"App\"). This privacy policy aims to explain how the App collects, uses, and protects your personal information. Please read this privacy policy carefully before using the App.\n\n### Information Collection and Use\n\n#### 1.1 Advertising\n\nThe App utilizes Admob advertising service to provide ad content. During this process, the App may collect your Advertising ID through the Internet permission. This Advertising ID is solely used to report the advertising revenue of the App to the advertising service provider and for analyzing and improving the performance of the App. Please note that the advertising service provider may collect and use data according to its own privacy policy. We recommend that you review the privacy policy of the advertising service provider for more information.\n\n#### 1.2 User Training Records\n\nThe App records the time you spend during training. These data are only stored on your local device and are not transmitted to any server. These records are intended to help you track your training progress, and you have the right to delete this data at any time.\n\n### Protection of Children\'s Privacy\n\nWe highly value the privacy rights of children. The App does not provide personalized advertising for children, and we do not intentionally collect personal identification information related to children. If you discover that your child has provided personal information to us, please contact us immediately, and we will take necessary measures to delete such information.\n\n### Information Security\n\nWe have implemented necessary technical and organizational measures to protect your personal information from unauthorized access, use, or disclosure. However, due to the nature of the internet, we cannot guarantee the absolute security of information.\n\n### Third-Party Links\n\nThe App may contain links to third-party websites or services. We are not responsible for the privacy practices and content of these third parties. When accessing and using these links, please read and understand their privacy policies.\n\n### Privacy Policy Updates\n\nWe may update the terms of this privacy policy from time to time. After the update, we will publish the updated privacy policy within the App and notify you of the changes within a reasonable scope. Please regularly review this privacy policy for any changes.\n\n### Contact Us\n\nIf you have any questions or concerns regarding this privacy policy or the privacy practices of the App, please contact us through the provided contact information within the App.\n\nBy using the App, you signify that you have read, understood, and agreed to the terms and conditions of this privacy policy. If you do not agree to this privacy policy, please refrain from using the App.\n\nLast Updated: 05/20/2023\n\n\n\n======================\n\n\n## 用户隐私协议\n\n感谢您使用迷宫大师（以下简称\"应用\"）。本隐私协议旨在向您说明应用如何收集、使用和保护您的个人信息。请在使用应用之前仔细阅读本隐私协议。\n\n###信息收集与使用\n\n#### 1.1 广告\n\n应用使用Admob广告服务来提供广告内容。在此过程中，应用会通过Internet权限获取您的广告ID（Advertising ID）。此广告ID仅用于向广告服务提供商报告应用的广告收益，并用于分析和改进应用的性能。请注意，广告服务提供商可能会根据其自身的隐私政策收集和使用数据，我们建议您查阅该广告服务提供商的隐私政策了解更多信息。\n\n#### 1.2 用户训练记录\n\n应用会记录用户在训练过程中的时间，这些数据仅保存在您的本地设备上，并不会传输到任何服务器。这些记录旨在帮助您追踪自己的训练进展，并且您有权随时删除这些数据。\n\n### 儿童隐私权保护\n\n我们非常重视儿童的隐私权益。应用不会针对儿童提供个性化广告，并且我们不会有意收集与儿童相关的个人身份信息。如果您发现您的孩子向我们提供了个人信息，请立即与我们联系，我们将采取必要的措施删除这些信息。\n\n### 信息安全\n\n我们采取了必要的技术和组织措施，保护您的个人信息免受未经授权的访问、使用或泄露。然而，由于互联网的性质，我们无法完全保证信息的绝对安全性。\n\n### 第三方链接\n\n应用可能包含指向第三方网站或服务的链接。我们不对这些第三方的隐私惯例和内容负责。在访问和使用这些链接时，请自行阅读和理解其隐私政策。\n\n### 隐私权更新\n\n我们可能会不时更新本隐私协议的条款。当更新后，我们会在应用中发布更新的隐私协议，并在合理范围内通知您变更。请定期查阅本隐私协议以了解任何变更。\n\n### 联系我们\n\n如果您对本隐私协议或应用的隐私做法有任何疑问或关注，请通过应用内提供的联系方式与我们联系。\n\n通过使用应用，即表示您已阅读、理解并同意本隐私协议的条款和条件。如果您不同意本隐私协议，请不要使用本应用。\n\n最后更新日期：05/20/2023\n\n\n========================\n\n\n## 用戶隱私協議\n\n感謝您使用迷宮大師（以下簡稱\"應用\"）。本隱私協議旨在向您說明應用如何收集、使用和保護您的個人信息。請在使用應用之前仔細閱讀本隱私協議。\n\n###信息收集與使用\n\n#### 1.1 廣告\n\n應用使用Admob廣告服務來提供廣告內容。在此過程中，應用會通過Internet權限獲取您的廣告ID（Advertising ID）。此廣告ID僅用于向廣告服務提供商報告應用的廣告收益，並用于分析和改進應用的性能。請注意，廣告服務提供商可能會根據其自身的隱私政策收集和使用數據，我們建議您查閱該廣告服務提供商的隱私政策了解更多信息。\n\n#### 1.2 用戶訓練記錄\n\n應用會記錄用戶在訓練過程中的時間，這些數據僅保存在您的本地設備上，並不會傳輸到任何服務器。這些記錄旨在幫助您追蹤自己的訓練進展，並且您有權隨時刪除這些數據。\n\n### 兒童隱私權保護\n\n我們非常重視兒童的隱私權益。應用不會針對兒童提供個性化廣告，並且我們不會有意收集與兒童相關的個人身份信息。如果您發現您的孩子向我們提供了個人信息，請立即與我們聯系，我們將采取必要的措施刪除這些信息。\n\n### 信息安全\n\n我們采取了必要的技術和組織措施，保護您的個人信息免受未經授權的訪問、使用或泄露。然而，由于互聯網的性質，我們無法完全保證信息的絕對安全性。\n\n### 第三方鏈接\n\n應用可能包含指向第三方網站或服務的鏈接。我們不對這些第三方的隱私慣例和內容負責。在訪問和使用這些鏈接時，請自行閱讀和理解其隱私政策。\n\n### 隱私權更新\n\n我們可能會不時更新本隱私協議的條款。當更新後，我們會在應用中發布更新的隱私協議，並在合理範圍內通知您變更。請定期查閱本隱私協議以了解任何變更。\n\n### 聯系我們\n\n如果您對本隱私協議或應用的隱私做法有任何疑問或關注，請通過應用內提供的聯系方式與我們聯系。\n\n通過使用應用，即表示您已閱讀、理解並同意本隱私協議的條款和條件。如果您不同意本隱私協議，請不要使用本應用。\n\n最後更新日期：05/20/2023\n\n\n\n\n');
-  </script>
+<div class="container">
+
+    <div class="lang-nav">
+        <a href="#en">English</a>
+        <a href="#zh-cn">简体中文</a>
+        <a href="#zh-tw">繁體中文</a>
+    </div>
+
+    <!-- ==================== ENGLISH VERSION ==================== -->
+    <section id="en">
+        <h1>Privacy Policy</h1>
+        <p class="meta">
+            <strong>Application Name:</strong> Maze Master (Package ID: <code>org.thjh.mazemaster</code>)<br>
+            <strong>Developer:</strong> thjhsoft<br>
+            <strong>Effective Date / Last Updated:</strong> November 20, 2026
+        </p>
+
+        <p>
+            Thank you for choosing <strong>Maze Master</strong> (hereinafter referred to as the "App"), developed and operated by <strong>thjhsoft</strong> ("we", "us", or "our"). We are committed to protecting your privacy and ensuring transparency regarding how data is handled when you use our App. Please read this Privacy Policy carefully before using the App.
+        </p>
+
+        <h2>1. Information Collection and Use</h2>
+
+        <h3>1.1 Personal Information &amp; Email Address (Voluntary Support Inquiries Only)</h3>
+        <p>
+            <strong>The App does not require user registration or account login.</strong> By default, the App does not actively collect, store, or transmit your name, email address, phone number, or physical address on or off your device during normal gameplay.
+        </p>
+        <p>
+            However, if you voluntarily choose to contact us via email for customer support, bug reports, or feedback (Developer Communications), we will receive your <strong>Email Address</strong> and any information you choose to include in your message. This information is used strictly to respond to your inquiries and improve the App functionality, and we do not share or sell your email address to any third parties.
+        </p>
+
+        <h3>1.2 Third-Party Advertising &amp; SDK Data Collection (Google AdMob)</h3>
+        <p>
+            To support the free provision of the App, we integrate <strong>Google AdMob (Google Mobile Ads SDK)</strong> to display advertisements. Using the <code>INTERNET</code> and <code>com.google.android.gms.permission.AD_ID</code> permissions, the Google Mobile Ads SDK may automatically collect and transmit certain device and usage data off your device for advertising, analytics, and fraud prevention purposes:
+        </p>
+        <ul>
+            <li><strong>Device or Other IDs:</strong> Google Advertising ID (AAID), app set ID, and device identifiers used to serve ads, measure ad performance, and report advertising revenue.</li>
+            <li><strong>Approximate Location:</strong> IP-based coarse location information used by AdMob for regional ad delivery and compliance.</li>
+            <li><strong>App Interactions &amp; Diagnostics:</strong> Ad views, clicks, app launch events, crash logs, and performance diagnostics related to ad rendering.</li>
+        </ul>
+        <p>
+            All data transmitted by the Google Mobile Ads SDK is encrypted in transit using HTTPS/TLS. For detailed information on how Google collects and processes data, please review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a>.
+        </p>
+
+        <h3>1.3 Local Game Progress, Blueprints, and Image Sharing</h3>
+        <ul>
+            <li><strong>Local Game Records &amp; Maze Blueprints:</strong> Your maze solving times, progress records, and custom maze blueprints are stored locally on your device only. This data is never uploaded to our servers.</li>
+            <li><strong>Print &amp; Share Function:</strong> When you use the maze image export, print, or share feature, the generated maze image is temporarily processed in your device's local cache or media storage and shared via the Android system share sheet at your explicit request. We do not collect or upload your files.</li>
+        </ul>
+
+        <h2>2. Summary of Data Safety &amp; Handling</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Collection Method</th>
+                    <th>Purpose</th>
+                    <th>Required / Optional</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Device or Other IDs (Advertising ID)</td>
+                    <td>Collected &amp; Shared via Google AdMob SDK</td>
+                    <td>Advertising, Analytics, Fraud Prevention</td>
+                    <td>Automatic (Users can reset/opt-out in Android Settings)</td>
+                </tr>
+                <tr>
+                    <td>Approximate Location, App Interactions, Diagnostics</td>
+                    <td>Collected &amp; Shared via Google AdMob SDK</td>
+                    <td>Advertising, Analytics, App Stability</td>
+                    <td>Automatic</td>
+                </tr>
+                <tr>
+                    <td>Email Address</td>
+                    <td>Provided voluntarily when contacting support</td>
+                    <td>Developer Communications, App Functionality</td>
+                    <td>Optional (Users can choose)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>3. Data Retention, Deletion, and User Controls</h2>
+        <ul>
+            <li><strong>Local Data Deletion:</strong> You can delete all locally saved game records and maze blueprints at any time by clearing the App's storage data in your Android system settings or by uninstalling the App.</li>
+            <li><strong>Advertising ID Controls:</strong> You can reset your Advertising ID or opt out of personalized advertising at any time on your Android device by navigating to <em>Settings &gt; Google &gt; Ads</em> (or <em>Settings &gt; Privacy &gt; Ads</em>).</li>
+            <li><strong>Email Deletion Request:</strong> If you have contacted us via email and wish to have your email correspondence and email address permanently deleted from our records, please send a deletion request to <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a>. We will process and complete your request within 30 days.</li>
+        </ul>
+
+        <h2>4. Protection of Children's Privacy</h2>
+        <p>
+            We attach great importance to the protection of children's privacy. We do not knowingly collect personal identification information from children. The App does not serve personalized behavioral advertisements to users identified as children. If you are a parent or guardian and believe that your child has provided personal information (such as an email address) to us, please contact us at <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a>, and we will promptly delete such information.
+        </p>
+
+        <h2>5. Data Security</h2>
+        <p>
+            We and our third-party service providers implement industry-standard technical and organizational measures, including HTTPS/TLS encryption in transit, to safeguard information against unauthorized access, alteration, or disclosure.
+        </p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Any updates will be posted on this page with an updated "Last Updated" date. We encourage you to review this Privacy Policy periodically.
+        </p>
+
+        <h2>7. Contact Us</h2>
+        <p>
+            If you have any questions, concerns, or data deletion requests regarding this Privacy Policy or the privacy practices of the App, please contact us at:
+        </p>
+        <ul>
+            <li><strong>Developer:</strong> thjhsoft</li>
+            <li><strong>Email:</strong> <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></li>
+        </ul>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ==================== 简体中文版本 ==================== -->
+    <section id="zh-cn">
+        <h1>用户隐私协议</h1>
+        <p class="meta">
+            <strong>应用名称：</strong>迷宫大师 / Maze Master（包名：<code>org.thjh.mazemaster</code>）<br>
+            <strong>开发者：</strong>thjhsoft<br>
+            <strong>生效日期 / 最后更新日期：</strong>2026年11月20日
+        </p>
+
+        <p>
+            感谢您使用由 <strong>thjhsoft</strong>（以下简称“我们”）开发和运营的<strong>迷宫大师（Maze Master）</strong>（以下简称“本应用”）。我们非常重视您的隐私保护，并致力于透明地说明本应用如何处理数据。请在使用本应用之前仔细阅读本隐私协议。
+        </p>
+
+        <h2>1. 信息收集与使用</h2>
+
+        <h3>1.1 个人信息与电子邮箱地址（仅限用户主动联系反馈）</h3>
+        <p>
+            <strong>本应用无需注册账号或登录即可使用全部功能。</strong>在正常游戏和使用过程中，本应用不会在后台主动收集、存储或向外传输您的姓名、电子邮箱地址、电话号码等个人身份信息。
+        </p>
+        <p>
+            仅当您主动通过电子邮件联系我们进行问题咨询、错误反馈或寻求客服支持（开发者通信）时，我们才会收到您的<strong>电子邮箱地址（Email Address）</strong>以及您在邮件中主动提供的内容。该信息仅用于回复您的咨询及改进应用功能，我们绝不会将您的电子邮箱地址出售或分享给任何第三方。
+        </p>
+
+        <h3>1.2 第三方广告与 SDK 数据收集（Google AdMob）</h3>
+        <p>
+            为了支持本应用的免费提供与维护，我们集成了 <strong>Google AdMob（Google 移动广告 SDK）</strong> 用于展示广告。在运行过程中，AdMob SDK 会通过网络权限（<code>INTERNET</code>）及广告 ID 权限（<code>com.google.android.gms.permission.AD_ID</code>）自动收集并传输以下数据，用于广告展示、成效分析及防欺诈：
+        </p>
+        <ul>
+            <li><strong>设备或其他标识符（Device or Other IDs）：</strong>如 Google 广告 ID（Advertising ID / AAID），用于展示广告、衡量广告效果及核算广告收益。</li>
+            <li><strong>粗略位置信息（Approximate Location）：</strong>基于 IP 地址的粗略区域位置，用于向您投放符合地区规范的广告。</li>
+            <li><strong>应用互动与诊断信息（App Interactions &amp; Diagnostics）：</strong>广告浏览与点击事件、应用启动事件、崩溃日志及性能诊断信息。</li>
+        </ul>
+        <p>
+            AdMob SDK 传输的所有数据均通过 HTTPS/TLS 进行传输加密。关于 Google 如何收集和处理数据的详细信息，请参阅 <a href="https://policies.google.com/privacy?hl=zh-CN" target="_blank" rel="noopener noreferrer">Google 隐私权政策</a>。
+        </p>
+
+        <h3>1.3 本地游戏记录、迷宫图纸与分享打印</h3>
+        <ul>
+            <li><strong>本地训练记录与迷宫图纸：</strong>您的迷宫闯关用时、历史成绩及保存的迷宫图纸仅存储在您的本地设备中，不会上传至任何服务器。</li>
+            <li><strong>分享与打印功能：</strong>当您主动使用迷宫图纸导出、打印或分享功能时，生成的图片仅在本地缓存或本地相册中处理，并通过 Android 系统原生的分享面板由您自主选择分享对象。本应用不会收集或上传您的图片文件。</li>
+        </ul>
+
+        <h2>2. 数据保留、删除与用户控制权</h2>
+        <ul>
+            <li><strong>删除本地数据：</strong>您可以随时在 Android 系统设置中清除本应用的存储数据，或直接卸载本应用，以彻底删除所有本地保存的游戏记录和迷宫图纸。</li>
+            <li><strong>重置或限制广告 ID：</strong>您可以随时在 Android 设备的“设置 &gt; Google &gt; 广告”（或“设置 &gt; 隐私 &gt; 广告”）中重置您的广告 ID 或选择退出个性化广告。</li>
+            <li><strong>申请删除邮件沟通记录：</strong>如果您曾通过电子邮件与我们联系，并希望我们从记录中永久删除您的电子邮箱地址及往来邮件，请发送删除请求至 <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a>，我们将在收到请求后的 30 天内予以删除。</li>
+        </ul>
+
+        <h2>3. 儿童隐私权保护</h2>
+        <p>
+            我们非常重视儿童的隐私权益。本应用不会针对儿童提供个性化行为广告，也不会有意收集儿童的个人身份信息。如果您是父母或监护人，发现您的孩子向我们提供了个人信息（如通过邮件发送了信息），请立即通过 <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a> 与我们联系，我们将采取必要措施及时删除相关信息。
+        </p>
+
+        <h2>4. 信息安全</h2>
+        <p>
+            我们及第三方服务提供商采取了符合行业标准的技术和组织安全措施（包括传输过程中的 HTTPS/TLS 加密），以保护信息免受未经授权的访问、使用或泄露。
+        </p>
+
+        <h2>5. 隐私协议更新</h2>
+        <p>
+            我们可能会不时更新本隐私协议。更新后的协议将发布在此页面并更新“最后更新日期”，建议您定期查阅本页面以了解最新内容。
+        </p>
+
+        <h2>6. 联系我们</h2>
+        <p>
+            如果您对本隐私协议、应用的数据处理方式有任何疑问，或需要行使数据删除权利，请通过以下方式与我们联系：
+        </p>
+        <ul>
+            <li><strong>开发者：</strong>thjhsoft</li>
+            <li><strong>联系邮箱：</strong><a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></li>
+        </ul>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ==================== 繁體中文版本 ==================== -->
+    <section id="zh-tw">
+        <h1>用戶隱私協議</h1>
+        <p class="meta">
+            <strong>應用名稱：</strong>迷宮大師 / Maze Master（包名：<code>org.thjh.mazemaster</code>）<br>
+            <strong>開發者：</strong>thjhsoft<br>
+            <strong>生效日期 / 最後更新日期：</strong>2026年11月20日
+        </p>
+
+        <p>
+            感謝您使用由 <strong>thjhsoft</strong>（以下簡稱「我們」）開發和運營的<strong>迷宮大師（Maze Master）</strong>（以下簡稱「本應用」）。我們非常重視您的隱私保護，並致力於透明地說明本應用如何處理數據。請在使用本應用之前仔細閱讀本隱私協議。
+        </p>
+
+        <h2>1. 信息收集與使用</h2>
+
+        <h3>1.1 個人信息與電子郵箱地址（僅限用戶主動聯繫反饋）</h3>
+        <p>
+            <strong>本應用無需註冊賬號或登錄即可使用全部功能。</strong>在正常遊戲和使用過程中，本應用不會在後台主動收集、存儲或向外傳輸您的姓名、電子郵箱地址、電話號碼等個人身份信息。
+        </p>
+        <p>
+            僅當您主動通過電子郵件聯繫我們進行問題諮詢、錯誤反饋或尋求客服支持（開發者通信）時，我們才會收到您的<strong>電子郵箱地址（Email Address）</strong>以及您在郵件中主動提供的內容。該信息僅用於回覆您的諮詢及改進應用功能，我們絕不會將您的電子郵箱地址出售或分享給任何第三方。
+        </p>
+
+        <h3>1.2 第三方廣告與 SDK 數據收集（Google AdMob）</h3>
+        <p>
+            為了支持本應用的免費提供與維護，我們集成了 <strong>Google AdMob（Google 移動廣告 SDK）</strong> 用於展示廣告。在運行過程中，AdMob SDK 會通過網絡權限（<code>INTERNET</code>）及廣告 ID 權限（<code>com.google.android.gms.permission.AD_ID</code>）自動收集並傳輸以下數據，用於廣告展示、成效分析及防欺詐：
+        </p>
+        <ul>
+            <li><strong>設備或其他標識符（Device or Other IDs）：</strong>如 Google 廣告 ID（Advertising ID / AAID），用於展示廣告、衡量廣告效果及核算廣告收益。</li>
+            <li><strong>粗略位置信息（Approximate Location）：</strong>基於 IP 地址的粗略區域位置，用於向您投放符合地區規範的廣告。</li>
+            <li><strong>應用互動與診斷信息（App Interactions &amp; Diagnostics）：</strong>廣告瀏覽與點擊事件、應用啟動事件、崩潰日誌及性能診斷信息。</li>
+        </ul>
+        <p>
+            AdMob SDK 傳輸的所有數據均通過 HTTPS/TLS 進行傳輸加密。關於 Google 如何收集和處理數據的詳細信息，請參閱 <a href="https://policies.google.com/privacy?hl=zh-TW" target="_blank" rel="noopener noreferrer">Google 隱私權政策</a>。
+        </p>
+
+        <h3>1.3 本地遊戲記錄、迷宮圖紙與分享打印</h3>
+        <ul>
+            <li><strong>本地訓練記錄與迷宮圖紙：</strong>您的迷宮闖關用時、歷史成績及保存的迷宮圖紙僅存儲在您的本地設備中，不會上傳至任何服務器。</li>
+            <li><strong>分享與打印功能：</strong>當您主動使用迷宮圖紙導出、打印或分享功能時，生成的圖片僅在本地緩存或本地相冊中處理，並通過 Android 系統原生的分享面板由您自主選擇分享對象。本應用不會收集或上傳您的圖片文件。</li>
+        </ul>
+
+        <h2>2. 數據保留、刪除與用戶控制權</h2>
+        <ul>
+            <li><strong>刪除本地數據：</strong>您可以隨時在 Android 系統設置中清除本應用的存儲數據，或直接卸載本應用，以徹底刪除所有本地保存的遊戲記錄和迷宮圖紙。</li>
+            <li><strong>重置或限制廣告 ID：</strong>您可以隨時在 Android 設備的「設置 &gt; Google &gt; 廣告」（或「設置 &gt; 隱私 &gt; 廣告」）中重置您的廣告 ID 或選擇退出個性化廣告。</li>
+            <li><strong>申請刪除郵件溝通記錄：</strong>如果您曾通過電子郵件與我們聯繫，並希望我們從記錄中永久刪除您的電子郵箱地址及往來郵件，請發送刪除請求至 <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a>，我們將在收到請求後的 30 天內予以刪除。</li>
+        </ul>
+
+        <h2>3. 兒童隱私權保護</h2>
+        <p>
+            我們非常重視兒童的隱私權益。本應用不會針對兒童提供個性化行為廣告，也不會有意收集兒童的個人身份信息。如果您是父母或監護人，發現您的孩子向我們提供了個人信息（如通過郵件發送了信息），請立即通過 <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a> 與我們聯繫，我們將採取必要措施及時刪除相關信息。
+        </p>
+
+        <h2>4. 信息安全</h2>
+        <p>
+            我們及第三方服務提供商採取了符合行業標準的技術和組織安全措施（包括傳輸過程中的 HTTPS/TLS 加密），以保護信息免受未經授權的訪問、使用或泄露。
+        </p>
+
+        <h2>5. 隱私協議更新</h2>
+        <p>
+            我們可能會不時更新本隱私協議。更新後的協議將發布在此頁面並更新「最後更新日期」，建議您定期查閱本頁面以了解最新內容。
+        </p>
+
+        <h2>6. 聯繫我們</h2>
+        <p>
+            如果您對本隱私協議、應用的數據處理方式有任何疑問，或需要行使數據刪除權利，請通過以下方式與我們聯繫：
+        </p>
+        <ul>
+            <li><strong>開發者：</strong>thjhsoft</li>
+            <li><strong>聯繫郵箱：</strong><a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></li>
+        </ul>
+    </section>
+
+</div>
 </body>
 </html>
