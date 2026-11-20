@@ -1,208 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - KJV Bible (org.vv.bible.kjv)</title>
-    <style>
-        :root {
-            --primary: #8C6D3B;
-            --primary-dark: #6E5328;
-            --bg-body: #F7F5EE;
-            --bg-card: #FFFFFF;
-            --text-main: #2C2518;
-            --text-sub: #5C5549;
-            --border-color: #E6DFCE;
-            --highlight-bg: #FDF9EE;
-            --highlight-border: #C9A96E;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.8;
-            color: var(--text-main);
-            background-color: var(--bg-body);
-            padding: 24px 16px 48px;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 840px;
-            margin: 0 auto;
-            background-color: var(--bg-card);
-            border-radius: 14px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            border: 1px solid var(--border-color);
-            padding: 40px 32px;
-        }
-
-        .header {
-            border-bottom: 2px solid var(--primary);
-            padding-bottom: 20px;
-            margin-bottom: 28px;
-        }
-
-        .app-badge {
-            display: inline-block;
-            background-color: #F3EBDD;
-            color: var(--primary-dark);
-            font-size: 13px;
-            font-weight: 600;
-            padding: 4px 12px;
-            border-radius: 20px;
-            margin-bottom: 12px;
-        }
-
-        h1 {
-            font-size: 26px;
-            font-weight: 700;
-            color: var(--primary-dark);
-            margin-bottom: 10px;
-        }
-
-        .meta {
-            font-size: 13px;
-            color: var(--text-sub);
-        }
-
-        .highlight-box {
-            background-color: var(--highlight-bg);
-            border-left: 4px solid var(--highlight-border);
-            padding: 18px 20px;
-            border-radius: 0 8px 8px 0;
-            margin: 24px 0;
-            font-size: 14px;
-            color: var(--text-main);
-        }
-
-        .highlight-box strong {
-            color: var(--primary-dark);
-        }
-
-        h2 {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--primary-dark);
-            margin: 32px 0 14px;
-            display: flex;
-            align-items: center;
-        }
-
-        h2::before {
-            content: "";
-            display: inline-block;
-            width: 4px;
-            height: 18px;
-            background-color: var(--primary);
-            margin-right: 10px;
-            border-radius: 2px;
-        }
-
-        p, ul {
-            font-size: 14.5px;
-            color: var(--text-sub);
-            margin-bottom: 16px;
-        }
-
-        ul {
-            padding-left: 22px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .contact-card {
-            background-color: #FAF7F0;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 16px 20px;
-            margin-top: 16px;
-        }
-
-        .contact-card p {
-            margin-bottom: 6px;
-        }
-
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-color);
-            text-align: center;
-            font-size: 12px;
-            color: var(--text-sub);
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 24px 18px;
-            }
-            h1 {
-                font-size: 22px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - KJV Bible (org.vv.bible.kjv)</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #8b5a2b;
+      --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111827;
+        --card: #1f2937;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --accent: #d4a373;
+        --border: #374151;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px 28px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 1.75rem;
+      color: var(--accent);
+    }
+    .meta {
+      margin: 4px 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    h2 {
+      margin: 26px 0 10px;
+      font-size: 1.18rem;
+      color: var(--accent);
+    }
+    p { margin: 0 0 12px; }
+    ul {
+      margin: 0 0 14px;
+      padding-left: 22px;
+    }
+    li { margin-bottom: 6px; }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    .contact-box {
+      background: rgba(139, 90, 43, 0.08);
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+    footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
+  <main>
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="meta"><strong>App Name:</strong> KJV Bible (Free Ad-Supported Version)</p>
+      <p class="meta"><strong>Package Name:</strong> <code>org.vv.bible.kjv</code></p>
+      <p class="meta"><strong>Developer:</strong> thjhsoftware</p>
+      <p class="meta"><strong>Email:</strong> <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></p>
+      <p class="meta"><strong>Last Updated:</strong> November 20, 2026</p>
+    </header>
 
-<div class="container">
-    <div class="header">
-        <span class="app-badge">Application ID: org.vv.bible.kjv</span>
-        <h1>Privacy Policy - KJV Bible</h1>
-        <div class="meta">
-            <span>Effective Date: September 2026</span> &nbsp;|&nbsp;
-            <span>Developer: thjhsoft</span>
-        </div>
-    </div>
+    <section>
+      <h2>1. Introduction</h2>
+      <p>This Privacy Policy explains how <strong>thjhsoftware</strong> ("we", "us", or "our") handles information in connection with the <strong>KJV Bible</strong> mobile application (package name: <code>org.vv.bible.kjv</code>, the "App"). This is the free, ad-supported version of the App using Google AdMob. We are committed to protecting your privacy and being transparent about data practices.</p>
+      <p>By using the App, you agree to the practices described in this Privacy Policy.</p>
+    </section>
 
-    <div class="highlight-box">
-        <strong>Our Commitment to Your Privacy:</strong><br>
-        Thank you for using the KJV Bible app. We hold deep respect for your spiritual devotion and privacy. This application does not require any account registration, does not collect personal identifiers, and stores all your personal reading notes, highlights, and bookmarks strictly on your local device.
-    </div>
+    <section>
+      <h2>2. Information We Collect &amp; Local Storage</h2>
+      <p><strong>No account registration or login is required.</strong> We do not operate our own backend servers and do not directly collect, upload, or sell personally identifiable information such as your name, phone number, or email address.</p>
+      <p>All user-created data is stored <strong>locally on your device</strong>, including:</p>
+      <ul>
+        <li>Bookmarks, verse highlights, personal notes, and prayer entries;</li>
+        <li>Reading progress, reading plans, and search history;</li>
+        <li>App preferences such as font size, dark mode theme, and daily verse reminder settings.</li>
+      </ul>
+      <p>If Android Auto Backup is enabled in your device settings, Android may back up your local app data to your personal Google account. You can delete all locally stored data at any time via <strong>Settings &rarr; Clear All Data</strong> inside the App, or by uninstalling the App.</p>
+    </section>
 
-    <h2>1. Information Collection and Storage</h2>
-    <p>We believe sacred reading should be peaceful, safe, and confidential:</p>
-    <ul>
-        <li><strong>No Account Required:</strong> You can access all scriptures and features without creating an account or providing email addresses, names, or phone numbers.</li>
-        <li><strong>Local User Data:</strong> All your bookmarks, reading progress, notes, prayers, and highlights are stored locally on your device's private sandbox storage. They are never transmitted to any remote servers.</li>
-        <li><strong>No Sensitive Permissions:</strong> We do not request sensitive device permissions such as Contacts, Camera, Microphone, Precise Location, or Phone Status.</li>
-    </ul>
+    <section>
+      <h2>3. Third-Party Advertising (Google AdMob &amp; UMP Consent)</h2>
+      <p>To keep the App free, we integrate <strong>Google AdMob</strong> (Google Mobile Ads SDK) to display banner ads and app open ads, together with the <strong>Google User Messaging Platform (UMP) SDK</strong> to request and manage user privacy consent in the European Economic Area (EEA), the UK, Switzerland, and other applicable regions.</p>
+      <p>To serve, personalize (where consented), and measure ads, Google and its advertising partners may automatically collect and process:</p>
+      <ul>
+        <li><strong>Device and Advertising Identifiers:</strong> such as Google Advertising ID (AAID), device model, operating system version, language settings, and screen dimensions;</li>
+        <li><strong>Network and Approximate Location Data:</strong> such as IP address (which may be used to estimate general location such as country or city);</li>
+        <li><strong>Ad Interaction and Diagnostic Data:</strong> such as ad impressions, clicks, app performance, and crash diagnostics for ad delivery, frequency capping, attribution, and fraud prevention.</li>
+      </ul>
+      <p>For more information on how Google collects and uses data, please review Google's official policies:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a></li>
+        <li><a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">Google Ads Settings</a></li>
+      </ul>
+      <p>The App may also use Google Play In-App Review to allow optional ratings, which is governed by Google Play's Terms of Service and Google's Privacy Policy.</p>
+    </section>
 
-    <h2>2. Advertising and Analytics (Google AdMob)</h2>
-    <p>This free edition is supported by advertising to maintain development and distribution costs:</p>
-    <ul>
-        <li>We integrate <strong>Google AdMob</strong> to display banner ads and app open ads.</li>
-        <li>Google AdMob may collect pseudonymous identifiers (such as Android Advertising ID / GAID), coarse IP location, and app diagnostics solely for ad delivery, fraud prevention, and frequency capping according to Google's Privacy Policy.</li>
-        <li>Users can reset or opt out of personalized ads at any time via Android system settings (<em>Settings &gt; Google &gt; Ads</em>).</li>
-        <li>For a 100% ad-free experience with zero ad SDKs, users may choose the KJV Bible Pro edition.</li>
-    </ul>
+    <section>
+      <h2>4. App Permissions</h2>
+      <ul>
+        <li><strong>Internet Access (<code>INTERNET</code>):</strong> Required to load Google AdMob ads, retrieve privacy consent configurations, and open external links such as this Privacy Policy or Google Play when tapped.</li>
+        <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>, optional):</strong> Used on Android 13+ only if you enable the Daily Verse reminder feature, which schedules local notifications on your device. You may disable this anytime in the App's Settings or your device's system settings.</li>
+        <li><strong>Advertising ID (<code>AD_ID</code>):</strong> Used by the Google Mobile Ads SDK for ad serving and measurement.</li>
+      </ul>
+      <p>When you use the verse card sharing feature, the App temporarily generates an image locally on your device solely so you can share it through the Android system share sheet.</p>
+    </section>
 
-    <h2>3. Offline Availability</h2>
-    <p>All 66 books of the Old and New Testament (King James Version) are bundled locally within the app package. The core reading experience is fully accessible offline without internet connectivity.</p>
+    <section>
+      <h2>5. Your Privacy Rights &amp; Managing Ad Preferences</h2>
+      <p>Depending on your location (including under the EU/UK GDPR and California CCPA/CPRA), you may have rights to access or delete your data, withdraw consent, and opt out of personalized advertising:</p>
+      <ul>
+        <li><strong>In-App Privacy Settings (EEA/UK and applicable regions):</strong> You can review, update, or withdraw your ad consent choices at any time via <strong>Settings &rarr; Privacy Settings</strong> inside the App.</li>
+        <li><strong>Device Ad Controls:</strong> You can reset or delete your Advertising ID or opt out of personalized ads via your Android device's <strong>Settings &rarr; Google &rarr; Ads</strong>.</li>
+        <li><strong>Local Data Deletion:</strong> Use <strong>Settings &rarr; Clear All Data</strong> inside the App or uninstall the App to permanently remove all locally stored data.</li>
+      </ul>
+    </section>
 
-    <h2>4. Children's Privacy</h2>
-    <p>Our app does not knowingly collect personal information from children under the age of 13. If you believe a child has provided us with personal information, please contact us and we will promptly delete it.</p>
+    <section>
+      <h2>6. Children's Privacy</h2>
+      <p>The App is not directed to children under the age of 13 (or the applicable minimum age in your jurisdiction, such as 16 in certain EEA countries). We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided personal data through the App or third-party ad services, please contact us using the email below and we will promptly assist.</p>
+    </section>
 
-    <h2>5. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy periodically. Any updates will be posted on this page with a revised effective date.</p>
+    <section>
+      <h2>7. Data Security</h2>
+      <p>Your bookmarks, notes, prayers, and highlights remain in Android's sandboxed private app storage on your device, and network communications by third-party advertising SDKs are encrypted in transit (HTTPS/TLS). However, no method of electronic storage or internet transmission is 100% secure.</p>
+    </section>
 
-    <h2>6. Contact Us</h2>
-    <div class="contact-card">
-        <p>If you have any questions or feedback regarding this Privacy Policy, please contact us at:</p>
-        <p><strong>Email:</strong> <a href="mailto:thjhsoft@gmail.com" style="color: var(--primary-dark); text-decoration: none;">thjhsoft@gmail.com</a></p>
-        <p><strong>Developer:</strong> thjhsoft</p>
-    </div>
+    <section>
+      <h2>8. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in app functionality, third-party SDKs, or legal requirements. Any updates will be posted on this page with an updated "Last Updated" date.</p>
+    </section>
 
-    <div class="footer">
-        &copy; 2026 thjhsoft. All rights reserved.
-    </div>
-</div>
+    <section>
+      <h2>9. Contact Us</h2>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your privacy rights, please contact us:</p>
+      <div class="contact-box">
+        <p style="margin:0 0 6px;"><strong>Developer:</strong> thjhsoftware</p>
+        <p style="margin:0 0 6px;"><strong>Email:</strong> <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></p>
+        <p style="margin:0;"><strong>Application:</strong> KJV Bible (<code>org.vv.bible.kjv</code>)</p>
+      </div>
+    </section>
 
+    <footer>
+      &copy; 2026 thjhsoftware. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
