@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>LumaKoi Privacy Policy</title>
+<style>
+  :root {
+    --bg: #FBF7EE;
+    --card: #FFFFFF;
+    --ink: #22302E;
+    --ink-soft: #566865;
+    --jade: #2E6F64;
+    --jade-soft: rgba(46, 111, 100, 0.12);
+    --border: rgba(34, 48, 46, 0.10);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 16px 16px 28px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans CJK SC", "Noto Sans CJK TC", sans-serif;
+    line-height: 1.65;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .lang-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  .lang-btn {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--ink-soft);
+    border-radius: 999px;
+    padding: 5px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .lang-btn.active {
+    background: var(--jade);
+    color: #FBF7EE;
+    border-color: var(--jade);
+  }
+  .section { display: none; }
+  .section.active { display: block; }
+  h1 {
+    font-size: 20px;
+    margin: 0 0 4px;
+    color: var(--ink);
+  }
+  .meta {
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 15px;
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-size: 15px;
+    margin: 0 0 6px;
+    color: var(--jade);
+  }
+  p { margin: 0 0 8px; }
+  p:last-child { margin-bottom: 0; }
+  ul {
+    margin: 4px 0 8px;
+    padding-left: 20px;
+  }
+  li { margin-bottom: 4px; }
+  a {
+    color: var(--jade);
+    text-decoration: underline;
+    word-break: break-word;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--jade-soft);
+    color: var(--jade);
+    border-radius: 999px;
+    padding: 2px 9px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="lang-bar" role="tablist" aria-label="Language">
+  <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+  <button class="lang-btn" id="btn-zh-CN" onclick="setLang('zh-CN')">简体中文</button>
+  <button class="lang-btn" id="btn-zh-TW" onclick="setLang('zh-TW')">繁體中文</button>
+</div>
+
+<!-- ENGLISH -->
+<article id="sec-en" class="section active" lang="en">
+  <h1>LumaKoi Privacy Policy</h1>
+  <p class="meta">Effective Date: 2026 · Package: com.cookie.lumakoi (Free Ad-Supported Edition)</p>
+  <span class="badge">GDPR &amp; UMP Compliant</span>
+
+  <div class="card">
+    <h2>1. Overview</h2>
+    <p>LumaKoi is designed as a calm, personal courtyard koi pond experience. We respect your privacy and minimize data collection. This Privacy Policy explains how data is handled in the free ad-supported version of LumaKoi.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. Local Game Data</h2>
+    <p>Your pond state (coins, koi collection, growth progress, fish names, courtyard themes, audio/visual preferences, and daily reward records) is stored locally on your device. LumaKoi does not require an account, sign-in, or personal profile, and we do not operate user-tracking servers.</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Advertising (Google AdMob) &amp; GDPR Consent</h2>
+    <p>To keep this edition free, LumaKoi integrates <strong>Google AdMob</strong> (Google Mobile Ads SDK) and Google's <strong>User Messaging Platform (UMP)</strong> SDK to serve App Open Ads (which you can skip during the welcome animation) and opt-in Rewarded Ads (which you explicitly choose to watch for in-game coins).</p>
+    <ul>
+      <li><strong>Delayed Initialization &amp; Consent (EEA / UK / Switzerland):</strong> For users in the European Economic Area, the UK, and Switzerland, AdMob initialization and ad requests are deferred until consent status is gathered through Google's official UMP GDPR consent message.</li>
+      <li><strong>Data Processed by Google AdMob:</strong> Depending on your consent choices and region, Google and its advertising partners may process device identifiers (such as Android Advertising ID), coarse IP-based location, app interaction events, diagnostics, and ad performance data to deliver personalized or non-personalized ads and prevent fraud.</li>
+      <li><strong>Managing Your Ad Privacy Choices:</strong> You can update or withdraw your consent at any time via <em>Settings &rarr; Ad Privacy Options</em> (when applicable in your region), or reset/limit your device Advertising ID in Android system settings.</li>
+    </ul>
+    <p>Learn more about how Google uses data in advertising: <a href="https://policies.google.com/technologies/partner-sites">Google Privacy &amp; Terms</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+    <p>If you prefer a completely ad-free experience with zero advertising SDKs, you may optionally choose the standalone <strong>LumaKoi Pro</strong> paid edition on Google Play.</p>
+  </div>
+
+  <div class="card">
+    <h2>4. Optional Local Weather &amp; Region Sync</h2>
+    <p>Only when you explicitly enable <em>Sync Local 24h Weather</em> in Settings does the app perform coarse IP-based city lookup or query public Open-Meteo geocoding and weather APIs for your selected city. GPS hardware location permissions are never requested, and weather queries are never linked to a personal account.</p>
+  </div>
+
+  <div class="card">
+    <h2>5. Local Custom Audio Access</h2>
+    <p>Audio files placed in the app's bundled assets or external app-specific music folder are read locally for playback only and are never uploaded or shared.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Children's Privacy</h2>
+    <p>LumaKoi is intended for a general audience and is not directed to children under the age of 13 (or the minimum digital consent age in your country). We do not knowingly collect personal information from children.</p>
+  </div>
+
+  <div class="card">
+    <h2>7. Data Deletion &amp; Contact Us</h2>
+    <p>All locally saved courtyard progress can be removed at any time by clearing the app's storage or uninstalling LumaKoi.</p>
+    <p>If you have any questions about this Privacy Policy or your privacy rights, please contact us at: <a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></p>
+  </div>
+</article>
+
+<!-- SIMPLIFIED CHINESE -->
+<article id="sec-zh-CN" class="section" lang="zh-CN">
+  <h1>LumaKoi 隐私协议</h1>
+  <p class="meta">更新日期：2026 年 · 应用包名：com.cookie.lumakoi（免费广告版）</p>
+  <span class="badge">遵循 GDPR 与 Google UMP 规范</span>
+
+  <div class="card">
+    <h2>1. 概述</h2>
+    <p>LumaKoi 致力于为您提供宁静、治愈的个人庭院锦鲤观赏体验。我们高度重视您的隐私保护，尽可能减少数据收集。本隐私协议说明 LumaKoi 免费版如何处理相关信息。</p>
+  </div>
+
+  <div class="card">
+    <h2>2. 本地游戏数据存储</h2>
+    <p>您的金币数量、锦鲤图鉴、成长进度、鱼儿名称、庭院主题布置、音画偏好以及每日任务记录均仅保存在您的设备本地。LumaKoi 无需注册账号或登录，开发者不运营任何收集用户个人资料的服务器。</p>
+  </div>
+
+  <div class="card">
+    <h2>3. 广告服务（Google AdMob）与 GDPR 隐私同意</h2>
+    <p>为支持本版本免费提供，LumaKoi 集成了 <strong>Google AdMob</strong> 广告 SDK 以及 Google 官方 <strong>User Messaging Platform (UMP)</strong> 隐私同意管理框架，用于展示开屏广告（您可在启动欢迎动画期间点击“跳过广告”取消）以及激励视频广告（仅在您于每日任务中主动点击观看以获取金币时展示）。</p>
+    <ul>
+      <li><strong>欧盟及英国地区延后初始化与 GDPR 授权：</strong>针对欧盟经济区（EEA）、英国及瑞士用户，应用会在欢迎动画结束后弹出 Google 官方 GDPR 同意消息，在完成同意状态确认前，不会初始化 AdMob 或发起广告请求。</li>
+      <li><strong>Google AdMob 处理的数据类型：</strong>根据您的授权选择与所在地区法规，Google 及其广告合作伙伴可能会处理设备广告标识符（如 Android 广告 ID）、基于 IP 的大致位置、广告展示与点击互动及诊断信息，用于投放个性化或非个性化广告及防止欺诈。</li>
+      <li><strong>管理或撤回同意：</strong>适用地区的用户可随时在应用内“设置 &rarr; 广告隐私选项”中修改或撤回同意，也可在 Android 系统设置中重置或停用广告 ID。</li>
+    </ul>
+    <p>详情请参阅：<a href="https://policies.google.com/technologies/partner-sites">Google 隐私权和条款</a> 及 <a href="https://policies.google.com/privacy">Google 隐私权政策</a>。</p>
+    <p>若您希望获得完全无广告且不含任何广告 SDK 的纯净体验，也可以在 Google Play 选择独立的 <strong>LumaKoi Pro 付费版</strong>。</p>
+  </div>
+
+  <div class="card">
+    <h2>4. 可选当地天气与昼夜同步</h2>
+    <p>仅当您在设置中主动开启“同步当地天气与24小时时间”后，应用才会按需通过网络获取大致所在城市或您手动搜索城市的公开 Open-Meteo 气象数据。本应用绝不申请或读取 GPS 精确定位权限，也不会将地区信息与个人身份关联。</p>
+  </div>
+
+  <div class="card">
+    <h2>5. 本地自定义音频读取</h2>
+    <p>放置在应用内置资源或应用专属音乐目录中的音频文件仅在本地播放，绝不会上传至任何服务器。</p>
+  </div>
+
+  <div class="card">
+    <h2>6. 儿童隐私保护</h2>
+    <p>LumaKoi 面向大众用户，并非专为 13 周岁以下儿童（或您所在司法辖区规定的最低数字同意年龄）设计。我们不会有意收集儿童的个人信息。</p>
+  </div>
+
+  <div class="card">
+    <h2>7. 数据清除与联系我们</h2>
+    <p>您可随时通过系统应用管理清除存储数据或卸载本应用，以彻底删除所有本地庭院存档。</p>
+    <p>如您对本隐私协议有任何疑问或建议，请通过电子邮件联系我们：<a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></p>
+  </div>
+</article>
+
+<!-- TRADITIONAL CHINESE -->
+<article id="sec-zh-TW" class="section" lang="zh-TW">
+  <h1>LumaKoi 隱私權政策</h1>
+  <p class="meta">更新日期：2026 年 · 應用程式包名：com.cookie.lumakoi（免費廣告版）</p>
+  <span class="badge">遵循 GDPR 與 Google UMP 規範</span>
+
+  <div class="card">
+    <h2>1. 概述</h2>
+    <p>LumaKoi 致力於提供寧靜、療癒的個人庭院錦鯉觀賞體驗。我們高度重視您的隱私權，並盡可能減少資料蒐集。本隱私權政策說明 LumaKoi 免費版如何處理相關資訊。</p>
+  </div>
+
+  <div class="card">
+    <h2>2. 本地遊戲資料儲存</h2>
+    <p>您的金幣數量、錦鯉圖鑑、成長進度、魚兒名稱、庭院主題佈置、音畫偏好以及每日任務記錄皆僅儲存於您的裝置本地。LumaKoi 無須註冊帳號或登入，開發者亦未營運任何蒐集個人資料的伺服器。</p>
+  </div>
+
+  <div class="card">
+    <h2>3. 廣告服務（Google AdMob）與 GDPR 隱私同意</h2>
+    <p>為維持本版本免費提供，LumaKoi 整合了 <strong>Google AdMob</strong> 廣告 SDK 及 Google 官方 <strong>User Messaging Platform (UMP)</strong> 同意管理框架，用於顯示開屏廣告（您可在啟動歡迎動畫期間點擊「跳過廣告」取消）以及獎勵式廣告（僅在您於每日任務中主動選擇觀看以獲得金幣時顯示）。</p>
+    <ul>
+      <li><strong>歐盟及英國地區延後初始化與 GDPR 授權：</strong>針對歐洲經濟區（EEA）、英國及瑞士使用者，應用程式會在歡迎動畫結束後顯示 Google 官方 GDPR 同意訊息；在完成同意狀態確認前，不會初始化 AdMob 或發起廣告請求。</li>
+      <li><strong>Google AdMob 處理的資料類型：</strong>視您的同意選擇與當地法規而定，Google 及其廣告合作夥伴可能會處理裝置廣告識別碼（如 Android 廣告 ID）、依 IP 推估的大致地區、廣告互動與診斷資訊，以提供個人化或非個人化廣告並防止詐欺。</li>
+      <li><strong>管理或撤回同意：</strong>適用地區的使用者可隨時於「設定 &rarr; 廣告隱私選項」中變更或撤回同意，亦可於 Android 系統設定中重設或停用廣告 ID。</li>
+    </ul>
+    <p>詳情請參閱：<a href="https://policies.google.com/technologies/partner-sites">Google 隱私權與條款</a> 及 <a href="https://policies.google.com/privacy">Google 隱私權政策</a>。</p>
+    <p>若您偏好完全無廣告且不含任何廣告 SDK 的純淨體驗，也可於 Google Play 選擇獨立的 <strong>LumaKoi Pro 付費版</strong>。</p>
+  </div>
+
+  <div class="card">
+    <h2>4. 可選當地天氣與晝夜同步</h2>
+    <p>僅當您在設定中主動開啟「同步當地天氣與24小時時間」時，應用程式才會按需取得大致所在城市或您手動搜尋城市的公開 Open-Meteo 氣象資料。本應用程式絕不申請或讀取 GPS 精確定位權限，亦不將地區資訊連結至個人身分。</p>
+  </div>
+
+  <div class="card">
+    <h2>5. 本地自訂音訊讀取</h2>
+    <p>置於應用程式內建資源或專屬音樂目錄中的音訊檔案僅供本地播放，絕不上傳至任何伺服器。</p>
+  </div>
+
+  <div class="card">
+    <h2>6. 兒童隱私保護</h2>
+    <p>LumaKoi 面向一般大眾，並非專為未滿 13 歲兒童（或您所在地區法定最低數位同意年齡）設計。我們不會刻意蒐集兒童的個人資訊。</p>
+  </div>
+
+  <div class="card">
+    <h2>7. 資料刪除與聯絡我們</h2>
+    <p>您可隨時透過清除應用程式儲存空間或解除安裝本應用程式，徹底移除所有本地庭院存檔。</p>
+    <p>如對本隱私權政策有任何疑問，歡迎透過電子郵件聯絡我們：<a href="mailto:thjhsoft@gmail.com">thjhsoft@gmail.com</a></p>
+  </div>
+</article>
+
+<script>
+  function normalizeLang(raw) {
+    if (!raw) return 'en';
+    var lower = String(raw).toLowerCase();
+    if (lower.indexOf('zh') === 0) {
+      if (lower.indexOf('tw') !== -1 || lower.indexOf('hk') !== -1 || lower.indexOf('mo') !== -1 || lower.indexOf('hant') !== -1) {
+        return 'zh-TW';
+      }
+      return 'zh-CN';
+    }
+    return 'en';
+  }
+  function setLang(lang) {
+    var target = normalizeLang(lang);
+    ['en', 'zh-CN', 'zh-TW'].forEach(function(code) {
+      var sec = document.getElementById('sec-' + code);
+      var btn = document.getElementById('btn-' + code);
+      if (sec) sec.className = (code === target) ? 'section active' : 'section';
+      if (btn) btn.className = (code === target) ? 'lang-btn active' : 'lang-btn';
+    });
+    document.documentElement.lang = target;
+  }
+  (function init() {
+    var params = new URLSearchParams(window.location.search);
+    var lang = params.get('lang') || navigator.language || 'en';
+    setLang(lang);
+  })();
+</script>
+</body>
+</html>
